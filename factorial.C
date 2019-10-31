@@ -5,10 +5,10 @@ void main()
   int a;
   float factorial=1;
   printf("Enter no:");
-  scan("%d", a)
+  scanf("%d", &a);
   for( int i=a;i>=1;i--)
   {
-    factorial=factoriali;
-    }
-    print("%d",factorial)
-   }
+    factorial=factorial(i);
+  }
+    print("%d",factorial);
+ }
