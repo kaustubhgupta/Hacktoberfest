@@ -8,7 +8,7 @@ void main()
   for(int i=1;i<=a;i++)
   {
     if(a%i=0)
-    b=a//i;
+    b=a/i;
     printf("%d\n",b)
 
   }
