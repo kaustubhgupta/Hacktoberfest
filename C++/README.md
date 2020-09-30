@@ -1,1 +1,1 @@
-**C (programming language)** is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion , with a static type system.
+**C++** is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes".
