@@ -4,12 +4,12 @@ void main()
 {
   int num;
   pritf("Enter a no:");
-  scan("%d", &num);       `   // Input a Number
-  for(int i=1; i<=num; i++)
+  scan("%d", &num);           // Input a Number
+  for(int iter=1; iter<=num; iter++)
   {
-    if(num%i == 0)           // If the given number is divisible, then print the factor
+    if(num%iter == 0)           // If the given number is divisible, then print the factor
     {
-      printf("%d\n",i);
+      printf("%d\n",iter);
     }
   }
    getch();
