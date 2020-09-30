@@ -3,7 +3,7 @@
 void main()
 {
   int num;
-  pritf("Enter a no:");
+  printf("Enter a no:");
   scanf("%d", &num);           // Input a Number
   for(int iter=1; iter<=num; iter++)
   {
