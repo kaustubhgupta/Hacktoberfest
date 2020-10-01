@@ -4,7 +4,7 @@
 int main()
 {
     int a,b,i;
-    pritf("Enter a no:");
+    printf("Enter a no:");
     scanf("%d", &a);
     for(i=1;i<=a;i++)    /* This function shows factorization */
     {
