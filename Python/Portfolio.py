@@ -12,4 +12,4 @@ for skill in skills:
 print("Hobbies : ")
 for hobby in hobbies:
   print(f"\t{hobby}")
-print("-------Thank You-------")
+print("***Thank You***")
