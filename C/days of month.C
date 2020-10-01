@@ -28,7 +28,7 @@ void main()
 	   }
 	   else
 	   {
-	     printf("It has 28 days")
+	     printf("It has 28 days");
 
 	   }
 
