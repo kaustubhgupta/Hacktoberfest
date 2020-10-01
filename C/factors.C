@@ -1,18 +1,19 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+
+int main()
 {
-  int a b;
-  pritf("Enter a no:");
-  scanf("%d", &a);
-  for(int i=1;i<=a;i++)
-  {
-    if(a%i=0)
+    int a,b,i;
+    pritf("Enter a no:");
+    scanf("%d", &a);
+    for(i=1;i<=a;i++)    /* This function shows factorization */
+    {
+      if(a%i=0)
       {
          b=a/i;
          printf("%d\n",b);
       }
 
-  }
-   getch();
-   }
+    }
+   return 0;
+ }
