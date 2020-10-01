@@ -28,7 +28,7 @@ $ git checkout <branch-name>
 $ git rebase upstream/<branch-name>
 ```
 
-## Step 2 : Create a Branch
+## Step 1 : Create a Branch
 Create a new branch. Use its name to identify the issue your addressing.
 ```
 # typing the command below in your terminal will create a new branch. You could call it: Branch_Name and switch to that branch 
@@ -40,7 +40,7 @@ $ git checkout -b branch_name
 $ git checkout -b "contribution"
 ```
 
-## Step 3 : Work on a specific code
+## Step 2 : Work on a specific code
 - For you only, you can contribute without being assigned any issue.
 - Examples include: Any type of DS/Algo implementation
 - Add all the files/folders needed.
@@ -57,7 +57,7 @@ $ git add index.html
 
 This would add the file to the staging area.
 
-## Step 4 : Write a commit
+## Step 3 : Write a commit
 - To commit means to give a descriptive message that shows what you've modified:
 ```
 # This message get associated with all files you have added to the staging area through the git add command.
@@ -65,7 +65,7 @@ This would add the file to the staging area.
 $ git commit -m "your commit message"
 ```
 
-## Step 5 : Work Remotely
+## Step 4 : Work Remotely
 - Now you are ready to push your work to the remote repository.
 - The next step would be to take the local version you've worked on, on your computer and push it to github.
 ```
@@ -79,13 +79,13 @@ $ git push -u origin Branch_Name
 
 - So that is the branch you'd create. I named mine contribution to address a particular issue but it could be anything you want.
 
-## Step 6 : Compare Changes
+## Step 5 : Compare Changes
 
 - You can compare the changes you've made in your branch with those in the main project. Just click on the compare button.
 
 ![compare](screenshots/compare-changes.jpg)
 
-## Step 7: Create a pull Request
+## Step 6: Create a pull Request
 
 - Next step would be to create a pull request and then adding a title and description to the changes you've made to the project.
 
