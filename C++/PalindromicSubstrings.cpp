@@ -1,19 +1,22 @@
+// C++ program to find all distinct palindrome sub-strings 
+// of a given string 
 #include <iostream> 
 #include <map> 
 using namespace std; 
 
+//function to find all continuous palindromic substrings
 void palindromeSubStrs(string s) 
-{ 
+{       //hash map tp store palindromes
 	map<string, int> m; 
 	int n = s.size(); 
-
+          // array to strore details of even and odd length palindromes
 	int R[2][n+1]; 
 
 
 	s = "@" + s + "#"; 
 
 	for (int j = 0; j <= 1; j++) 
-	{ 
+	{        // length of 'palindrome radius' 
 		int rp = 0;
 		R[j][0] = 0; 
 
@@ -35,7 +38,8 @@ void palindromeSubStrs(string s)
 	} 
 
 	s = s.substr(1, n); 
-
+       
+    // Put all obtained palindromes in a hash map 
 	m[string(1, s[0])]=1; 
 	for (int i = 1; i <= n; i++) 
 	{ 
@@ -44,6 +48,8 @@ void palindromeSubStrs(string s)
 			m[s.substr(i - rp - 1, 2 * rp + j)]=1; 
 		m[string(1, s[i])]=1; 
 	} 
+	
+    //printing all distinct palindromes from hash map 
 cout <<"Possible Palindromic Substrings";
 map<string, int>::iterator ii; 
 for (ii = m.begin(); ii!=m.end(); ++ii) 
