@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-struct Node
+struct Node // structure for linked list
 {
-    struct Node *prev;
-    int data;
-    struct Node *next;
+    struct Node *prev; // pointer to previous node
+    int data; // data in linkedlist
+    struct Node *next; // pointer to next node
 } *first = NULL;
 
-void Create(int A[], int n)
+void Create(int A[], int n) // function for creating the Linked List
 {
     struct Node *t, *last;
     int i;
-    first = (struct Node *)malloc(sizeof(struct Node));
+    first = (struct Node *)malloc(sizeof(struct Node)); // initializing the first pointer using malloc function
     first->data = A[0];
     first->prev = first->next = NULL;
     last = first;
-    for (int i = 1; i < n; i++)
+    for (int i = 1; i < n; i++) 
     {
-        t = (struct Node *)malloc(sizeof(struct Node));
+        t = (struct Node *)malloc(sizeof(struct Node)); // allocating memory to a temp variable
         t->data = A[i];
         t->next = last->next;
         t->prev = last;
@@ -26,18 +26,19 @@ void Create(int A[], int n)
     }
 }
 
-void Display(struct Node *p)
+void Display(struct Node *p) // function for displaying the elememnts of a linked list
 {
-    while (p)
+    while (p) // loop runs while the pointer does'nt reach the end of the linked list
     {
         printf("%d ", p->data);
         p = p->next;
     }
-    printf("\n");
+    printf("\n"); // to seaperate each element of a linkedlist in a ne wline
 }
 
-int Length(struct Node *p)
+int Length(struct Node *p) // function for finding the length of a linked list
 {
+    // logic for finding the length
     int len = 0;
     while (p)
     {
@@ -47,7 +48,7 @@ int Length(struct Node *p)
     return len;
 }
 
-void Insert(struct Node *p, int index, int x)
+void Insert(struct Node *p, int index, int x) // function for creatintg a linked list
 {
     struct Node *t;
     int i;
@@ -78,7 +79,7 @@ void Insert(struct Node *p, int index, int x)
     }
 }
 
-int Delete(struct Node *p, int index)
+int Delete(struct Node *p, int index) // function for deleting the node in a linked list
 {
     struct Node *q;
     int x = -1, i;
@@ -105,7 +106,7 @@ int Delete(struct Node *p, int index)
     return x;
 }
 
-void Reverse(struct Node *p)
+void Reverse(struct Node *p) // function for reversing the elements of doubly linked list
 {
     struct Node *temp;
     while (p != NULL)
