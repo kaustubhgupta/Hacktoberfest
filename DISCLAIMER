@@ -1,0 +1,60 @@
+What Role Does a Description Play in a Pull Request?
+Providing descriptions for pull requests is highly recommended for a better code review process. Descriptions clearly answer:
+
+What can reviewers expect while reviewing the submitted code?
+What standards has the developer considered before submitting their code for review?
+Later, the reviewers can initiate an open discussion between themselves and the developers to track every code change before those changes are pushed into repositories.
+
+What is a Pull Request Template?
+When you initiate a new pull request for an implemented feature or a bug fix in your project repository, you can allow the description field to pre-populate with  a checklist of items relevant to your team, like the checklist provided in the previous section. This process of exhibiting the pre-filled description field in pull request form is often referred to as a Pull Request or Merge Request Template.
+For an automatic pre-population of details in the description field, you must first define your own set of templates and then add them to the project’s root directory.
+You can also create multiple templates separately for bugs, features, documentation, etc..
+The description templates are usually drafted as Markdown files and should be added to the appropriate directory of your project repository. 
+The naming of a directory, as well as the handling of single and multiple templates in your project repositories, differs based on what service you prefer to use:
+GitHub or GitLab. For the purposes of this article, we are going to focus on GitHub.
+
+If your project repository is on GitHub, the name of the template and where it’s located in your repository matters a lot. The template created as a Markdown file should be named PULL_REQUEST_TEMPLATE.md by default and placed in either the project’s root folder or .github directory.
+
+Create a Markdown file, name it PULL_REQUEST_TEMPLATE.md, and place it in the project’s root folder.
+
+Pull Request Template Markdown file
+Or, create a directory, name it .github, and place the Markdown file in this folder.
+
+pull request template GitHub folder
+NOTE: Make sure to place the Markdown file within one of the previously mentioned locations and save and merge it with the same name.
+Now, when you create a new pull request, you will see the template content automatically loaded into the description field as shown in the following image.
+
+Create new pull request
+Utilizing Pull Request Templates in GitKraken
+As we briefly mentioned earlier, GitKraken supports pull request templates committed to remote repos on GitHub, GitLab, or VSTS (including Azure DevOps with legacy VSTS URLs).
+
+When you create a new pull request in GitKraken, the Pull Request Template drop-down menu will appear, allowing you to select a
+pull request you have created in one of your repositories. This allows you to easily and quickly fill in your pull request using all the information
+designated on your pre-drafted template.  
+
+How to Create Multiple Pull Request Templates in GitHub
+It wouldn’t be sensible to use the same description template for different categories of pull requests. For example, you may need to initiate a pull request for submitting the code changes of a newly implemented feature, a simple bug fix, documentation, or any kind of configuration work. It would be best for each of these pull request links to load and pre-populate different template contents in the description fields based on the submitted pull request category.
+
+To make use of different templates, you must first create multiple template files and save them as separate Markdown files in your repository, as explained in the following steps:
+
+Create a folder named PULL_REQUEST_TEMPLATE and place it within either the root directory or the directory named .github.
+Create multiple template Markdown files and place them all in the folder PULL_REQUEST_TEMPLATE.
+NOTE: The Markdown files created in this process can be named as you choose, but the folder mentioned in the first step must have the name PULL_REQUEST_TEMPLATE.
+Pull Request Templates for Bug FixesPull Request Template New Feature
+If you do have multiple template files in GitHub, you will always need to manually navigate to the URL of the specific Markdown file you want to pre-populate in the pull request form.
+
+For example, I’m creating a Markdown file and naming it bug-template.md. I place it in the PULL_REQUEST_TEMPLATE folder of my main repository. When I want to push some changes into this main repository, I will initiate a new pull request. To pre-populate my pull request form with the content of the bug-template.md file, I need to navigate to the URL by passing an additional template parameter:
+
+https://github.com/Scheduler_Project/compare/master…Test_branch?expand=1&template=bug-template.md
+
+Here, Scheduler-Project refers to the name of my main repository and I’m trying to merge the code changes from the Test_branch into my master branch. At the end of the URL, there’s template=bug-template.md to pre-populate the content of the bug-template.md file into my pull request form.
+
+NOTE: You can also refer to the GitHub help documentation, which explains how to use template query parameters in the URL.
+Now, after making these URL changes, you can see the description content being loaded in the pull request form as follows.
+
+URL change for pull request
+You can edit the previous description with relevant details and click the Create pull request button, which will open your submitted pull request page as follows.
+
+submitted pull request page
+
+
