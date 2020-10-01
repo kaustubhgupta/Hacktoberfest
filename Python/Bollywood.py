@@ -1,20 +1,20 @@
 import random
 movies = ('LAGAAN', 'HIGHWAY', 'THOR', 'DANGAL', 'NEWTON','ANEK','APNE','CHHICHHORE','WAR','GULAAL','DHOOM','MALANG', 'STAR WARS') #movies_name_that_you_will_get_to_play
-c_m = random.sample(movies,1)    #one movie is selected by random library
-k = '*' * len(c_m[0])
+selected_movie = random.sample(movies,1)    #one movie is selected by random library
+k = '*' * len(selected_movie[0])
 print(k) #output movie name in stars
 
 
-lap = {}
-for i in range(len(c_m[0])):
-    if c_m[0][i] not in lap.keys():
+lap = {}                                         #assigning the stars values the letters of movie
+for i in range(len(selected_movie[0])):
+    if selected_movie[0][i] not in lap.keys():
         j = list()
         j.append(i)
-        lap[c_m[0][i]] = j
+        lap[selected_movie[0][i]] = j
     else:
-        j = lap[c_m[0][i]]
+        j = lap[selected_movie[0][i]]
         j.append(i)
-        lap[c_m[0][i]] = j
+        lap[selected_movie[0][i]] = j
 score = 10
 
 print(f'Score = {score}')                              #prints the starting score
@@ -44,4 +44,4 @@ if '*' not in k:
 else:
     print("YOU LOOSE")
 
-print(f"The Answer was {c_m[0]}")                     #prints the correct answer
+print(f"The Answer was {selected_movie[0]}")                     #prints the correct answer
