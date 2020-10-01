@@ -1,15 +1,16 @@
 #include<stdio.h>
 #include<conio.h>
+
 int main()
 {
-  int a,i;
-  float f=1;
+  int num,i;
+  float fact=1;
   printf("Enter no:");
-  scanf("%d", &a);
-  for(i=a;i>=1;i--)
+  scanf("%d", &num);
+  for(i=num;i>=1;i--) /* This loop shows factorial*/
   {
-    f=f*i;
+    fact=fact*i;
   }
-    printf("%f",f);
+    printf("%f",fact);
   return 0;
  }
