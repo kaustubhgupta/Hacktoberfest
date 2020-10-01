@@ -27,6 +27,7 @@
 
 ## Happy?? Do Star ⭐ this Repo. 🤩
 
+If you have any concern, then read this [code of conduct](CODE_OF_CONDUCT.md)
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://hacktoberfest.netlify.com/)&nbsp;
 Voila!
