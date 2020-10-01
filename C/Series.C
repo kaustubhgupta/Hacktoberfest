@@ -1,13 +1,14 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+
+int main()
 {
-  int a;
+  int val,i;
   printf("Enter value upto which you want series:");
-  scanf("%d", &a);
-  for( int i=1,i<=a;i++)
+  scanf("%d", &val);
+  for(i=1,i<=val;i++)
   {
     printf("\t%d",i);
-    
-   getch();
-   }
+  }
+  return 0;
+}
