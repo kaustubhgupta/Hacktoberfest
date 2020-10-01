@@ -20,4 +20,4 @@
 - To Contribute make sure you have read the contributors guidlines.
 - Create an Issue and we can discuss about it!
 
-#### If you like this project Please make sure you give a star.
+### If you like this project Please make sure you give a star.
