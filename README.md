@@ -20,14 +20,4 @@
 - To Contribute make sure you have read the contributors guidlines.
 - Create an Issue and we can discuss about it!
 
-# Contributors
-| ☆   | Name               | GitHub                                              |
-| --- | ------------------ | --------------------------------------------------- |
-| 1   | Kaustabh Gupta | [kaustubhgupta](https://github.com/kaustubhgupta)   |
-| 2   | Aditya Thakur | [adityathakurxd](https://github.com/adityathakurxd)   |
-| 3   | Saumya Nasa | [saumyanasa](https://github.com/saumyanasa)   |
-| 4   | Anmol Singla | [anmolsingla](https://github.com/anmolsingla)   |
-| 5   | Vandit | [vanditkhurana](https://github.com/vanditkhurana)   |
-| 6   | Abir Bhattacharya | [abirbhattacharya82](https://github.com/abirbhattacharya82)   |
-
 #### If you like this project Please make sure you give a star.
