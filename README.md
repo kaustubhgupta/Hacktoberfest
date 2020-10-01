@@ -2,12 +2,12 @@
 🙅🏼‍♂️Hacktoberfest is open to everyone in our global community. Whether you’re new to development, a student, long-time contributor, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skills levels are encouraged to complete the challenge.🙅🏼‍♂️
 
 ## Instructions for begineers: 🙅🏼 🙅🏼‍♂️
-- If you are totally new to this culture then head over to this [guide](contributing.md) where everything has been explained!
+- If you are totally new to this culture then head over to this [guide](CONTRIBUTING_BEGINEER.md) where everything has been explained!
 - After you are done untill Step:2 (setting up a branch), then you can make pull request without being assigned an issue. The PR should follow the rules mentioned in the end of these instructions.
 - You can create programs for any language we have folder of. Make sure the code is understandable.
 
 ## Instructions for intermediates: 🙅🏼 🙅🏼‍♂️
-- I expect you are familiar with concept of forking and creating a branch in your forked repo
+- I expect you are familiar with concept of forking and creating a branch in your forked repo. If you still find it difficult, then head over to this [guide](CONTRIBUTING_INTERMEDIATE.md).
 - Look at the current issues.
 - If you are interested in any of them then comment "I would like to contribute in this"
 - Issues are assigned on first-come basis.
