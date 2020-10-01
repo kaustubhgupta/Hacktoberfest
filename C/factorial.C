@@ -10,5 +10,5 @@ void main()
   {
     f=f*i;
   }
-    print("%f",f);
+    printf("%f",f);
  }
