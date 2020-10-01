@@ -3,7 +3,7 @@
 void main()
 {
   int a;
-  printf("Enter value upto which you want series:");
+  printf("Enter value upto which you want series:\n");
   scanf("%d", &a);
   for( int i=1,i<=a;i++)
   {
