@@ -18,10 +18,10 @@ def getJPG():
     im1 = Image.open(import_file_path)
 
 
-font = ('helvetica', 12, 'bold')
-bg = 'royalblue'
-fg = 'white'
-browseButton_JPG = tk.Button(text="      Import JPEG File     ", command=getJPG, bg=bg, fg=fg, font=font)   # Browse button
+font_style = ('helvetica', 12, 'bold')
+background_color = 'royalblue'
+figure = 'white'
+browseButton_JPG = tk.Button(text="      Import JPEG File     ", command=getJPG, bg=background_color, fg=figure, font=font_style)   # Browse button
 canvas1.create_window(150, 130, window=browseButton_JPG)
 
 
@@ -33,8 +33,9 @@ def convertToPNG():
     else:
         export_file_path = filedialog.asksaveasfilename(defaultextension='.png')
         im1.save(export_file_path)
+        messagebox.showinfo("Successful", "Image Converted") 
 
 
-saveAsButton_PNG = tk.Button(text='Convert JPEG to PNG', command=convertToPNG, bg=bg, fg=fg, font=font)      # Convert button
+saveAsButton_PNG = tk.Button(text='Convert JPEG to PNG', command=convertToPNG, bg=background_color, fg=figure, font=font_style)      # Convert button
 canvas1.create_window(150, 180, window=saveAsButton_PNG)
 root.mainloop()
