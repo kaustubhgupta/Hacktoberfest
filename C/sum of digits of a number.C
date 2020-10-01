@@ -1,11 +1,13 @@
+## This is a program to show sum of digits
 #include<stdio.h>
-void main()
+int main()
 {
-  int a,b,sum=0;
+  int num1,num2,sum=0;
   printf("Enter a no:");
-  scanf("%d", &a);
+  scanf("%d", &num1);
   printf("Enter another no:");
-  scanf("%d", &b);
-  sum=a+b;
+  scanf("%d", &num2);
+  sum=num1+num2;
   printf("Sum of digits is %d",sum);
+  return 0;
 }
