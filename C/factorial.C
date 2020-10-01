@@ -1,14 +1,15 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
-  int a;
+  int a,i;
   float f=1;
   printf("Enter no:");
   scanf("%d", &a);
-  for( int i=a;i>=1;i--)
+  for(i=a;i>=1;i--)
   {
     f=f*i;
   }
     printf("%f",f);
+  return 0;
  }
