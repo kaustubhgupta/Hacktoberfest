@@ -3,15 +3,15 @@
 
 int main()
 {
-    int a,b,i;
+    int num,factors,i;
     printf("Enter a no:");
-    scanf("%d", &a);
+    scanf("%d", &num);
     for(i=1;i<=a;i++)    /* This function shows factorization */
     {
-      if(a%i=0)
+      if(num%i=0)
       {
-         b=a/i;
-         printf("%d\n",b);
+         factor=num/i;
+         printf("%d\n",factor);
       }
 
     }
