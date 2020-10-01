@@ -6,6 +6,28 @@
 - Add comments to explain hard parts but don't add unnecessay comments.
 - Have fun coding!
 
-# Suggestions or improvements?
-Make an issue of the same and we will discuss it!
+# Rules for Participating in Hacktoberfest
+- To get a shirt, you must make four pull requests (PRs) between October 1–31 in any time zone. Pull requests can be to any public repository on GitHub, not just the ones highlighted. The pull request must contain commits you made yourself. If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest. If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate. This year, the first 70,000 participants can earn a T-shirt
 
+# Quality Standards for Hacktoberfest
+##### The Following examples of pull requests that we consider to be low-quality contributions
+- Pull requests that are automated
+- Pull requests that are disruptive
+- Pull requests that are regarded by a project maintainer as a hindrance vs. helping.
+- Something that's clearly an attempt to simply +1 your pull request count for October.
+
+# Suggestions or improvements?
+- To Contribute make sure you have read the contributors guidlines.
+- Create an Issue and we can discuss about it!
+
+# Contributors
+| ☆   | Name               | GitHub                                              |
+| --- | ------------------ | --------------------------------------------------- |
+| 1   | Kaustabh Gupta | [kaustubhgupta](https://github.com/kaustubhgupta)   |
+| 2   | Aditya Thakur | [adityathakurxd](https://github.com/adityathakurxd)   |
+| 3   | Saumya Nasa | [saumyanasa](https://github.com/saumyanasa)   |
+| 4   | Anmol Singla | [anmolsingla](https://github.com/anmolsingla)   |
+| 5   | Vandit | [vanditkhurana](https://github.com/vanditkhurana)   |
+| 6   | Abir Bhattacharya | [abirbhattacharya82](https://github.com/abirbhattacharya82)   |
+
+#### If you like this project Please make sure you give a star.
