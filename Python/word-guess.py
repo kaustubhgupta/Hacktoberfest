@@ -1,12 +1,12 @@
 import random
  
-name = input("What is your name? ")
+name = input("What's your Name? ")
  
 print("Good Luck ! ", name)
  
 words = ['rainbow', 'computer', 'science', 'programming', 
          'python', 'mathematics', 'player', 'condition', 
-         'reverse', 'water', 'board', 'geeks'] 
+         'reverse', 'water', 'board', 'geeks','hacktoberfest'] 
  
 word = random.choice(words)
  
