@@ -7,7 +7,7 @@ void main()
    scanf("%d", &a);
    if(a==1||a==3||a==5||a=7||a==8||a==10||a==12)
    {
-     prinf("It has 31 days");
+     printf("It has 31 days");
      }
    else
    {
