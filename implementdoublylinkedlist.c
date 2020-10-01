@@ -1,8 +1,5 @@
 /*
-name:soham purohit
-enrollment no:1906307178
-class: 3 CE 3 
-data structure practical 8
+
 Write a program to implement following operations on the doubly linked list.
 a. Insert a node at the front of the linked list.
 b. Insert a node at the end of the linked list. 
