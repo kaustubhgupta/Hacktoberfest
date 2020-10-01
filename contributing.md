@@ -7,16 +7,19 @@ Contributions are always appreciated and **no contribution is too small.**
 # Submitting Contributions
 The following steps below outline how to make contributions to the existing project.
 
+**Note:** You don't need to copy or type the dollar sign. 
 
 ## Step 0 : Find an issue(any issue you can work on)
-- Take a look at the any Existing Issue you could work on or alernatively, create your **own** Issues!
+- Take a look at the any Existing Issue you could work on or alternatively, create your **own** Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
-- Note : Every change in this project should/must have an associated issue. 
+- Note: Every change in this project should/must have an associated issue. 
 
 ![issue](screenshots/issue.jpg)
 
-## Step 1 : Fork the Project/REpository
+## Step 1 : Fork the Project/Repository
 - Fork this Repository. This will create a Local Copy of this Repository for you to work on.  This will make a copy on your Github Profile. Keep a reference to the original project in `upstream` remote.
+
+Got to your terminal and write this commands.
 ```
 $ git clone https://github.com/<your-username>/<repo-name>
 $ cd <repo-name>
@@ -38,6 +41,10 @@ Create a new branch. Use its name to identify the issue your addressing.
 # typing the command below in your terminal will create a new branch. You could call it: Branch_Name and switch to that branch 
 
 $ git checkout -b branch_name
+
+#for example
+
+$ git checkout -b "contribution"
 ```
 
 ## Step 3 : Work on a specific issue
@@ -53,6 +60,8 @@ $ git add .
 
 $ git add index.html
 ```
+
+This would add the file to the staging area.
 
 ## Step 4 : Write a commit
 - To commit means to give a descriptive message that shows what you've modified:
@@ -92,6 +101,6 @@ $ git push -u origin Branch_Name
 
 And, you're done. Your pull request would be submitted and reviewed and merged.
 
-## You can do it.
-- It might seem like a lot if it's your first time but everyone started out new to github as well. If you missed a few steps, don't worry, try again. You'd definitely get better.
+## In case you got stuck.
+- It might seem like a lot if it's your first time but everyone started out new to github and open source at some point. If you missed a few steps, don't worry, try again. You'd definitely get better.
 
