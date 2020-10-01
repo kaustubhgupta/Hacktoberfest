@@ -1,8 +1,6 @@
 /*
-name:soham purohit
-enrollment no:1906307178
-class: 3 CE 3 
-data structure practical 2 (stack)
+
+data structure  stack
 Write a C program to implement the stack which should include following functions:
 a. Push() : insert an element into the stack
 b. Pop() : return and then delete an element from the stack
@@ -16,7 +14,7 @@ int peek(int s[]);
 int pop(int s[]);
 int display(int s[]);
 */
-int s[20], top = -1;
+int stack[20], top = -1;
 void main()
 {
     int choice;
@@ -26,21 +24,21 @@ void main()
     switch (choice)
     {
     case 1:
-        push(s);
+        push(stack);
         break;
     case 2:
-        peek(s);
+        peek(stack);
         break;
     case 3:
-        pop(s);
+        pop(stack);
         break;
     case 4:
-        display(s);
+        display(stack);
         break;
     }
 }
 
-int pop(int s[])
+int pop(int stack[])
 {
     int n;
     if (top < 0)
@@ -50,13 +48,13 @@ int pop(int s[])
     }
     else
     {
-        n = s[top];
+        n = stack[top];
         top--;
         printf("%d", n);
         return 0;
     }
 }
-int peek(int s[])
+int peek(int stack[])
 {
     if (top < 0)
     {
@@ -64,11 +62,11 @@ int peek(int s[])
     }
     else
     {
-        printf("\n %d", s[top]);
+        printf("\n %d", stack[top]);
     }
     return 0;
 }
-int display(int s[])
+int display(int stack[])
 {
     int i;
     if (top < 0)
@@ -80,12 +78,12 @@ int display(int s[])
         printf("content of stack are... \n");
         for (i = top; i >= 0; i++)
         {
-            printf("%d", s[i]);
+            printf("%d", stack[i]);
         }
     }
     return 0;
 }
-int push(int s[])
+int push(int stack[])
 {
     int b;
 
@@ -94,7 +92,7 @@ int push(int s[])
         printf("enter element to push.\n");
         scanf("%d",&b);
         top = top + 1;
-        s[top] = b;
+        stack[top] = b;
     }
     else
     {
