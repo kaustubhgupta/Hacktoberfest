@@ -109,7 +109,6 @@ $ git push -u origin Branch_Name
 
 ![compare](screenshots/compare-changes.jpg)
 
-
 ## Step 7: Create a pull Request
 
 - Next step would be to create a pull request and then adding a title and description to the changes you've made to the project.
