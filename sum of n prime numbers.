@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{int a=2,b,n,i,sum=0,flag;
+    printf("enter number ");
+    scanf("%d",&b);
+    for(n=a;n<=b;n++)
+    {flag=1;
+    for(i=2;i<=n/2;i++)
+        {
+            if(n%i==0)
+            {
+                flag=0;
+                break;
+            }
+            }
+        if(flag==1)
+        {
+            printf("%d\n",n);
+            sum+=n;
+        }
+        }
+    printf("sum of prime  is %d",sum);
+    getch();
+    }
