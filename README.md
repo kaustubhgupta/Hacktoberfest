@@ -2,9 +2,6 @@
 🙅🏼‍♂️Hacktoberfest is open to everyone in our global community. Whether you’re new to development, a student, long-time contributor, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skills levels are encouraged to complete the challenge.🙅🏼‍♂️
 
 
-
-
-
 ## Instructions: 🙅🏼 🙅🏼‍♂️
 
 
