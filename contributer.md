@@ -34,7 +34,7 @@ Create a new branch. Use its name to identify the issue your addressing.
 It always takes time to understand and learn. So, do not worry at all. We know **you have got this**!💪
 
 ## Need More Help??
-- If you are stuck you can always refer to the following sites:-
+#### If you are stuck you can always refer to the following sites:-
 - [Forking A Repo](https://docs.github.com/en/enterprise/2.13/user/articles/fork-a-repo)
 - [Issue](https://docs.github.com/en/enterprise/2.15/user/articles/about-issues)
 - [Pull Requests](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
