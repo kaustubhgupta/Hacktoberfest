@@ -6,15 +6,15 @@ print(starred_movie) #output movie name in stars
 
 
 lap = {}                                         #assigning the stars values the letters of movie
-for i in range(len(selected_movie[0])):
-    if selected_movie[0][i] not in lap.keys():
-        j = list()
-        j.append(i)
-        lap[selected_movie[0][i]] = j
+for letter in range(len(selected_movie[0])):
+    if selected_movie[0][letter] not in lap.keys():
+        movie_name = list()
+        movie_name.append(letter)
+        lap[selected_movie[0][letter]] = movie_name
     else:
-        j = lap[selected_movie[0][i]]
-        j.append(i)
-        lap[selected_movie[0][i]] = j
+        movie_name = lap[selected_movie[0][letter]]
+        movie_name.append(letter)
+        lap[selected_movie[0][letter]] = movie_name
 score = 10
 
 print(f'Score = {score}')                              #prints the starting score
@@ -22,9 +22,9 @@ print(f'Score = {score}')                              #prints the starting scor
 while score > 0 and '*' in starred_movie:
     letter = input("Guess a letter:").capitalize()     #capitalizes the user input
     if letter in lap.keys():                           # checks if the letter is present in the movie name  
-        n = lap[letter]  
-        for p in n:
-            starred_movie = starred_movie[:p]+letter+starred_movie[p+1:]
+        movie_guess = lap[letter]  
+        for letter_guess in movie_guess:
+            starred_movie = starred_movie[:letter_guess]+letter+starred_movie[letter_guess+1:]
         score = score+3                                #increases the points ofg the player
         print('correct guess')
         print(starred_movie)
