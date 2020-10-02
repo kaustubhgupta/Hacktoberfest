@@ -5,7 +5,8 @@ root = tk.Tk()   # Tkinter window initialized
 root.title('Converter')     # Title of the window
 canvas1 = tk.Canvas(root, width=300, height=250, bg='orange', relief='raised')
 canvas1.pack()
-label1 = tk.Label(root, text='File Converter', bg='lightsteelblue2')   # giving a title to the screen
+# giving a title to the screen
+label1 = tk.Label(root, text='File Converter', bg='lightsteelblue2')
 label1.config(font=('helvetica', 20))
 canvas1.create_window(150, 60, window=label1)
 im1 = None  # variable to store path of image
@@ -21,7 +22,8 @@ def getJPG():
 font_style = ('helvetica', 12, 'bold')
 background_color = 'royalblue'
 figure = 'white'
-browseButton_JPG = tk.Button(text="      Import JPEG File     ", command=getJPG, bg=background_color, fg=figure, font=font_style)   # Browse button
+browseButton_JPG = tk.Button(text="      Import JPEG File     ", command=getJPG,
+                             bg=background_color, fg=figure, font=font_style)   # Browse button
 canvas1.create_window(150, 130, window=browseButton_JPG)
 
 
@@ -31,11 +33,13 @@ def convertToPNG():
     if im1 is None:
         tk.messagebox.showerror("Error", "No File selected")
     else:
-        export_file_path = filedialog.asksaveasfilename(defaultextension='.png')
+        export_file_path = filedialog.asksaveasfilename(
+            defaultextension='.png')
         im1.save(export_file_path)
-        messagebox.showinfo("Successful", "Image Converted") 
+        messagebox.showinfo("Successful", "Image Converted")
 
 
-saveAsButton_PNG = tk.Button(text='Convert JPEG to PNG', command=convertToPNG, bg=background_color, fg=figure, font=font_style)      # Convert button
+saveAsButton_PNG = tk.Button(text='Convert JPEG to PNG', command=convertToPNG,
+                             bg=background_color, fg=figure, font=font_style)      # Convert button
 canvas1.create_window(150, 180, window=saveAsButton_PNG)
 root.mainloop()

@@ -10,7 +10,8 @@ A clear and concise description of what you want to happen.
 Add any other context or screenshots about the feature request here.
 
 **Languages**
-- [ ] Python
-- [ ] Java
-- [ ] C
-- [ ] C++
+
+-   [ ] Python
+-   [ ] Java
+-   [ ] C
+-   [ ] C++
