@@ -1,3 +1,5 @@
+### Update: Read this before moving ahead [Important Announcement](https://github.com/kaustubhgupta/Hacktoberfest2020_/issues/105)!
+
 # Hacktober Fest 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://hacktoberfest.netlify.com/)&nbsp;
 ![Hacktober](https://i0.wp.com/wp.laravel-news.com/wp-content/uploads/2020/09/hacktoberfest2020.jpg?fit=2200%2C1100&ssl=1?resize=2200%2C1125)
