@@ -3,7 +3,7 @@ Python:
 C:
   - "(C)"
 C++:
-  - "(C++|c++)"
+  - "(C++)"
 Java:
   - "(Java|JAVA)"
 enhancement:
