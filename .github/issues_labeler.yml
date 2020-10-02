@@ -2,8 +2,6 @@ Python:
   - "(Python|PYTHON|python)"
 C:
   - "(C)"
-C++:
-  - "(C++)"
 Java:
   - "(Java|JAVA)"
 enhancement:
