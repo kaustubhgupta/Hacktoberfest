@@ -9,5 +9,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Congrats for creating your first issue here! Wait till uor mentors assign this issue to you.'
-        pr-message: 'Congracts on making your first pull request, our mentors will review it soon!'
+        issue-message: Congrats for creating your first issue here! Wait till our mentors assign this issue to you.'
+        pr-message: 'Congrats on making your first pull request, our mentors will review it soon!'
