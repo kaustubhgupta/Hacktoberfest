@@ -1,16 +1,17 @@
 Python:
   - "(Python|PYTHON|python)"
+C:
+  - "(C)"
+C++:
+  - "(C++|c++)"
+Java:
+  - "(Java|JAVA)"
 enhancement:
   - "(enhancement)"
-Easy:
-  - "(Easy|easy)"  
-Medium:
-  - "(Medium|medium)"
-Hard:
-  - "(Hard|hard)"
 bug:
   - "(bug|Bug|BUG)"  
 Urgent:
   - "(urgent|URGENT|Urgent)"  
 documentation:
   - "(documentation)"
+
