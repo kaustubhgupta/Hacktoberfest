@@ -6,13 +6,16 @@ use serde_json::Value;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    //get env values
     dotenv().ok();
     let _apikey: String = dotenv!("OPENWEATHERMAP_APIKEY").to_string();
 
+    //input city 
     println!("Input City :");
     let mut city = String::new();
     stdin().read_line(&mut city).ok().expect("No city");
 
+    //generate new request to open weathermap
     let client = reqwest::Client::new();
     let weather = client.get("http://api.openweathermap.org/data/2.5/forecast")
         .query(&[("q",&city),("appid",&_apikey)])
@@ -21,6 +24,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .text()
         .await?;
 
+    //get value
     let res: Value = serde_json::from_str(&weather).unwrap();
     let date = &res["list"][0]["dt_txt"];
     let description = &res["list"][0]["weather"][0]["description"];
