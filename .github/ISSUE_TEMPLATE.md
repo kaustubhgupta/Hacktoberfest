@@ -1,20 +1,16 @@
-# Title/Heading
-
 Please include a small description or summary of the issue here.
 
-## Bug Reports
-Please replace this line with a brief summary of your issue AND if reporting a build issue include the link.
+**Is your feature request related to a problem? Please describe.**
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-- [ ] Didn't run?
-- [ ] Permission Issues?
-- [ ] Broken Links
-- [ ] Other Issues? (Add Here)
+**Describe the solution you'd like**
+A clear and concise description of what you want to happen.
 
-## Any links, resources or references to solve the issue?
-- [ ] Yes
+**Additional context**
+Add any other context or screenshots about the feature request here.
 
-If yes, please the resources in the following format:
-- Resource 1
-- Resource 2
-
-- [ ] No
+**Languages**
+- [ ] Python
+- [ ] Java
+- [ ] C
+- [ ] C++
