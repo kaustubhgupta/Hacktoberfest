@@ -1,0 +1,16 @@
+Python:
+  - "(Python|PYTHON|python)"
+enhancement:
+  - "(enhancement)"
+Easy:
+  - "(Easy|easy)"  
+Medium:
+  - "(Medium|medium)"
+Hard:
+  - "(Hard|hard)"
+bug:
+  - "(bug|Bug|BUG)"  
+Urgent:
+  - "(urgent|URGENT|Urgent)"  
+documentation:
+  - "(documentation)"
