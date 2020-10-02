@@ -13,9 +13,9 @@ neg=['its very rude of you','i dont like to talk to you','i am hurted by you']
 nutral=['oo i see','what happend next','continue..i am listening']
 
 text='as'
-print('hey,i am a moody chatbot created by sougata....lets talk something..tell me anythonh you want but donot ask me any question <<quit>> to exit')
+print(' Bot : hey,i am a moody chatbot created by sougata....lets talk something..tell me anythonh you want but donot ask me any question <<quit>> to exit')
 while(text!='quit'):
-    text=input()
+    text=input(" me : ")
     analysis=TextBlob(text)
     mind='nutral'
     if analysis.sentiment.polarity>0:
@@ -24,7 +24,7 @@ while(text!='quit'):
         mind='negetive'
     else:
         mind='nutral'
-    
+    print("Bot :",end='')
     index=random.randrange(3)
     if(mind=='positive'):
         print(pos[index])
