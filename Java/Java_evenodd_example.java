@@ -6,5 +6,6 @@ public class Java_evenodd_example {
         System.out.println("Enter a number: ");
         int num = sc.nextInt();
         System.out.println(num % 2 == 0 ? "The number is even" : "The number is odd");
+        sc.close();
     }
 }
