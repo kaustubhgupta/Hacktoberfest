@@ -7,3 +7,4 @@
 | Coin change (infinite supply of coins) |                [link](./CoinChange_i.java)                |
 |     Longest Increasing Subsequence     |        [link](./LongestIncreasingSubsequence.java)        |
 |            Merge Sort Algo             |                 [link](./MergeSort.java)                  |
+|		        Calculator		         |		    [link](./Calculator/Calculator.java)               	     |
