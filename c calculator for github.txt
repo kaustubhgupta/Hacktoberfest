@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<math.h>
+
+main()
+{
+float a,b,result;
+int c;
+printf("enter the numbers.");
+scanf("%f %f", &a,&b);
+printf("select operation. 1 for add. 2 for subs. 3 for mul. 4 for div. 5 for power. 6 for sqrt. 7 for log.");
+scanf("%d", &c);
+result=0.0;
+switch (c)
+{
+case 1:
+     printf("%f",a+b);
+     break;
+case 2:
+     printf("%f",a-b);
+     break;
+case 3:
+     printf("%f",a*b);
+     break;
+case 4:
+     printf("%f",a/b);
+     break;
+case 5:
+     printf("%f",pow(a,b));
+     break;
+case 6:
+     printf("%f",sqrt(a));
+     break;
+case 7: 
+     printf("%f",log(a));
+     break;
+}
+printf("result = %d", result);
+return 0;
+}
