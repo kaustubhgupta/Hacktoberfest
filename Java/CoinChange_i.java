@@ -20,7 +20,7 @@ package Hacktoberfest2020_.Java;
 
 import java.util.Arrays;
 
-public class CoinChange {
+public class CoinChange_i {
 	public static class CoinChangeI {
 
         // Function to calculate the no. of ways to make change
