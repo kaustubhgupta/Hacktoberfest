@@ -30,6 +30,38 @@ void inorder(struct node *root) {
   }
 }
 
+// Postorder Traversal
+void Postorder(struct node* root) 
+{ 
+     if (root == NULL) 
+        return; 
+  
+     // first recur on left subtree 
+     Postorder(root->left); 
+  
+     // then recur on right subtree 
+     Postorder(root->right); 
+  
+     // now deal with the node 
+     printf("%d ", root->key); 
+} 
+
+// Preorder Traversal
+void Preorder(struct node* root) 
+{ 
+     if (root == NULL) 
+          return; 
+  
+     /* first print data of node */
+     printf("%d ", root->key);   
+  
+     /* then recur on left sutree */
+     printPreorder(root->left);   
+  
+     /* now recur on right subtree */
+     printPreorder(root->right); 
+}     
+
 // Insert a node
 struct node *insert(struct node *node, int key) {
   // Return a new node if the tree is empty
@@ -101,12 +133,14 @@ int main() {
   root = insert(root, 10);
   root = insert(root, 14);
   root = insert(root, 4);
-
-  printf("Inorder traversal: ");
-  inorder(root);
-
+  
   printf("\nAfter deleting 10\n");
   root = deleteNode(root, 10);
   printf("Inorder traversal: ");
   inorder(root);
+  printf("Postorder traversal: ");
+  Postorder(root);
+  printf("Preorder traversal: ");
+  Preorder(root);
+
 }
