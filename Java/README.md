@@ -8,7 +8,4 @@
 |     Longest Increasing Subsequence     |        [link](./LongestIncreasingSubsequence.java)        |
 |            Merge Sort Algo             |                 [link](./MergeSort.java)                  |
 |         PalindromeSubSequence          |                 [link](./PalindromeSubSequence.java)      |
-
-
-
-
+|         Egg Dropping Puzzle            |                 [link](./EggDroppingPuzzle.java)          |
