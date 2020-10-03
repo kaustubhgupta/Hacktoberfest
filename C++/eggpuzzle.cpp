@@ -1,5 +1,4 @@
 /* Contributed by Dhrubajyoti Chakraborty */
-
 /* Egg Drop Puzzle Solution */
 
 #include <bits/stdc++.h> 
@@ -9,7 +8,6 @@ int max(int a, int b)
 { 
     return (a > b) ? a : b; 
 } 
-  
 
 int eggDrop(int n, int k) 
 { 
@@ -34,17 +32,15 @@ int eggDrop(int n, int k)
   
     return min + 1; 
 } 
-  
- 
 int main() 
 { 
-    int n = 2, k = 10; 
-    cout << "Minimum number of trials "
-            "in worst case with "
+   int n,k;
+  cin>>n>>endl;
+  cin>>k;
+    cout << "Min trials "
+            "worst case with "
          << n << " eggs and " << k 
-         << " floors is "
+         << " floors : "
          << eggDrop(n, k) << endl; 
     return 0; 
 } 
-  
-
