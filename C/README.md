@@ -12,3 +12,4 @@ C is a general-purpose, high-level language that was originally developed by Den
 | reverse digits of a number |                    [link](./reverseNumber.c)                     |
 |    Stack implementation    |                 [link](./StackImplementation.c)                  |
 |  Sum of digits of number   |                  [link](./sumOfNumberDigits.C)                   |
+|  Binary Search Tree        |                  [link](./BinarySearchTree.C)                    |
