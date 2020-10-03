@@ -1,64 +1,72 @@
-#include<iostream>
-#include<map>
-#include<list>
-#include<queue>
+#include <iostream>
+#include <map>
+#include <list>
+#include <queue>
 using namespace std;
-template<typename T>
-class Graph {
-    map<T, list<T> > adjList;
+template <typename T>
+class Graph
+{
+    map<T, list<T>> adjList;
 
 public:
-    Graph() {
+    Graph()
+    {
     }
 
-    void addEdge(T u, T v, bool bidir = true) {
+    void addEdge(T u, T v, bool bidir = true)
+    {
         adjList[u].push_back(v);
-        if (bidir) {
+        if (bidir)
+        {
             adjList[v].push_back(u);
         }
     }
-    void print() {
+    void print()
+    {
 
-        for (auto p : adjList) {
+        for (auto p : adjList)
+        {
             auto key = p.first;
             auto neigbours = p.second; //list of neigbours
 
             cout << key << "->";
-            for (auto n : neigbours) {
+            for (auto n : neigbours)
+            {
                 cout << n << ",";
             }
             cout << endl;
         }
     }
 
-    void bfs(T src) {
-        queue<T>q;
-        map<T, bool>visited;
+    void bfs(T src)
+    {
+        queue<T> q;
+        map<T, bool> visited;
         q.push(src);
         visited[src] = true;
 
-        while (!q.empty()) {
+        while (!q.empty())
+        {
             T node = q.front();
             cout << node << " ";
             q.pop();
 
-
-            for (int neighbour : adjList[node]) {
-                if (!visited[neighbour]) {
+            for (int neighbour : adjList[node])
+            {
+                if (!visited[neighbour])
+                {
                     q.push(neighbour);
                     visited[neighbour] = true;
                 }
             }
         }
-
-
     }
 };
 
+int main()
+{
 
-int main() {
-
-    Graph<int>g;
+    Graph<int> g;
     g.addEdge(0, 1);
     g.addEdge(1, 2);
     g.addEdge(0, 4);
@@ -72,27 +80,5 @@ int main() {
     cout << "Breadth First Search Traversal Applied:" << endl;
     g.bfs(0);
 
-
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

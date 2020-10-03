@@ -1,65 +1,68 @@
-#include<iostream>
-#include<map>
-#include<list>
-#include<queue>
+#include <iostream>
+#include <map>
+#include <list>
+#include <queue>
 using namespace std;
-template<typename T>
-class Graph {
-    map<T, list<T> > adjList;
+template <typename T>
+class Graph
+{
+    map<T, list<T>> adjList;
 
 public:
-    Graph() {
+    Graph()
+    {
     }
 
-    void addEdge(T u, T v, bool bidir = true) {
+    void addEdge(T u, T v, bool bidir = true)
+    {
         adjList[u].push_back(v);
-        if (bidir) {
+        if (bidir)
+        {
             adjList[v].push_back(u);
         }
     }
-    void print() {
+    void print()
+    {
 
-        for (auto p : adjList) {
+        for (auto p : adjList)
+        {
             auto key = p.first;
             auto neigbours = p.second; //list of neigbours
 
             cout << key << "->";
-            for (auto n : neigbours) {
+            for (auto n : neigbours)
+            {
                 cout << n << ",";
             }
             cout << endl;
         }
     }
 
-
-    void dfshelper(T node, map<T, bool> &visited) {
+    void dfshelper(T node, map<T, bool> &visited)
+    {
         // comes to the node, mark it as visited
         visited[node] = true;
         cout << node << " ";
 
-        for (T neighbour : adjList[node]) {
-            if (!visited[neighbour]) {
+        for (T neighbour : adjList[node])
+        {
+            if (!visited[neighbour])
+            {
                 dfshelper(neighbour, visited);
             }
         }
-
-
-
-
     }
 
-    void dfs(T src) {
-        map<T, bool>visited;
+    void dfs(T src)
+    {
+        map<T, bool> visited;
         dfshelper(src, visited);
-
-
     }
 };
 
-
-int main() {
-
-    Graph<string>g;
+int main()
+{
+    Graph<string> g;
     // g.addEdge(0, 1);
     // g.addEdge(1, 2);
     // g.addEdge(0, 4);
@@ -73,35 +76,10 @@ int main() {
     g.addEdge("d", "c", false);
     g.addEdge("e", "d", false);
     g.addEdge("e", "f", false);
-
-
     cout << "Adjacency list:" << endl;
     g.print();
     cout << "Depth First Search Traversal Applied:" << endl;
     g.dfs("a");
     cout << endl;
-
-
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
