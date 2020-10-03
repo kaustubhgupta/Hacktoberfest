@@ -23,6 +23,6 @@ def find_all_palindrome_substrings(input):
 
   return count
 
-
-s = input("Enter a string : ")
-print("Total palindrome substrings: ", find_all_palindrome_substrings(s))
+if __name__ == "__main__":
+    s = input("Enter a string : ")
+    print("Total palindrome substrings: ", find_all_palindrome_substrings(s))
