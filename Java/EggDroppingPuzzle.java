@@ -15,44 +15,55 @@
 
 package Hacktoberfest2020_.Java;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class EggDroppingPuzzle {
 	public static class Puzzle {
 
         // Function to calculate the minimum number of attemps
-		public static int eggDrop(int n, int k) {
-			int eggFloor[][] = new int[n+1][k+1];
+		public static int eggDrop(int eggs, int floors) {
+			int eggFloor[][] = new int[eggs+1][floors+1];
 			int res;
 			
-			for(int i = 0; i <= n; i++) {
-				eggFloor[i][0] = 0;
-				eggFloor[i][1] = 1;
+			for(int egg = 0; egg <= eggs; egg++) {
+				eggFloor[egg][0] = 0;
+				eggFloor[egg][1] = 1;
 			}
 			
-			for(int j = 1; j <= k; j++) {
-				eggFloor[1][j] = j;
+			for(int floor = 1; floor <= floors; floor++) {
+				eggFloor[1][floor] = floor;
 			}
 			
-			for(int i = 2; i <= n; i++) {
-				for(int j = 2; j <= k; j++) {
-					eggFloor[i][j] = Integer.MAX_VALUE;
-					for(int x = 1; x <= j; x++) {
-						res = 1 + Math.max(eggFloor[i-1][x-1], eggFloor[i][j-x]);
+			for(int egg = 2; egg <= eggs; egg++) {
+				for(int floor = 2; floor <= floors; floor++) {
+					eggFloor[egg][floor] = Integer.MAX_VALUE;
+					for(int x = 1; x <= floor; x++) {
+						res = 1 + Math.max(eggFloor[egg-1][x-1], eggFloor[egg][floor-x]);
 						
-						if(res < eggFloor[i][j]) {
-							eggFloor[i][j] = res;
+						if(res < eggFloor[egg][floor]) {
+							eggFloor[egg][floor] = res;
 						}
 					}
 				}
 			}
 			
-			return eggFloor[n][k];
+			return eggFloor[eggs][floors];
 		}
 	}
 	
-	public static void main(String[] args) {
-		int eggs = 2;
-		int floors = 10;
+	public static void main(String[] args) throws Exception{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
+		// Taking the input for no. of eggs
+		System.out.println("Enter the number of eggs: ");
+		int eggs = Integer.parseInt(br.readLine());
+
+		// Taking the input for no. of floors
+		System.out.println("Enter the number of floors: ");
+		int floors = Integer.parseInt(br.readLine());
+		
+		// Printing the output for the given inputs
 		System.out.println("Minimum number of trials required: " + Puzzle.eggDrop(eggs, floors));
 	}
 }
