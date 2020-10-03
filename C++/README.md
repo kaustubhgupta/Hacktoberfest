@@ -8,6 +8,6 @@
 |     Doubly LinkedList     |              [link](./doublyLinkedList.cpp)               |
 |  Palindromic Substrings   |            [link](./PalindromicSubstrings.cpp)            |
 |   Pancake Sorting Algo    |                 [link](./PancakeSort.cpp)                 |
-| Object Based Segment Tree | [link](./SegmentTree/segment_tree_build_update_query.cpp)
- Depth First Search Graph Algorithm | [link](./dfs_traversal.cpp)| 
- Breadth First Search Graph Algorithm | [link](./bfs_traversal.cpp) |
+| Object Based Segment Tree | [link](./SegmentTree/segment_tree_build_update_query.cpp) |
+| Depth First Search Graph Algorithm | [link](./dfs_traversal.cpp)| |
+ |Breadth First Search Graph Algorithm | [link](./bfs_traversal.cpp) |
