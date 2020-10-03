@@ -9,3 +9,4 @@
 |            Merge Sort Algo             |                 [link](./MergeSort.java)                  |
 |         PalindromeSubSequence          |                 [link](./PalindromeSubSequence.java)      |
 |         Egg Dropping Puzzle            |                 [link](./EggDroppingPuzzle.java)          |
+|		        Calculator		               |		    [link](./Calculator/Calculator.java)               |
