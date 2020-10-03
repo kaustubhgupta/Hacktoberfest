@@ -21,7 +21,7 @@ int main()
     createList(n);
     printf("\nThe List is \n");
     displayList();
-    printf("\nEnter the position : ");
+    printf("\nEnter the position: ");
     scanf("%d", &pos);
     printf("\nEnter data to insert at position %d of the list: ", pos);
     scanf("%d", &data);
