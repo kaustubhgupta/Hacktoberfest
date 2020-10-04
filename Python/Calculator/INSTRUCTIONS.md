@@ -13,22 +13,22 @@
 
 you can use upper or lower case for operations    
 
-Operators|Functions
----------|---------
-   +     |for addition
-   -     |for subtraction
-   /     |for division
-   *     |for multiplication
-   ^     |for power
-   r     |for root
-   %     |for modulus
-   pie   |for Pie
-   e     |for E
-   sin   |for sin (trig)
-   cos   |for cos (trig)
-   tan   |for tan (trig)
-   !     |for factorial 
-   ln    |for ln (natural log)
+|Operators|Functions|
+|---------|---------|
+|   +     |for addition|
+|   -     |for subtraction|
+|   /     |for division|
+|   *     |for multiplication|
+|   ^     |for power|
+|   r     |for root|
+|   %     |for modulus|
+|   pie   |for Pie|
+|   e     |for E|
+|   sin   |for sin (trig)|
+|   cos   |for cos (trig)|
+|   tan   |for tan (trig)|
+|   !     |for factorial |
+|   ln    |for ln (natural log)|
    
 
 ### error? read comment below
