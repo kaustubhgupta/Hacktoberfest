@@ -11,3 +11,4 @@
 | Object Based Segment Tree | [link](./SegmentTree/segment_tree_build_update_query.cpp) |
 | Depth First Search Graph Algorithm | [link](./dfs_traversal.cpp)| |
  |Breadth First Search Graph Algorithm | [link](./bfs_traversal.cpp) |
+ |Egg Dropping Puzzle Solution | [link](./eggpuzzle.cpp) |
