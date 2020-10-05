@@ -13,4 +13,5 @@ C is a general-purpose, high-level language that was originally developed by Den
 |    Stack implementation    |                 [link](./StackImplementation.c)                  |
 |  Sum of digits of number   |                  [link](./sumOfNumberDigits.C)                   |
 |  Binary Search Tree        |                  [link](./BinarySearchTree.C)                    |
-|  Floyd's Cycle Detection   |                  [link](./floyds_cycle_detection_for_linked_lists.c)				|
+|  Floyd's Cycle Detection   |                  [link](./floyds_cycle_detection_for_linked_lists.c)		
+|  Calculator                |                  [link](./Calculator/Calculator.c)               |                           |
