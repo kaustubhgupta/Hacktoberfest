@@ -1,3 +1,6 @@
+// Hacktoberfest2020 Contribution by Dhrubajyoti Chakraborty
+// Prime checker with time complexity O(sqrt(n))
+
 #include <bits/stdc++.h> 
 using namespace std; 
   
