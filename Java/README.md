@@ -9,4 +9,5 @@
 |         PalindromeSubSequence          |                 [link](./PalindromeSubSequence.java)      |
 |         Egg Dropping Puzzle            |                 [link](./EggDroppingPuzzle.java)          |
 |		        Calculator		               |		    [link](./Calculator/Calculator.java)               |
-|       DirectoryHandlerJava          |                 [link](./DirectoryHandlerJava.java)          |
+|       DirectoryHandlerJava             |                 [link](./DirectoryHandlerJava.java)       |
+|           PrimeChecker                 |        [link](./PrimeChecker.java) 
