@@ -11,3 +11,4 @@
 | Object Based Segment Tree | [link](./SegmentTree/segment_tree_build_update_query.cpp) |
 | Depth First Search Graph Algorithm | [link](./dfs_traversal.cpp)| |
  |Breadth First Search Graph Algorithm | [link](./bfs_traversal.cpp) |
+ | Prime Checker in Time Complexity O(sqrt(n)) | [link](./primechecker.cpp) |
