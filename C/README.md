@@ -12,6 +12,8 @@ C is a general-purpose, high-level language that was originally developed by Den
 | reverse digits of a number |                    [link](./reverseNumber.c)                     |
 |    Stack implementation    |                 [link](./StackImplementation.c)                  |
 |  Sum of digits of number   |                  [link](./sumOfNumberDigits.C)                   |
-|  Binary Search Tree        |                  [link](./BinarySearchTree.C)                    |
-|  Floyd's Cycle Detection   |                  [link](./floyds_cycle_detection_for_linked_lists.c)		
-|  Calculator                |                  [link](./Calculator/Calculator.c)               |                           |
+|  Binary Search Tree        |                  [link](./BinarySearchTree.C)                    
+| Floyd's Cycle Detection    |          [link](./Floyds_cycle_detection_for_linked_lists.c)     |
+|  Hash Table Implementation |                  [link](./HashTableImplementation.c)             | 
+|  Calculator                |                  [link](./Calculator/Calculator.c)               | 
+
