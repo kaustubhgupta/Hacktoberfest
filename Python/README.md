@@ -8,4 +8,6 @@
 | Bollywood movie game |                 [link](./Bollywood.py)                 |
 |  Repository to CSV   |          [link](./repositoriesTo_CSV/main.py)          |
 | JPG to PNG converter | [link](./JPG_to_PNG_converter/JPG_to_PNG_Converter.py) |
+|Scientific Calculator |           [link](./Calculator/calculator.py)           |
 | Palindrome_Substrings|            [link](./Palindrome_Substrings.py)          |
+
