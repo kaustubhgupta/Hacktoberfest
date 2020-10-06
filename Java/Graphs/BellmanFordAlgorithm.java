@@ -14,18 +14,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// Data structure to store graph edges
-class Edge {
-	int source, dest, weight;
-
-	public Edge(int source, int dest, int weight) {
-		this.source = source;
-		this.dest = dest;
-		this.weight = weight;
-	}
-}
-
 public class BellmanFordAlgorithm {
+	// Data structure to store graph edges
+	static class Edge {
+		int source, dest, weight;
+
+		public Edge(int source, int dest, int weight) {
+			this.source = source;
+			this.dest = dest;
+			this.weight = weight;
+		}
+	}
+
     static void printPath(int parent[], int vertex)
 	{
 		if (vertex < 0)
