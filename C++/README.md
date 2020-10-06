@@ -13,4 +13,6 @@
 |Breadth First Search Graph Algorithm |         [link](./bfs_traversal.cpp)             |
 |Egg Dropping Puzzle Solution         |                 [link](./eggpuzzle.cpp)         |
 | Prime Checker in Time Complexity O(sqrt(n)) |    [link](./primechecker.cpp)           |
+| Topological Sorting       |                   [link](./TopolgicalSort.cpp)            |
+
 

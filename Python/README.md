@@ -10,6 +10,8 @@
 | JPG to PNG converter | [link](./JPG_to_PNG_converter/JPG_to_PNG_Converter.py) |
 |Scientific Calculator |           [link](./Calculator/calculator.py)           |
 | Palindrome_Substrings|            [link](./Palindrome_Substrings.py)          |
-| BST_implementations  |            [link](./BST_implementation.py)          |
+| BST_implementations  |            [link](./BST_implementation.py)             |
+|   Password-manager-1 |     [link](./password-manager/password-manager.py)     |
+
 
 
