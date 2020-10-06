@@ -8,9 +8,7 @@ The other key must be kept private.
 The algorithm is based on the fact that finding the factors of a large composite number is difficult: 
 when the factors are prime numbers, the problem is called prime factorization. 
 It is also a key pair (public and private key) generator.
-"""
 
-"""
 Flow of the code:
     
     input_numbers()
@@ -64,8 +62,7 @@ def prime_number(n):                              # a prime number function to c
             flag = 1
     if flag==0:
         return True
-    else:
-        return False
+    return False
 
 def input_numbers():
     try:
@@ -80,8 +77,8 @@ def input_numbers():
             input_numbers()
     except ValueError:
         print("Please enter valid integer prime numbers.")
-    except:
-        print("Please follow the instructions.")
+    except Exception as e:
+        print ("Error '{0}' occurred. Arguments {1}.".format(e.message, e.args))
        
 # Messages encrypted using the public key can only be decrypted with the private key        
 
@@ -98,8 +95,8 @@ def encrypt(public_key,private_key):
         decrypt(c,private_key)
     except ValueError:
         print("Please enter message in integer format")
-    except:
-        print("Please follow the instructions.")
+    except Exception as e:
+        print ("Error '{0}' occurred. Arguments {1}.".format(e.message, e.args))
         
 def keys(n,e,d):
     public_key = (n,e)
