@@ -2,6 +2,7 @@ Huffman Coding is a technique of compressing data to reduce its size without los
 It follows a Greedy approach since it deals with generating minimum length prefix-free binary codes.
 It uses variable-length encoding scheme for assigning binary codes to characters depending on how frequently they occur in the given text.
 Priority Queue is used for building the Huffman tree such that the character that occurs most frequently is assigned the smallest code and the one that occurs least frequently gets the largest code.
+
 It follows this procedure: -
 
 Create a leaf node for each character and build a min heap using all the nodes (The frequency value is used to compare two nodes in min heap)
