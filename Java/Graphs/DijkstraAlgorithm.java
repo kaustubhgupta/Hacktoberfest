@@ -1,3 +1,11 @@
+/* Given a source vertex s from set of vertices V in a weighted graph 
+ * where all its edge weights w(u, v) are non-negative, find the 
+ * shortest-path weights d(s, v) from given source s for all vertices 
+ * v present in the graph. 
+ * Time Complexity: O(V * E)
+ * Space Complexity: O(V)
+ */
+
 package Hacktoberfest2020_.Java.Graphs;
 
 import java.io.BufferedReader;
