@@ -17,4 +17,4 @@ C is a general-purpose, high-level language that was originally developed by Den
 |  Hash Table Implementation |                  [link](./HashTableImplementation.c)             | 
 | Bubble Sort                |                  [link](./bubble_sort.c)                         |
 | calculator with extra functions|              [link](./my_calc/my_calculator.c)               |
-
+| Queue using Dynamic memory allocation |              [link](./DynamicQueue.c)                 |
