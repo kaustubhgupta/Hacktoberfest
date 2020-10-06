@@ -15,4 +15,4 @@ C is a general-purpose, high-level language that was originally developed by Den
 |  Binary Search Tree        |                  [link](./BinarySearchTree.C)                    |
 | Floyd's Cycle Detection    |          [link](./Floyds_cycle_detection_for_linked_lists.c)     |
 |  Hash Table Implementation |                  [link](./HashTableImplementation.c)             | 
-| calculator with extra functions|              [link](./my calculator.c)                       |
+| calculator with extra functions|              [link](./my_calculator.c)                       |
