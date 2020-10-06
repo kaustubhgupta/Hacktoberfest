@@ -1,5 +1,5 @@
 #Sieve Of Eratosthenes
-
+#Author - https://www.github.com/yatocodes
 '''
 About - The programme is created for the purpose of calculating
 prime numbers; between two of the user given numbers.
@@ -19,8 +19,6 @@ for numbers in range(starting_num, ending_num+1):
         else:
             print(numbers)
             
-
-#Coded By - Siddhant aka "Jack"    
 
 
        
