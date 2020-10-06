@@ -1,0 +1,13 @@
+FROM hayd/deno:1.0.0
+
+EXPOSE 8080
+
+WORKDIR /app
+
+USER deno
+
+ADD ./app .
+
+RUN deno cache server.ts
+
+CMD ["--allow-net", "server.ts"]
