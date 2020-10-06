@@ -1,5 +1,7 @@
 ### Update: With very heavy heart I am announcing that this repo is not longer accepting any PR or issues due to some unavoidable reasons. All of you who have made their contributions here, Hat's Off to your dedication. I have merged all the valid PRs untill this message and further no more contributions will happen here. Best of luck to your open source journey!
 
+### Don't worry, all who have made their valid contribution here are tagged as hacktober-fest accepted and will be counted towards your counter
+
 [![CodeFactor](https://www.codefactor.io/repository/github/kaustubhgupta/hacktoberfest2020_/badge)](https://www.codefactor.io/repository/github/kaustubhgupta/hacktoberfest2020_)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://hacktoberfest.netlify.com/)&nbsp;
 
