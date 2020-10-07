@@ -34,9 +34,9 @@ public class INSERTIONSORT {
 
 	public static void display(int[] arr) {
 
-		for(int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
-		}
+		for(Integer element : arr) {
+            		System.out.println(element);
+        	}
 	}
 
 public static void insertionSort(int[] arr) {
