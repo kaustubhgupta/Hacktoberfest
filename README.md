@@ -3,12 +3,13 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/kaustubhgupta/hacktoberfest2020_/badge)](https://www.codefactor.io/repository/github/kaustubhgupta/hacktoberfest2020_)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://hacktoberfest.netlify.com/)&nbsp;
 
-# Hacktober Fest
+# Hacktoberfest
 ![Hacktober](https://i0.wp.com/wp.laravel-news.com/wp-content/uploads/2020/09/hacktoberfest2020.jpg?fit=2200%2C1100&ssl=1?resize=2200%2C1125)
 Voila!
+## What is hecktoberfest?
 🙅🏼‍♂️Hacktoberfest is open to everyone in our global community. Whether you’re new to development, a student, long-time contributor, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skills levels are encouraged to complete the challenge.🙅🏼‍♂️
 
-## Instructions 🙅🏼 🙅🏼‍♂️
+## Important Instructions for beginner.  🙅🏼 🙅🏼‍♂️
 
 -   If you are totally new to this culture then head over to this [guide](CONTRIBUTING.md) where everything has been explained in detail.
 -   Look at the current issues.
