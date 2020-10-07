@@ -1,7 +1,7 @@
 public class LongestCommonSubsequence {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Scanner s = new Scanner(System.in);
 		// Input String 1
 		String str1=s.next();
