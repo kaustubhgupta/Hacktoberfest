@@ -1,0 +1,8 @@
+Python:
+  - "(Python|PYTHON|python)"
+C:
+  - "(C)"
+Java:
+  - "(Java|JAVA)"
+Javascript:
+  - "(JS|Javascript|JAVASCRIPT)"
