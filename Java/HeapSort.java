@@ -1,6 +1,6 @@
 import java.util.*;
  
-public class HeapSortMain {
+public class HeapSort{
  
    public static void buildheap(int []arr) {
     for(int i=(arr.length-1)/2; i>=0; i--){
