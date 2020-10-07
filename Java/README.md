@@ -20,3 +20,5 @@
 |           Bubble Sort                  |        [link](./bubbleSort.java)                          |
 |           Insertion Sort               |        [link](./insertionSort.java)                       |
 |           Selection Sort               |        [link](./selectionSort.java)                       |
+|           Binary Search                |        [link](./BinarySearch.java)                        |
+|           Linear Search                |        [link](./LinearSearch.java)                        |
