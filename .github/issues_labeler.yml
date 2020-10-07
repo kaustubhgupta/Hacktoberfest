@@ -4,12 +4,5 @@ C:
   - "(C)"
 Java:
   - "(Java|JAVA)"
-enhancement:
-  - "(enhancement)"
-bug:
-  - "(bug|Bug|BUG)"  
-Urgent:
-  - "(urgent|URGENT|Urgent)"  
-documentation:
-  - "(documentation)"
-
+Javascript:
+  - "(JS|Javascript|JAVASCRIPT)"

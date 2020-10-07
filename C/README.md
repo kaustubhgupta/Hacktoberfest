@@ -8,7 +8,7 @@ C is a general-purpose, high-level language that was originally developed by Den
 |     Doubly LinkedList      | [link-1](./doublyLinkedList.c) [link-2](./doublyLinkedList-ii.c) |
 |    Factorial of Number     |                      [link](./factorial.C)                       |
 |  Factors Of given Number   |                   [link](./factorsOfNumber.C)                    |
-|    Queue using 2 stack     | [link-1](./queueUsingStack.c) [link-2](./QueueUsingStack2.c)       |
+|    Queue using 2 stack     | [link-1](./queueUsingStack.c) [link-2](./QueueUsingStack2.c)     |
 | reverse digits of a number |                    [link](./reverseNumber.c)                     |
 |    Stack implementation    |                 [link](./StackImplementation.c)                  |
 |  Sum of digits of number   |                  [link](./sumOfNumberDigits.C)                   |
@@ -18,3 +18,6 @@ C is a general-purpose, high-level language that was originally developed by Den
 | Bubble Sort                |                  [link](./bubble_sort.c)                         |
 | calculator with extra functions|              [link](./my_calc/my_calculator.c)               |
 | Queue using Dynamic memory allocation |              [link](./DynamicQueue.c)                 |
+| Insertion Sort             |                  [link](./Insertion%20Sort.c)                    |
+| Bresenham Circle           |                  [link](./Bresenham-Circle.c)                    |
+| Egg Dropping Puzzle        |                  [link](./EggDroppingPuzzle.c)                   |

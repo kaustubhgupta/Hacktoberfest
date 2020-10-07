@@ -14,8 +14,10 @@ The following steps below outline how to make contributions to the existing proj
 ## Step 0: Find/Create an issue(any issue you can work on)
 
 -   Take a look at any Existing Issue you could work on✨ or create your **own** Issues!💡
+-   While creating own issues make sure to **fill the template properly otherwise face the consequences of rejection**
+-   To tick the particular option in issue simply add "x" inbetween the [ ]. For example : [x]
 -   Wait for the `Issue` to be assigned to you, after which you can start working on it.
--   **Note**: Every change in this project should/must have an associated issue.
+-   **Note: Every change in this project should/must have an associated issue.**
 
 ![issue](screenshots/issue.jpg)
 
@@ -113,9 +115,10 @@ $ git push -u origin Branch_Name
 
 ## Step 7: Create a pull Request
 
--   Next step would be to create a pull request and then adding a title and description to the changes you've made to the project.
-
--   A good description is always better to properly convey what you did.
+-   Next step would be to create a pull request. 
+-   Make sure to **fill the template properly otherwise face the consequences of rejection**
+-   To tick the particular option in issue simply add "x" inbetween the [ ]. For example : [x]
+-   Now wait for mentors to review your code and make changes if suggested!
 
 ![pull-request](screenshots/pull-request.jpg)
 

@@ -12,7 +12,7 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         stale-pr-message: 'Your pull request has not seen any activity for a while, so it will be marked as stale. If no activity is not seen after 3 days, your pull request will be closed and marked as invalid.'
         stale-pr-label: 'stale'
-        close-pr-message: 'Unfortunetly, your pull request has not had any activity for the past 10 days, so your pull request will be closed and marked as invalid.'
+        close-pr-message: 'Unfortunetly, your pull request has not had any activity for the past three days, so your pull request will be closed and marked as invalid.'
         close-pr-label: 'invalid'
         days-before-stale: 7
         days-before-close: 3
