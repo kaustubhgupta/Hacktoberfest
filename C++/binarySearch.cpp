@@ -25,7 +25,6 @@ int binarySearch(int arr[], int length, int x) {
         //if element is greater than middle change constraints, since element is greater than middle set left equal to middle and new middle is calculated accordingly
         else if (x > arr[middle]) {
             left = middle + 1;
-
         }
         //if element is smaller than middle change constraints, since element is smaller than middle set right equal to middle and new middle is calculated accordingly
         else {
