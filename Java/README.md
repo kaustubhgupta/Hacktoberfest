@@ -19,4 +19,5 @@
 |           BST                          |        [link](./binarySearchTree.java)                    |
 |           Bubble Sort                  |        [link](./bubbleSort.java)                          |
 |           Insertion Sort               |        [link](./insertionSort.java)                       |
-|           Selection Sort               |        [link](./selectionSort.java)                       |
+|           Selection Sort               |        [link](./selectionSort.java)  
+|           Tower of Hanoi               |         [link](./TowerOfHanoi.java) 
