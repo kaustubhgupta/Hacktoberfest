@@ -1,4 +1,4 @@
-public class LinearSearchExample{    
+public class LinearSearch{    
 public static int linearSearch(int[] arr, int key){  
         // used  simple for loop to traverse each element to search
         for(int i=0;i<arr.length;i++){    
