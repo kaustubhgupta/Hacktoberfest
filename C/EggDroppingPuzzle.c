@@ -6,7 +6,7 @@
 #include<stdio.h>
 #define INT_MAX 1e9+9 
 
-int maxi(int a , int b)
+int max(int a , int b)
 {
    if(a >= b)
     return a ;
@@ -14,9 +14,9 @@ int maxi(int a , int b)
    return b ;
 }
 
-int solve(int eggs, int floors) 
+int EggDroppingPuzzle(int eggs, int floors) 
 { 
-
+   //Function to calculate the minimum number of attempts
     if (floors == 1 || floors == 0) 
         return floors; 
   
@@ -31,7 +31,7 @@ int solve(int eggs, int floors)
 
     for(i = 1 ; i <= floors ; i++)
     {
-      possible_ans = maxi(solve(eggs-1 , i-1) , solve(eggs , floors - i)) ;
+      possible_ans = max(EggDroppingPuzzle(eggs-1 , i-1) , EggDroppingPuzzle(eggs , floors - i)) ;
       if(possible_ans < ans)
         ans = possible_ans ;
     }
@@ -41,13 +41,17 @@ int solve(int eggs, int floors)
 int main() 
 { 
    int eggs,floors;
+   
+   //Input Number of Eggs here
    printf("Enter the number of eggs\n") ;
    scanf("%d",&eggs);
+   
+   //Input Number of Floors here
    printf("Enter the number of floors\n");
    scanf("%d",&floors);
   
-
-   printf("Minimum attempts required having %d eggs and %d floors are %d\n",eggs,floors,solve(eggs,floors));
+   //Output Minimum number of attempts required
+   printf("Minimum attempts required having %d eggs and %d floors are %d\n",eggs,floors,EggDroppingPuzzle(eggs,floors));
     
     return 0; 
 } 
