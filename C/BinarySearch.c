@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int BinarySearch(int arr[], int low, int high, int numSearch) // low is the first index of the array and high is the last index of the array and numSearch is the number to be searched
+int BinarySearch(int arr[], int low, int high, int numSearch) // low is the first index of the array(i.e. 0) and high is the last index of the array and numSearch is the number to be searched
 {
     if(high >= low){
         int mid = low + (high-1) /2;
