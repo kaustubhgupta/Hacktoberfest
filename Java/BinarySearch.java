@@ -1,13 +1,21 @@
 public class BinarySearch{  
  public static void binarySearch(int arr[], int first, int last, int key){  
    int mid = (first + last)/2;  
-   while( first <= last ){  
+   while( first <= last ){ 
+            // If element is greater than mid, then 
+            // it can only be present in right subarray 
       if ( arr[mid] < key ){  
         first = mid + 1;     
-      }else if ( arr[mid] == key ){  
+      }
+     // If the element is present at the 
+            // middle itself 
+    else if ( arr[mid] == key ){    
         System.out.println("Element is found at index: " + mid);  
         break;  
-      }else{  
+      }
+    // If element is less than mid, then 
+    // it can only be present in left subarray 
+    else{  
          last = mid - 1;  
       }  
       mid = (first + last)/2;  
