@@ -1,5 +1,6 @@
 public class LinearSearchExample{    
-public static int linearSearch(int[] arr, int key){    
+public static int linearSearch(int[] arr, int key){  
+        // used  simple for loop to traverse each element to search
         for(int i=0;i<arr.length;i++){    
             if(arr[i] == key){    
                 return i;    
