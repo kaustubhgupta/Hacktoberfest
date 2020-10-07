@@ -7,11 +7,10 @@ public class PrimeChecker{
 
 		Scanner scanner = new Scanner(System.in);
 		int number = scanner.nextInt();
-
-		if(isPrime(number))
-			System.out.println(number + " is a prime number");
-		else
-			System.out.println(number + " is not a prime number");
+		
+		System.out.print(number + " is ");
+		isPrime(number) ? System.out.println("a PRIME number") : System.out.println("NOT a PRIME number");
+			
 	}
 
 	public static boolean isPrime(int number)
