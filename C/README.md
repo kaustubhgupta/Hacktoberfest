@@ -19,4 +19,4 @@ C is a general-purpose, high-level language that was originally developed by Den
 | calculator with extra functions|              [link](./my_calc/my_calculator.c)               |
 | Insertion Sort             |                  [link](./Insertion%20Sort.c)                      |
 | Bresenham Circle           |                  [link](./Bresenham-Circle.c)                    |
-
+| Egg Dropping Puzzle        |                  [link](./EggDroppingPuzzle.c)                   |
