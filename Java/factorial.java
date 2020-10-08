@@ -23,11 +23,9 @@ public class factorial {
 		int num, res;
 		// scanner object sc
 		Scanner sc = new Scanner(System.in);
-
 		// input number
 		System.out.println("Enter a number to find factorial: ");
 		num = sc.nextInt();
-
 		// calling fact method with num argument
 		res = fact(num);
 		System.out.println("The factorial of "+ num + " is " + res);
