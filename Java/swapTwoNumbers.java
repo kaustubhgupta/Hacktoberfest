@@ -1,7 +1,4 @@
 /**
-	Author: AnOnYmOus001100
-	Date: 04/10/2020
-
 	Description: swap the value of two numbers without using temporary variable
 */
 
@@ -26,6 +23,7 @@ public class swapTwoNumbers {
 	// main method
 	public static void main(String[] args)
 	{
+		// variable declaration
 		int num1, num2;
 		Scanner sc = new Scanner(System.in);
 		
