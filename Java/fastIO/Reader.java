@@ -103,26 +103,32 @@ public class Reader implements AutoCloseable {
 			hasStarted = true;
 		}
 		
+		// if a new chunk has to be read not, do it
 		if(parserAt >= chunkSize-1) {
 			bytesRead = readNewChunk(); 
 			parserAt=0;
 		}
 		
+		// if that chunk was exactly the first with no bytes, end reading
 		if(bytesRead == -1) {
 			isDone = true; 
-			throw new IndexOutOfBoundsException();
+			return "";
 		}
 		
 		StringBuilder sb = new StringBuilder();
+		// read loop
 		while(true) {
+			// as long as a chunk has to be read, read it
 			for(; parserAt<bytesRead; parserAt++) {
 				char currentChar = currentChunk[parserAt];
+				// stop reading at each new line
 				if(currentChar == '\n' || currentChar == '\r') {
 					parserAt+= 2; 
 					return sb.toString(); 
 				}
 				sb.append(currentChar);
 			}
+			// if chunk done, read new chunk
 			bytesRead = readNewChunk();
 			if(bytesRead == -1) {
 				isDone = true; 
@@ -133,7 +139,7 @@ public class Reader implements AutoCloseable {
 		}
 	}
 
-	// internal method
+	// internal method, reads new chunk
 	private int readNewChunk() throws IOException {
 		return fr.read(currentChunk);
 	}
