@@ -5,6 +5,7 @@
 |     Problem Name     |                          link                          |
 | :------------------: | :----------------------------------------------------: |
 |   Word Guess Game    |                 [link](./wordGuess.py)                 |
+|   YouTube Trending Page Scraping    | [link](./YouTube_Trending_Analysis/YT_Trending_Analysis.py) |
 | Bollywood movie game |                 [link](./Bollywood.py)                 |
 |  Repository to CSV   |          [link](./repositoriesTo_CSV/main.py)          |
 | JPG to PNG converter | [link](./JPG_to_PNG_converter/JPG_to_PNG_Converter.py) |
