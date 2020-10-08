@@ -4,7 +4,7 @@ C is a general-purpose, high-level language that was originally developed by Den
 
 |        Problem Name        |                               link                               |
 | :------------------------: | :--------------------------------------------------------------: |
-| Guessing Game              |                     [link](./Guessing Game/main.c)               |
+| Guessing Game              |                     [link](https://github.com/bhavesh1129/Hacktoberfest2020_/blob/master/C/Guessing%20Game/main.c)               |
 |   No. of days in a month   |                     [link](./daysOfMonth.C)                      |
 |     Doubly LinkedList      | [link-1](./doublyLinkedList.c) [link-2](./doublyLinkedList-ii.c) |
 |    Factorial of Number     |                      [link](./factorial.C)                       |
