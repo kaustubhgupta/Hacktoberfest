@@ -9,8 +9,8 @@ def search (arr,l,r,x):
 
     if x < arr[mid]:
         return search(arr, l, mid-1,x)
-    else:
-        return search(arr, mid+1, r,x)  
+    
+    return search(arr, mid+1, r,x)  
         
     
 
