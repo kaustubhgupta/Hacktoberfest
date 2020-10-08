@@ -16,5 +16,6 @@
 | Topological Sorting       |                   [link](./TopolgicalSort.cpp)            |
 | Linear Search             |                   [link](./linearSearch.cpp)              |
 | Binary Search             |                   [link](./binarySearch.cpp)              |
-
+| Longest Common Subsequence|              [link](./longest_common_subsequence.cpp)     |
+| Longest Palindromic Subsequence|    [link](./longest_palindromic_subsequence.cpp)     |
 
