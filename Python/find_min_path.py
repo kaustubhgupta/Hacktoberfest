@@ -22,9 +22,12 @@ def min_path(path):
             x.append(0)
         dynamic_sizes.append(x)
 
+    row_amount = len(dynamic_sizes)
+    col_amount = len(dynamic_sizes[0])
+
     # go through the rows and columns
-    for i in range(len(dynamic_sizes)):
-        for j in range(len(dynamic_sizes[0])):
+    for i in range(row_amount):
+        for j in range(col_amount):
 
             # if we are in the first row
             if i == 0:
