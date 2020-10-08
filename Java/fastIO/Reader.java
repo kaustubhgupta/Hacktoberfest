@@ -124,7 +124,11 @@ public class Reader implements AutoCloseable {
 				sb.append(currentChar);
 			}
 			bytesRead = readNewChunk();
-			if(bytesRead == -1) {isDone = true; close(); return sb.toString();}
+			if(bytesRead == -1) {
+				isDone = true; 
+				close(); 
+				return sb.toString();
+			}
 			parserAt=0;
 		}
 	}
