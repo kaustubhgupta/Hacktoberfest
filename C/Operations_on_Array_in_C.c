@@ -2,12 +2,12 @@
 #include<stdlib.h>
 main()
 {
-	int i, arr[100], a, b, c, d, e, f, j,  x, t;
+	int i, arr[100], noEle, b, c, d, e, f, j,  x, t;
 	printf("\t\t\tOPERATIONS ON ARRAY DATA STRUCTURE");
 	printf("\nEnter the Number of Elements for the Array: ");
-	scanf("%d",&a);
+	scanf("%d",&noEle);
 	printf("Enter the elements:\n");
-	for(i=0;i<a;i++)
+	for(i=0;i<noEle;i++)
 	{
 		scanf("%d",&arr[i]);
 	}
@@ -18,14 +18,15 @@ main()
     	case 1:
     		printf("\n\nTRAVERSING:");
     		printf("\nThe Array is: ");
-			for(i=0;i<a;i++)
+			for(i=0;i<noEle;i++)
 			{
 				printf("%d\t",arr[i]);
 			}
+			break;
 		case 2:
 			printf("\n\n\tINSERTION");
 			printf("\n\nThe Array is:\t");
-			for(i=0;i<a;i++)
+			for(i=0;i<noEle;i++)
 			{
 				printf("%d\t",arr[i]);
 			}
@@ -33,44 +34,46 @@ main()
 			scanf("%d",&c);
 			printf("\nEnter the Position to which %d has to added: ",c);
 			scanf("%d",&d);
-			for(i=a;i>=b;i--)
+			for(i=noEle;i>=b;i--)
 			{
 				arr[i]=arr[i-1];
 			}
 			arr[d-1]=c;
 			printf("\nInsertion\nThe updated elements are:\t");
-			for(i=0;i<a+1;i++)
+			for(i=0;i<noEle+1;i++)
 			{
 				printf("%d\t",arr[i]);
 			}
+			break;
 		case 3:
 			printf("\n\n\tDELETION");
 			printf("\n\nThe Array is:\t");
-			for(i=0;i<a;i++)
+			for(i=0;i<noEle;i++)
 			{
 				printf("%d\t",arr[i]);
 			}
 			printf("\nEnter the Position of the Element to be deleted:");
 			scanf("%d",&e);
-			for(i=e-1;i<a-1;i++)
+			for(i=e-1;i<noEle-1;i++)
 			{
 				arr[i]=arr[i+1];
 			}
 			printf("\nDeletion\nThe updated elements are:\t");
-			for(i=0;i<a-1;i++)
+			for(i=0;i<noEle-1;i++)
 			{
 				printf("%d\t",arr[i]);
 			}
+			break;
 		case 4:
 			printf("\n\n\tSEARCH");
 			printf("\n\nThe Array is:\t");
-			for(i=0;i<a;i++)
+			for(i=0;i<noEle;i++)
 			{
 				printf("%d\t",arr[i]);
 			}
 			printf("\nEnter the Element to be searched:");
 			scanf("%d",&f);
-			for(i=0;i<a;i++)
+			for(i=0;i<noEle;i++)
 			{
 				if(f==arr[i])
 				{
@@ -83,14 +86,15 @@ main()
 				{
 					printf("The value %d is not present in the array.",f);
 				}
+			break;
 		case 5:
 			printf("\n\n\tSORT");
 			printf("\nThe Array is:\t");
-			for(i=0;i<a;i++)
+			for(i=0;i<noEle;i++)
 			{
 				printf("%d\t",arr[i]);
 			}
-			for (i=1;i<=a-1;i++)
+			for (i=1;i<=noEle-1;i++)
 		    {
 			    j=i;
 				while ( j > 0 && arr[j-1] > arr[j])
@@ -102,9 +106,10 @@ main()
 		        }
 		    }
 		    printf("\nThe Sorted Array is:\t");
-			for(i=0;i<a;i++)
+			for(i=0;i<noEle;i++)
 			{
 				printf("%d\t",arr[i]);
 			}
+			break;
 	}
 }
