@@ -14,5 +14,7 @@
 |Egg Dropping Puzzle Solution         |                 [link](./eggpuzzle.cpp)         |
 | Prime Checker in Time Complexity O(sqrt(n)) |    [link](./primechecker.cpp)           |
 | Topological Sorting       |                   [link](./TopolgicalSort.cpp)            |
+| Linear Search             |                   [link](./linearSearch.cpp)              |
+| Binary Search             |                   [link](./binarySearch.cpp)              |
 
 
