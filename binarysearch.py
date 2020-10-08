@@ -1,18 +1,21 @@
 #Function to check if the number exists ,the array is sorted
 def search (arr,l,r,x):
     if r>=l:
-        mid = (l+(r-l))//3
-     #Checks if the  element is present in the array , if yes returns index is sent back to the driver function.
+        mid = (l+(r-l))//2
+        #Checks if the  element is present in the array , if yes returns index is sent back to the driver function.
         if arr[mid] == x: 
-            return mid 
+             return mid 
+        elif arr[mid]>x:
+            return search(arr,l,mid-1,x)
+        else:
+            return  search(arr,mid+1,l,x)
         #Checks if the number to be searched lies in the first half or the second half of the array
-        elif arr[mid] > x: 
-            return search(arr, l, mid-1, x) 
+       
         #Checks is the number to be searched lies in the first half or the second half of the array
-        else: 
-            return search(arr, mid + 1, r, x) 
     else:
-        return -1
+        return -1    
+        
+    
 
 
 #Accepting number of terms in an array
