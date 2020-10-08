@@ -20,4 +20,7 @@
 |           Bubble Sort                  |        [link](./bubbleSort.java)                          |
 |           Insertion Sort               |        [link](./insertionSort.java)                       |
 |           Selection Sort               |        [link](./selectionSort.java)                       |
+|    Longest Common Subsequence          |        [link](./LongestCommonSubsequence.java)            |
+|    Longest Palindromic Subsequence     |        [link](./LongestPalindromicSubsequence.java)       |
 |           HeapSort                     |        [link](./HeapSort.java)                            |
+
