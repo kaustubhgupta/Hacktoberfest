@@ -1,6 +1,5 @@
 /**
 	Description: Display fibonacci series upto n, taken as input
-
 	Fibonacci: starts from 0,1 and next number of the series is obtained by adding the previous two terms
 */
 
@@ -13,8 +12,6 @@ public class fibonacci {
 	{
 		// variable initialization
 		int first = 0, second = 1, next = 0;
-		
-
 		// displaying the first and second term
 		System.out.println(first + "\n" + second);
 
@@ -23,7 +20,6 @@ public class fibonacci {
 			// finding the next term by adding the previous two terms
 			next = first + second;
 			System.out.println(next);
-
 			// updating first and second
 			first = second;
 			second = next;
@@ -36,7 +32,6 @@ public class fibonacci {
 	{
 		int n;
 		Scanner sc = new Scanner(System.in);
-		
 		// input range	
 		System.out.println("Enter the range of the fibonacci series: ");
 		n = sc.nextInt();
