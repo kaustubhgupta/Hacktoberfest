@@ -10,12 +10,10 @@ public class swapTwoNumbers {
 	public static void swap(int num1, int num2)
 	{
 		System.out.println("Before swapping: " + num1 + " " + num2);
-
 		// swapping
 		num1 = num1 + num2;
 		num2 = num1 - num2;
 		num1 = num1 - num2;
-
 		System.out.println("After swapping: " + num1 + " " + num2);
 	}
 
@@ -26,12 +24,10 @@ public class swapTwoNumbers {
 		// variable declaration
 		int num1, num2;
 		Scanner sc = new Scanner(System.in);
-		
 		// input prompt
 		System.out.println("Enter two numbers: ");
 		num1 = sc.nextInt();
 		num2 = sc.nextInt();
-
 		// calling swap method, num1 and num2 as arguments
 		swap(num1,num2);
 	}
