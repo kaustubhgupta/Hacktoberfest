@@ -46,8 +46,10 @@ def getVideoDetails(video):
 	comm = driver.find_element_by_tag_name("h2")
 	vcomments = comm.find_element_by_xpath("//*[@id='count']/yt-formatted-string").text.split()[0].replace(',', "")
 	vviews = int(vviews)
-	if vlikes: vlikes = int(vlikes.split()[0].replace(',', ""))
-	if vdislikes: vdislikes = int(vdislikes.split()[0].replace(',', ""))
+	if vlikes: 
+		vlikes = int(vlikes.split()[0].replace(',', ""))
+	if vdislikes: 
+		vdislikes = int(vdislikes.split()[0].replace(',', ""))
 	details = [vname, vviews, vlikes, vdislikes, vcomments, vdate]
 	return details
 
