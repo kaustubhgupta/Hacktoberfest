@@ -18,5 +18,6 @@
 | Binary Search             |                   [link](./binarySearch.cpp)              |
 | Minimum spanning tree using Prims             |[link](./MST_Prims.cpp)                |
 | Minimum spanning tree using Kruskals          |[link](./MST_Kruskals.cpp)             |
-
+| Longest Common Subsequence|              [link](./longest_common_subsequence.cpp)     |
+| Longest Palindromic Subsequence|    [link](./longest_palindromic_subsequence.cpp)     |
 
