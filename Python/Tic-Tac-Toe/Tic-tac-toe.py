@@ -1,12 +1,22 @@
 """
 @author: Arpit Somani
 """
-
+"""
+Import the required modules
+"""
 import numpy
+"""
+Creating the platform, where we play the game.
+"""
 board= numpy.array([['_','_','_'],['_','_','_'],['_','_','_']])
+"""
+We have 2 symbols , as its a 2 player game
+"""
 p1s= 'X'
 p2s= 'O'
-
+"""
+Checking for empty place in rows
+"""
 def check_rows(symbol):
     for r in range (3):
         count=0
@@ -17,7 +27,9 @@ def check_rows(symbol):
             print(symbol,"Won")
             return True
     return False
-    
+"""
+Checking for empty place in columns
+"""
 def check_cols(symbol):
     for c in range (3):
         count=0
@@ -28,7 +40,9 @@ def check_cols(symbol):
             print(symbol,"Won")
             return True
     return False
-    
+"""
+Checking for empty place in diagonals
+"""   
 def check_diagonals(symbol):
     if board[0][2]==board[1][1] and board[1][1]==board[2][0] and board[1][1]==symbol:
         print(symbol,"Won")
@@ -37,10 +51,15 @@ def check_diagonals(symbol):
         print(symbol,"Won")
         return True
     return False
-
+"""
+When a player get into the win siituation, when a straight line formed either at row,column or diagonal position.
+"""
 def won(symbol):
     return check_rows(symbol) or check_cols(symbol) or check_diagonals(symbol)
 
+"""
+Placing of players symbol as desired empty position
+"""
 def place(symbol):
     print(numpy.matrix(board))
     while(1):
@@ -51,7 +70,10 @@ def place(symbol):
         else:
             print('Invalid input. PLease enter again!')
     board[row-1][col-1]=symbol
-    
+ 
+"""
+The play function, player 1 starts game, and the chances will revolve one by one in between 2 players, until a winner arise.
+"""
 def play():
     for turn in range(9):
         if turn%2==0:
@@ -67,5 +89,7 @@ def play():
             
     if not(won(p1s)) and not(won(p2s)):
         print("Draw!")
-        
+"""
+Calling play function       
+"""
 play()
