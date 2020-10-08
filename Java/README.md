@@ -22,3 +22,5 @@
 |           Selection Sort               |        [link](./selectionSort.java)                       |
 |    Longest Common Subsequence          |        [link](./LongestCommonSubsequence.java)            |
 |    Longest Palindromic Subsequence     |        [link](./LongestPalindromicSubsequence.java)       |
+|           HeapSort                     |        [link](./HeapSort.java)                            |
+
