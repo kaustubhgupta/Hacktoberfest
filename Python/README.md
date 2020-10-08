@@ -16,11 +16,12 @@
 |    Bubble Sort       |                   [link](./Sorting_Algorithms/bubble_sort.py)               |
 |    Insertion Sort    |                   [link](./Sorting_Algorithms/insertion_sort.py)            |
 |    Selection Sort    |                   [link](./Sorting_Algorithms/selection_sort.py)            |
-|   Message Encrypter  |               [link](./msg-encryptor/encrypter-msg.py)   |
-|  Password_generator_App |          [link](./Password_generator_App.py)            |
-|   RSA           |             [link](./RSA.py)                             |
-|   SnakeGame          |            [link](./SnakeGame.py)          |
-|    Sieve            |         [link](./sieve.py)                       |
+|   Message Encrypter  |               [link](./msg-encryptor/encrypter-msg.py) |
+|  Password_generator_App |          [link](./Password_generator_App.py)        |
+|   RSA                |             [link](./RSA.py)                           |
+|   SnakeGame          |            [link](./SnakeGame.py)                      |
+|    Sieve             |         [link](./sieve.py)                             |
+|    Anagram           |         [link](./anagram.py)                           |
 
 
 
