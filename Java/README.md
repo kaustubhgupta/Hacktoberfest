@@ -22,3 +22,7 @@
 |           Selection Sort               |        [link](./selectionSort.java)                       |
 |           Binary Search                |        [link](./BinarySearch.java)                        |
 |           Linear Search                |        [link](./LinearSearch.java)                        |
+|    Longest Common Subsequence          |        [link](./LongestCommonSubsequence.java)            |
+|    Longest Palindromic Subsequence     |        [link](./LongestPalindromicSubsequence.java)       |
+|           HeapSort                     |        [link](./HeapSort.java)                            |
+
