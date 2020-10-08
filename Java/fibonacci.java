@@ -4,7 +4,6 @@
 */
 
 import java.util.Scanner;
-
 public class fibonacci {
 
 	// fibo method calculates the next term in the series and runs till n
@@ -25,7 +24,6 @@ public class fibonacci {
 			second = next;
 		}
 	}
-
 
 	// main method
 	public static void main(String[] args)
