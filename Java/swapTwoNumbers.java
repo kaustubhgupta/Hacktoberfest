@@ -3,7 +3,6 @@
 */
 
 import java.util.Scanner;
-
 public class swapTwoNumbers {
 
 	// swap method, to swap the values, takes two integer numbers as parameter
@@ -16,7 +15,6 @@ public class swapTwoNumbers {
 		num1 = num1 - num2;
 		System.out.println("After swapping: " + num1 + " " + num2);
 	}
-
 
 	// main method
 	public static void main(String[] args)
