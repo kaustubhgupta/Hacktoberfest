@@ -1,8 +1,6 @@
 /**
-	Author: AnOnYmOus001100
-	Date: 04/10/2020
 
-	Description: inputs a number and displays the factorial of the number
+	Description: Take a number as input and displays the factorial of the number
 
 */
 
@@ -12,7 +10,7 @@ public class factorial {
 
 	// fact method to calculate factorial, takes integer n as parameter and returns the factorial
 	public static int fact(int n)
-	{
+	{	// setting factorial to 1
 		int factorial = 1;
 
 		// loop to calculate factorial
@@ -26,6 +24,7 @@ public class factorial {
 	public static void main(String[] args)
 	{
 		int num, res;
+		// scanner object sc
 		Scanner sc = new Scanner(System.in);
 
 		// input number
