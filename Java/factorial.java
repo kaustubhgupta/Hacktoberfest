@@ -1,7 +1,5 @@
 /**
-
 	Description: Take a number as input and displays the factorial of the number
-
 */
 
 import java.util.Scanner;
@@ -16,8 +14,7 @@ public class factorial {
 		// loop to calculate factorial
 		for (int i = n; i > 0; i--)
 			factorial *= i;
-
-		return factorial;
+	return factorial;
 	}
 
 	// main method
