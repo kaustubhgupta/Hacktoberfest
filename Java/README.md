@@ -20,3 +20,4 @@
 |           Bubble Sort                  |        [link](./bubbleSort.java)                          |
 |           Insertion Sort               |        [link](./insertionSort.java)                       |
 |           Selection Sort               |        [link](./selectionSort.java)                       |
+|           HeapSort                     |        [link](./HeapSort.java)                            |
