@@ -4,142 +4,177 @@
 #include <cstring>
 using namespace std;
 
-class TreeN//node declaration 
+class TreeN //node declaration
 {
-   public: char d;
+public:
+   char d;
    TreeN *l, *r;
-   TreeN(char d) {
+   TreeN(char d)
+   {
       this->d = d;
       this->l = NULL;
-      this->r = NULL; 
+      this->r = NULL;
    }
 };
 
-class StackNod// stack declaration 
+class StackNod // stack declaration
 {
-   public: TreeN *treeN;
+public:
+   TreeN *treeN;
    StackNod *n;
-   StackNod(TreeN *treeN)//constructor 
+   StackNod(TreeN *treeN) //constructor
    {
       this->treeN = treeN;
       n = NULL;
    }
 };
 
-class ExpressionTree {
-   private: StackNod *top;
-   public: ExpressionTree() {
+class ExpressionTree
+{
+private:
+   StackNod *top;
+
+public:
+   ExpressionTree()
+   {
       //constructor
       top = NULL;
    }
-   void clear() {
+   void clear()
+   {
       top = NULL;
    }
 
-   
-   void push(TreeN *ptr) {
+   void push(TreeN *ptr)
+   {
       if (top == NULL)
          top = new StackNod(ptr);
-      else {
+      else
+      {
          StackNod *nptr = new StackNod(ptr);
          nptr->n = top;
          top = nptr;
       }
    }
 
-   TreeN *pop() {
-      if (top == NULL) {
-         cout<<"Underflow"<<endl;
-      } else {
+   TreeN *pop()
+   {
+      if (top == NULL)
+      {
+         cout << "Underflow" << endl;
+      }
+      else
+      {
          TreeN *ptr = top->treeN;
          top = top->n;
          return ptr;
       }
    }
 
-   TreeN *peek() {
+   TreeN *peek()
+   {
       return top->treeN;
    }
 
-   void insert(char val) {
-      if (isDigit(val)) {
+   void insert(char val)
+   {
+      if (isDigit(val))
+      {
          TreeN *nptr = new TreeN(val);
          push(nptr);
-      } else if (isOperator(val)) {
+      }
+      else if (isOperator(val))
+      {
          TreeN *nptr = new TreeN(val);
          nptr->l = pop();
-         nptr->r= pop();
+         nptr->r = pop();
          push(nptr);
-      } else {
-         cout<<"Invalid Expression"<<endl;
+      }
+      else
+      {
+         cout << "Invalid Expression" << endl;
          return;
       }
    }
 
-   bool isDigit(char ch) {
+   bool isDigit(char ch)
+   {
       return ch >= '0' && ch <= '9';
    }
 
-   bool isOperator(char ch) {
+   bool isOperator(char ch)
+   {
       return ch == '+' || ch == '-' || ch == '*' || ch == '/';
    }
 
-   int toDigit(char ch) {
+   int toDigit(char ch)
+   {
       return ch - '0';
    }
 
-   void buildTree(string eqn) {
+   void buildTree(string eqn)
+   {
       for (int i = eqn.length() - 1; i >= 0; i--)
          insert(eqn[i]);
    }
 
-   void postfix() {
+   void postfix()
+   {
       postOrder(peek());
       cout << endl;
    }
 
-   void postOrder(TreeN*ptr) {
-      if (ptr != NULL) {
+   void postOrder(TreeN *ptr)
+   {
+      if (ptr != NULL)
+      {
          postOrder(ptr->l);
          postOrder(ptr->r);
-         cout<<ptr->d;
+         cout << ptr->d;
       }
    }
-   void infix() {
+   void infix()
+   {
       inOrder(peek());
    }
 
-   void inOrder(TreeN *ptr) {
-      if (ptr != NULL) {
+   void inOrder(TreeN *ptr)
+   {
+      if (ptr != NULL)
+      {
          inOrder(ptr->l);
-         cout<<ptr->d;
+         cout << ptr->d;
          inOrder(ptr->r);
       }
    }
-   void prefix() {
+   void prefix()
+   {
       preOrder(peek());
    }
 
-   void preOrder(TreeN *ptr) {
-      if (ptr != NULL) {
-         cout<<ptr->d;
+   void preOrder(TreeN *ptr)
+   {
+      if (ptr != NULL)
+      {
+         cout << ptr->d;
          preOrder(ptr->l);
          preOrder(ptr->r);
       }
    }
 };
 
-int main() {
+int main()
+{
    string s;
    ExpressionTree et;
-   cout<<"\nEnter equation in Prefix form: ";
-   cin>>s;
+   cout << "\nEnter equation in Prefix form: ";
+   cin >> s;
    et.buildTree(s);
-   cout<<"\nPrefix : ";
+   cout << "\nPrefix : ";
    et.prefix();
-   cout<<"\n\nInfix : ";
+   cout << "\n\nInfix : ";
    et.infix();
-   cout<<"\n\nPostfix : ";
+   cout << "\n\nPostfix : ";
    et.postfix();
- return 0;
+   return 0;
 }
