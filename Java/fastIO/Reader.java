@@ -97,16 +97,29 @@ public class Reader implements AutoCloseable {
 	 */
 	public String readLine() throws IndexOutOfBoundsException, IOException {
 		if(isDone) throw new IndexOutOfBoundsException();
-		if(!hasStarted) {bytesRead = readNewChunk(); hasStarted = true;}
-		if(parserAt >= chunkSize-1) {bytesRead = readNewChunk(); parserAt=0;}
-		if(bytesRead == -1) {isDone = true; throw new IndexOutOfBoundsException();}
+		
+		if(!hasStarted) {
+			bytesRead = readNewChunk(); 
+			hasStarted = true;
+		}
+		
+		if(parserAt >= chunkSize-1) {
+			bytesRead = readNewChunk(); 
+			parserAt=0;
+		}
+		
+		if(bytesRead == -1) {
+			isDone = true; 
+			throw new IndexOutOfBoundsException();
+		}
 		
 		StringBuilder sb = new StringBuilder();
 		while(true) {
 			for(; parserAt<bytesRead; parserAt++) {
 				char currentChar = currentChunk[parserAt];
 				if(currentChar == '\n' || currentChar == '\r') {
-					parserAt+= 2; return sb.toString(); 
+					parserAt+= 2; 
+					return sb.toString(); 
 				}
 				sb.append(currentChar);
 			}
