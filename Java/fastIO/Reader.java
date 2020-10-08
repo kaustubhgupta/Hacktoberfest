@@ -103,10 +103,10 @@ public class Reader implements AutoCloseable {
 		
 		StringBuilder sb = new StringBuilder();
 		while(true) {
-			for(; parserAt<bytesRead; parserAt++) { // check if counted correctly
+			for(; parserAt<bytesRead; parserAt++) {
 				char currentChar = currentChunk[parserAt];
 				if(currentChar == '\n' || currentChar == '\r') {
-					parserAt+= 2; return sb.toString(); // check if increment is done
+					parserAt+= 2; return sb.toString(); 
 				}
 				sb.append(currentChar);
 			}
