@@ -17,7 +17,7 @@ def shellSort(input_list):
 
         gap = gap//2
 
-list = [19,2,31,45,30,11,121,27]
+input_list = [19,2,31,45,30,11,121,27]
 
 shellSort(list)
 print(list)
