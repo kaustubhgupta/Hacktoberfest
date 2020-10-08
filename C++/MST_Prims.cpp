@@ -1,61 +1,41 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long
 #define fast ios_base::sync_with_stdio(false);	cin.tie(NULL);	cout.tie(NULL);
-#define piii pair<ll,pair<ll,ll>> 
 #define pii pair<ll,ll>
 #define pb push_back
 #define INF 0x3f3f3f3f
+#define ll long long
+vector<pii> g[(int)1e4+5];
+vector<bool> visited((int)1e4+5,false);
+vector<ll> key((int)1e4+5,INF);
 int n;
 
-vector<piii> edges;
-vector<pii> parent ((int)1e4+5); 
-vector<pii> g[(int)1e4+5];
-
-// findind the parent of element x
-ll find(ll x)
-{
-	if(parent[x].first==x)
-		return x;
-	return parent[x].first=find(parent[x].first);
-}
-
-// Union find using path compression
-void merge(ll x, ll y)
-{
-	ll set_x=find(x);									//Union based on the fact that both x and y are present in different sets.
-	ll set_y=find(y);
-	if(parent[set_x].second<parent[set_y].second)
-		parent[set_x].first=set_y;
-	else if(parent[set_x].second>parent[set_y].second)
-		parent[set_y].first=set_x;
-	else
-	{
-		parent[set_y].first=set_x;
-		parent[set_x].second++;
-	}
-}
-
-// Finds the cost of the minimum spanning tree
 ll MST(ll start)
 {
-	ll cnt=0,sum=0,u,v,w,x,y;
-	for(auto it: edges)
+	ll u,c,v,w;
+	priority_queue<pii,vector<pii>,greater<pii>> q;
+	key[start]=0;
+	q.push(pii(0,start));
+	while(!q.empty())
 	{
-		w=it.first;
-		u=it.second.first;
-		v=it.second.second;
-		x=find(u);
-		y=find(v);
-		if(x!=y)
+		u=q.top().second;
+		c=q.top().first;
+		q.pop();
+		visited[u]=true;
+		for(auto it: g[u])
 		{
-			sum+=w;
-			merge(u,v);
-			cnt++;
+			v=it.first;
+			w=it.second;
+			if(visited[v]==false && key[v]>w)
+			{
+				key[v]=w;
+				q.push(pii(key[v],v));
+			}
 		}
-		if(cnt==n-1)
-			break;
 	}
+	ll sum=0;	
+	for(int i=1;i<=n;i++)
+	    sum+=key[i];
 	return sum;
 }
 
@@ -63,20 +43,13 @@ int main()
 {
 	fast;
 	ll m,u,v,w;
-	// n represents node count and m represents edge count
+	// n is the number of nodes and m is the number of edges
 	cin>>n>>m;
 	for(int i=1;i<=m;i++)
 	{
 		cin>>u>>v>>w;
-		edges.pb({w,{u,v}});
 		g[u].pb(pii(v,w));
 		g[v].pb(pii(u,w));
-	}
-	sort(edges.begin(),edges.end());
-	for(int i=0;i<n;i++)
-	{
-		parent[i].first=i;
-		parent[i].second=0;
 	}
 	cout<<MST(1);
 	return 0;
