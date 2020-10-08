@@ -1,0 +1,15 @@
+num=int(input())    #number given
+n=num
+d=(len(str(num)))   #number of digits
+i=1
+sum=0
+
+while i<=d:
+    l=n%10
+    n=n//10
+    sum=(sum*10)+l
+    i=i+1
+if sum==num:
+    print("true")
+else :
+    print("false")
