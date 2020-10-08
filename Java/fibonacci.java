@@ -1,6 +1,4 @@
 /**
-	Author: AnOnYmOus001100
-	Date: 04/10/2020
 	Description: Display fibonacci series upto n, taken as input
 
 	Fibonacci: starts from 0,1 and next number of the series is obtained by adding the previous two terms
