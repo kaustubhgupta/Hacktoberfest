@@ -25,4 +25,4 @@
 |    Longest Common Subsequence          |        [link](./LongestCommonSubsequence.java)            |
 |    Longest Palindromic Subsequence     |        [link](./LongestPalindromicSubsequence.java)       |
 |           HeapSort                     |        [link](./HeapSort.java)                            |
-
+|           Making Anagrams              |        [link](./MakingAnagrams.java)                      |
