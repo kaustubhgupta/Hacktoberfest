@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 
-public class Reader {
+public class Reader implements AutoCloseable {
 	
 	private File inputFile;
 	private FileReader fr;
@@ -84,6 +84,7 @@ public class Reader {
 			}
 			sb.append(String.valueOf(currentChunk));
 		}
+		close();
 		return sb.toString();
 	}
 	
@@ -110,7 +111,7 @@ public class Reader {
 				sb.append(currentChar);
 			}
 			bytesRead = readNewChunk();
-			if(bytesRead == -1) {isDone = true; return sb.toString();}
+			if(bytesRead == -1) {isDone = true; close(); return sb.toString();}
 			parserAt=0;
 		}
 	}
@@ -127,6 +128,22 @@ public class Reader {
 	 */
 	public boolean hasNextLine() {
 		return !isDone;
+	}
+	
+	
+	/**
+	 * 
+	 * Closes the Reader
+	 * 
+	 */ 
+	
+	@Override
+	public void close() {
+		try {
+			fr.close();
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 	}
 	
 	
