@@ -1,9 +1,8 @@
-import java.util.Scanner;
+import Java.util.*
 
 public class countmasepath {
 
 	public static void main(String[] args) {
-		
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
 
