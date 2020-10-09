@@ -22,6 +22,8 @@
 |   SnakeGame          |            [link](./SnakeGame.py)                      |
 |    Sieve             |         [link](./sieve.py)                             |
 |    Anagram           |         [link](./anagram.py)                           |
+|  Tic-Tac-Toe Game    |   [link](./Tic-Tac-Toe/Tic-tac-toe.py)                 |
+
 
 
 
