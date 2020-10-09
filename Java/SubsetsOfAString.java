@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class StringSubsets {
+public class SubsetsOfAString {
 	private static void printSubsets(String str, String current, int index)
 	{	// Prints an Empty String as the first subset.
 		
