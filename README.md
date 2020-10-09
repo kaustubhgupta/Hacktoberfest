@@ -1,6 +1,11 @@
 ### Update: Read this before moving head! [Important](https://github.com/kaustubhgupta/Hacktoberfest2020_/issues/105)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/kaustubhgupta/hacktoberfest2020_/badge)](https://www.codefactor.io/repository/github/kaustubhgupta/hacktoberfest2020_)
+![GitHub forks](https://img.shields.io/github/forks/kaustubhgupta/Hacktoberfest2020_?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/kaustubhgupta/Hacktoberfest2020_?style=social)
+![GitHub issues](https://img.shields.io/github/issues/kaustubhgupta/Hacktoberfest2020_)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/kaustubhgupta/Hacktoberfest2020_)
+![GitHub Hacktoberfest combined status (suggestion label override)](https://img.shields.io/github/hacktoberfest/2020/kaustubhgupta/Hacktoberfest2020_)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://hacktoberfest.netlify.com/)&nbsp;
 
 # Hacktober Fest

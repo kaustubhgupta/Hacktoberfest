@@ -20,3 +20,11 @@
 |           Bubble Sort                  |        [link](./bubbleSort.java)                          |
 |           Insertion Sort               |        [link](./insertionSort.java)                       |
 |           Selection Sort               |        [link](./selectionSort.java)                       |
+|           Binary Search                |        [link](./BinarySearch.java)                        |
+|           Linear Search                |        [link](./LinearSearch.java)                        |
+|    Longest Common Subsequence          |        [link](./LongestCommonSubsequence.java)            |
+|    Longest Palindromic Subsequence     |        [link](./LongestPalindromicSubsequence.java)       |
+|           HeapSort                     |        [link](./HeapSort.java)                            |
+|           factorial                    |       [link](./factorial.java)                            | 
+|           fibonacci                    |       [link](./fibonacci.java)                            |
+|           swaptwonumbers               |       [link](./swapTwoNumbers.java)                       |

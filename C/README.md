@@ -4,6 +4,7 @@ C is a general-purpose, high-level language that was originally developed by Den
 
 |        Problem Name        |                               link                               |
 | :------------------------: | :--------------------------------------------------------------: |
+| Guessing Game              |                     [link](./Guessing%20Game/main.c)             |
 |   No. of days in a month   |                     [link](./daysOfMonth.C)                      |
 |     Doubly LinkedList      | [link-1](./doublyLinkedList.c) [link-2](./doublyLinkedList-ii.c) |
 |    Factorial of Number     |                      [link](./factorial.C)                       |
@@ -21,3 +22,5 @@ C is a general-purpose, high-level language that was originally developed by Den
 | Insertion Sort             |                  [link](./Insertion%20Sort.c)                    |
 | Bresenham Circle           |                  [link](./Bresenham-Circle.c)                    |
 | Egg Dropping Puzzle        |                  [link](./EggDroppingPuzzle.c)                   |
+| Linear Search              |                  [link](./LinearSearch.c)                        |
+| Binary Search              |                  [link](./BinarySearch.c)                        |
