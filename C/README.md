@@ -25,3 +25,4 @@ C is a general-purpose, high-level language that was originally developed by Den
 | Linear Search              |                  [link](./LinearSearch.c)                        |
 | Binary Search              |                  [link](./BinarySearch.c)                        |
 | minimum spanning tree-Prim's algo  |          [link](./PrimMST.c)                             |
+| Kadane's Algorithm         |                  [link](./kadane.c)                              |
