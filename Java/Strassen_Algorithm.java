@@ -1,7 +1,7 @@
 import java.util.Scanner;
  
 
-public class Strassen Algorithm
+public class Strassen_Algorithm
 {
     // Function to multiply matrices
     public int[][] multiply(int[][] A, int[][] B)
@@ -121,7 +121,7 @@ public class Strassen Algorithm
         Scanner sc = new Scanner(System.in);
 
         /** Making an object of Strassen class **/
-        Strassen s = new Strassen();
+        Strassen_Algorithm s = new Strassen_Algorithm();
  
         System.out.println("Enter the order of matrices (n) :");
         int N = sc.nextInt();
