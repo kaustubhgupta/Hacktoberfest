@@ -8,10 +8,6 @@ public class sieveOfEratosthenes {
 		int num = sc.nextInt();
 		//Creating a boolean array prime[0..size]
 		boolean prime[] = new boolean[num+1];
-		//Initializing each item in prime[] with true value
-		for(int i=0;i<=num;i++) {
-			prime[i] = true;
-		}
 		
 		//Implementing sieve
 		for(int i=2;i*i<=num;i++) {
