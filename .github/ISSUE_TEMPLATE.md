@@ -1,17 +1,11 @@
-Please include a small description or summary of the issue here.
+# Description
+(Replace this text holder with your description: Please include a small description or summary of the issue here )
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+# Additional context
+Add any other context, links references or screenshots about the feature request here.
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
-
-**Languages**
-
--   [ ] Python
--   [ ] Java
--   [ ] C
--   [ ] C++
+# Languages and Assignees:
+-   [ ] Python: @
+-   [ ] Java: @
+-   [ ] C: @
+-   [ ] C++: @ 
