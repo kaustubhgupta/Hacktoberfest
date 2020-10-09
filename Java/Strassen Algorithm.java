@@ -1,7 +1,7 @@
 import java.util.Scanner;
  
 
-public class Strassen
+public class Strassen Algorithm
 {
     // Function to multiply matrices
     public int[][] multiply(int[][] A, int[][] B)
