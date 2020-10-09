@@ -19,4 +19,5 @@
 | Longest Common Subsequence|              [link](./longest_common_subsequence.cpp)     |
 | Longest Palindromic Subsequence|    [link](./longest_palindromic_subsequence.cpp)     |
 | Recursive Power Set       |         [link](./recursivePowerSetOfString.cpp)           |
+| Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
 
