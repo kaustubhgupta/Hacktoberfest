@@ -20,7 +20,7 @@
 |   RSA           |             [link](./RSA.py)                             |
 |   SnakeGame          |            [link](./SnakeGame.py)          |
 |    Sieve            |         [link](./sieve.py)                       |
-
-
-
+|    Linear Search  |           [link](./linearsearch.py)     |
+|Binary Search |               [link](./binarysearch.py)      |
+ 
 
