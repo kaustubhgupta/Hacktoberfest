@@ -26,4 +26,7 @@
 |    Longest Palindromic Subsequence     |        [link](./LongestPalindromicSubsequence.java)       |
 |           HeapSort                     |        [link](./HeapSort.java)                            |
 |         What Is Number? - Game         |        [link](./WhatIsNumberGame.java)
+|           factorial                    |       [link](./factorial.java)                            | 
+|           fibonacci                    |       [link](./fibonacci.java)                            |
+|           swaptwonumbers               |       [link](./swapTwoNumbers.java)                       |
 
