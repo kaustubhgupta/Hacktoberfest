@@ -25,5 +25,5 @@
 |    Longest Common Subsequence          |        [link](./LongestCommonSubsequence.java)            |
 |    Longest Palindromic Subsequence     |        [link](./LongestPalindromicSubsequence.java)       |
 |           HeapSort                     |        [link](./HeapSort.java)                            |
-|         What Is Number - Game?         |        [link](./WhatIsNumberGame.java)
+|         What Is Number? - Game         |        [link](./WhatIsNumberGame.java)
 
