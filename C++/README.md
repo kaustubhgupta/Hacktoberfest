@@ -14,5 +14,6 @@
 |Egg Dropping Puzzle Solution         |                 [link](./eggpuzzle.cpp)         |
 | Prime Checker in Time Complexity O(sqrt(n)) |    [link](./primechecker.cpp)           |
 | Topological Sorting       |                   [link](./TopolgicalSort.cpp)            |
+| Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
 
 
