@@ -1,5 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
+printArr(int n, int *m)
+{
+	printf("\nThe Array is:\t");
+	for(int i=0;i<n;i++)
+		{
+			printf("%d\t", *m);
+			m++;
+		}
+}
 main()
 {
 	int i, arr[100], noEle, b, c, d, e, f, j,  x, t;
@@ -16,20 +25,12 @@ main()
     switch(b)
     {
     	case 1:
-    		printf("\n\nTRAVERSING:");
-    		printf("\nThe Array is: ");
-			for(i=0;i<noEle;i++)
-			{
-				printf("%d\t",arr[i]);
-			}
-			break;
+    		printf("\n\n\tTRAVERSING:");
+    		printArr(noEle, arr);
+    		break;
 		case 2:
 			printf("\n\n\tINSERTION");
-			printf("\n\nThe Array is:\t");
-			for(i=0;i<noEle;i++)
-			{
-				printf("%d\t",arr[i]);
-			}
+			printArr(noEle, arr);
 			printf("\nEnter the Value to be added: ");
 			scanf("%d",&c);
 			printf("\nEnter the Position to which %d has to added: ",c);
@@ -47,11 +48,7 @@ main()
 			break;
 		case 3:
 			printf("\n\n\tDELETION");
-			printf("\n\nThe Array is:\t");
-			for(i=0;i<noEle;i++)
-			{
-				printf("%d\t",arr[i]);
-			}
+			printArr(noEle, arr);
 			printf("\nEnter the Position of the Element to be deleted:");
 			scanf("%d",&e);
 			for(i=e-1;i<noEle-1;i++)
@@ -66,11 +63,7 @@ main()
 			break;
 		case 4:
 			printf("\n\n\tSEARCH");
-			printf("\n\nThe Array is:\t");
-			for(i=0;i<noEle;i++)
-			{
-				printf("%d\t",arr[i]);
-			}
+			printArr(noEle, arr);
 			printf("\nEnter the Element to be searched:");
 			scanf("%d",&f);
 			for(i=0;i<noEle;i++)
@@ -89,11 +82,7 @@ main()
 			break;
 		case 5:
 			printf("\n\n\tSORT");
-			printf("\nThe Array is:\t");
-			for(i=0;i<noEle;i++)
-			{
-				printf("%d\t",arr[i]);
-			}
+			printArr(noEle, arr);
 			for (i=1;i<=noEle-1;i++)
 		    {
 			    j=i;
