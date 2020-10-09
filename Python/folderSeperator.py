@@ -50,8 +50,6 @@ for file in files:
         others.append(file)
 
 
-print("These are other folders:","\n",others,"\n")
-
 move("Media",medias)
 move("Images",images)
 move("Python",python)
