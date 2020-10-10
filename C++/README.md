@@ -20,4 +20,5 @@
 | Longest Palindromic Subsequence|    [link](./longest_palindromic_subsequence.cpp)     |
 | Recursive Power Set       |         [link](./recursivePowerSetOfString.cpp)           |
 | Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
-
+| Quick Sort                |         [link](./Quick_Sort.cpp)                          |  
+| Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
