@@ -7,7 +7,7 @@ C is a general-purpose, high-level language that was originally developed by Den
 | Guessing Game              |                     [link](./Guessing%20Game/main.c)             |
 |   No. of days in a month   |                     [link](./daysOfMonth.C)                      |
 |     Doubly LinkedList      | [link-1](./doublyLinkedList.c) [link-2](./doublyLinkedList-ii.c) |
-|  Reverse a Doubly link list| [link](C/doubly_linklist_reverse.c)
+|  Reverse a Doubly link list| [link](./doubly_linklist_reverse.c)
 |    Factorial of Number     |                      [link](./factorial.C)                       |
 |  Factors Of given Number   |                   [link](./factorsOfNumber.C)                    |
 |    Queue using 2 stack     | [link-1](./queueUsingStack.c) [link-2](./QueueUsingStack2.c)     |
