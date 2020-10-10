@@ -8,7 +8,6 @@ using namespace std;
 void init() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
-
 #ifndef ONLINE_JUDGE
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
@@ -19,8 +18,8 @@ template <typename T>
 class Graph {
 	int V;
 	unordered_map<T, list<pair<T, int>>> um; // (string->(string,weight))
-public:
 	
+public:
 	Graph(int V) {
 		this->V = V;
 	}
