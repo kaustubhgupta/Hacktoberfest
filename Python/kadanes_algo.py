@@ -1,4 +1,4 @@
-ip=list(map(int,input("Enter array elements").split()))
+ip=list(map(int,input().split()))
 i,j,summ,maxsum=0,0,0,0
 while(i<len(ip)-1 and ip[i]<0):
     i=i+1
@@ -18,7 +18,4 @@ while( j<len(ip)):
         j=i+1
 if(summ>maxsum):
     maxsum=summ
-print("Maximum positive sum = ",maxsum)
-            
-    
-
+print(maxsum)
