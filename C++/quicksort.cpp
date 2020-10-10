@@ -58,7 +58,6 @@ struct Node *quickSortRecur(struct Node *head, struct Node *end)
 		return head; 
 	Node *newHead = NULL, *newEnd = NULL; 
 	struct Node *pivot = partition(head, end, &newHead, &newEnd); 
-
 		if (newHead != pivot) 
 	{ 	struct Node *tmp = newHead; 
 		while (tmp->next != pivot) 
