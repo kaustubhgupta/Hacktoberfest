@@ -1,4 +1,4 @@
-public class QuickSortLinkedList { 
+public class QuickSort { 
 static class Node { 
     int data; 
     Node next; 
