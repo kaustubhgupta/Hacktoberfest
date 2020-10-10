@@ -204,6 +204,25 @@ public final class CalendarUtils {
         }
     }
 
+    /**
+     * Creates and returns a {@link Calendar} instance by parsing a given string base on a data format.
+     *
+     * @param value
+     *            the date in string format
+     * @param dateFormat
+     *            the format to use when parsing the dateString
+     *
+     * @return the generated {@link Calendar} instance.
+     * @throws ParseException
+     */
+    public static Calendar parse(final String value, final DateFormat dateFormat)
+            throws ParseException {
+        final Calendar calendar = Calendar.getInstance();
+        final Date date = dateFormat.parse(value);
+        calendar.setTime(date);
+        return calendar;
+    }
+
     public static Calendar parse(final String aDateString) {
         return parse(aDateString, "dd-MM-yyyy");
     }
@@ -303,25 +322,6 @@ public final class CalendarUtils {
         final Calendar yesterday = now();
         yesterday.add(Calendar.DATE, 1);
         return yesterday;
-    }
-
-    /**
-     * Creates and returns a {@link Calendar} instance by parsing a given string base on a data format.
-     *
-     * @param value
-     *            the date in string format
-     * @param dateFormat
-     *            the format to use when parsing the dateString
-     *
-     * @return the generated {@link Calendar} instance.
-     * @throws ParseException
-     */
-    public static Calendar parse(final String value, final DateFormat dateFormat)
-            throws ParseException {
-        final Calendar calendar = Calendar.getInstance();
-        final Date date = dateFormat.parse(value);
-        calendar.setTime(date);
-        return calendar;
     }
 
     /**
