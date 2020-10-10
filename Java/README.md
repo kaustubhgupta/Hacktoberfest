@@ -32,4 +32,4 @@
 |           swaptwonumbers               |       [link](./swapTwoNumbers.java)                       |
 |           sieveOfEratosthenes          |       [link](./sieveOfEratosthenes.java)                  |
 |  Subsets of a String (Recurive)        |       [link](./SubsetsOfAString.java)                     |
-
+|  Quick Sort                            |       [link](./QuickSort.java)
