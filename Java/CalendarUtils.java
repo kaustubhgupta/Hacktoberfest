@@ -227,10 +227,6 @@ public final class CalendarUtils {
         return parse(aDateString, "dd-MM-yyyy");
     }
 
-    public static String format(final Calendar ocurrs) {
-        return format(ocurrs, "YYYY/MM/dd");
-    }
-
     /**
      * Formats a date according to ISO8601.
      * <p>
@@ -244,6 +240,20 @@ public final class CalendarUtils {
     public static String iso8601(final Calendar when) {
         return DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mmX").withZone(ZoneOffset.UTC)
                 .format(when.toInstant());
+    }
+
+    /**
+     * Returns the current time according to the ISO 8601 format.
+     *
+     * <p>
+     * based on
+     * https://stackoverflow.com/questions/3914404/how-to-get-current-moment-in-iso-8601-format-with-date-hour-and-minute/33532945
+     *
+     * @return the current time in ISO 8601 format
+     */
+    public static String iso8601() {
+        return DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mmX").withZone(ZoneOffset.UTC)
+                .format(Instant.now());
     }
 
     /**
@@ -265,20 +275,6 @@ public final class CalendarUtils {
         return LocalDateTime.ofInstant(calendar.toInstant(), zid);
     }
 
-    /**
-     * Returns the current time according to the ISO 8601 format.
-     *
-     * <p>
-     * based on
-     * https://stackoverflow.com/questions/3914404/how-to-get-current-moment-in-iso-8601-format-with-date-hour-and-minute/33532945
-     *
-     * @return the current time in ISO 8601 format
-     */
-    public static String iso8601() {
-        return DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mmX").withZone(ZoneOffset.UTC)
-                .format(Instant.now());
-    }
-
     public static String format(final Calendar ocurrs, final String dateFormat) {
         return format(ocurrs, new SimpleDateFormat(dateFormat));
     }
@@ -295,6 +291,10 @@ public final class CalendarUtils {
      */
     public static String format(final Calendar calendar, final DateFormat dateFormat) {
         return dateFormat.format(calendar.getTime());
+    }
+
+    public static String format(final Calendar ocurrs) {
+        return format(ocurrs, "YYYY/MM/dd");
     }
 
     public static String weekdayName(final Calendar calendar) {
