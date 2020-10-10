@@ -12,7 +12,7 @@ class Node
                 left=right=null;
         }
 }
-class Main
+class PrefixConversion
 {
         public static void preorder(Node root)
         {
