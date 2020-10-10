@@ -28,3 +28,4 @@
 |           factorial                    |       [link](./factorial.java)                            | 
 |           fibonacci                    |       [link](./fibonacci.java)                            |
 |           swaptwonumbers               |       [link](./swapTwoNumbers.java)                       |
+|           Extra Long Factorials        |        [link](./ExtraLongFactorial.java)                  |
