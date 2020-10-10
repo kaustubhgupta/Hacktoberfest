@@ -10,14 +10,8 @@ void push(struct Node** head_ref, int new_data)
 { 
 
 	struct Node* new_node = new Node; 
-
-
 	new_node->data = new_data; 
-
-	
 	new_node->next = (*head_ref); 
-
-	
 	(*head_ref) = new_node; 
 } 
 void printList(struct Node *node) 
@@ -42,17 +36,14 @@ struct Node *partition(struct Node *head, struct Node *end, struct Node **newHea
 	while (cur != pivot) 
 	{ 
 		if (cur->data < pivot->data) 
-		{ 
-			
+		{ 	
 			if ((*newHead) == NULL) 
 				(*newHead) = cur; 
-
 			prev = cur; 
 			cur = cur->next; 
 		} 
 		else 
 		{ 
-			
 			if (prev) 
 				prev->next = cur->next; 
 			struct Node *tmp = cur->next; 
@@ -64,11 +55,7 @@ struct Node *partition(struct Node *head, struct Node *end, struct Node **newHea
 	} 
 	if ((*newHead) == NULL) 
 		(*newHead) = pivot; 
-
-
 	(*newEnd) = tail; 
-
-
 	return pivot; 
 } 
 struct Node *quickSortRecur(struct Node *head, struct Node *end) 
@@ -87,17 +74,11 @@ struct Node *quickSortRecur(struct Node *head, struct Node *end)
 		while (tmp->next != pivot) 
 			tmp = tmp->next; 
 		tmp->next = NULL; 
-
-	
 		newHead = quickSortRecur(newHead, tmp); 
-
-		
 		tmp = getTail(newHead); 
 		tmp->next = pivot; 
 	} 
-
 	pivot->next = quickSortRecur(pivot->next, newEnd); 
-
 	return newHead; 
 } 
 void quickSort(struct Node **headRef) 
@@ -111,8 +92,7 @@ int main()
 	int x,size;
     cin>>size;
     for(int i=0; i<size; i++)
-    {
-        cin>>x;
+    {   cin>>x;
         push(&a,x);
     }
 	quickSort(&a); 
