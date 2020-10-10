@@ -2,23 +2,18 @@
 #include <cstdio> 
 using namespace std; 
 struct Node 
-{ 
-	int data; 
+{ 	int data; 
 	struct Node *next; 
 }; 
 void push(struct Node** head_ref, int new_data) 
-{ 
-
-	struct Node* new_node = new Node; 
+{ 	struct Node* new_node = new Node; 
 	new_node->data = new_data; 
 	new_node->next = (*head_ref); 
 	(*head_ref) = new_node; 
 } 
 void printList(struct Node *node) 
-{ 
-	while (node != NULL) 
-	{ 
-		printf("%d ", node->data); 
+{ 	while (node != NULL) 
+	{ 	printf("%d ", node->data); 
 		node = node->next; 
 	} 
 	printf("\n"); 
@@ -59,18 +54,13 @@ struct Node *partition(struct Node *head, struct Node *end, struct Node **newHea
 	return pivot; 
 } 
 struct Node *quickSortRecur(struct Node *head, struct Node *end) 
-{ 
-	
-	if (!head || head == end) 
+{ 	if (!head || head == end) 
 		return head; 
-
 	Node *newHead = NULL, *newEnd = NULL; 
 	struct Node *pivot = partition(head, end, &newHead, &newEnd); 
 
 		if (newHead != pivot) 
-	{ 
-		
-		struct Node *tmp = newHead; 
+	{ 	struct Node *tmp = newHead; 
 		while (tmp->next != pivot) 
 			tmp = tmp->next; 
 		tmp->next = NULL; 
