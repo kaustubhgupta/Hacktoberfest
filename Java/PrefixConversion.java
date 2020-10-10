@@ -1,17 +1,7 @@
 //Code contributed by Aditya Prakash (@PrakashAditya17 --Github)
 import java.io.*;
 import java.util.*;
-public class Node
-{
-        char value;
-        Node left;
-        Node right;
-        public Node(char c)
-        {
-                value=c;
-                left=right=null;
-        }
-}
+
 class PrefixConversion
 {
         public static void preorder(Node root)
@@ -91,6 +81,16 @@ class PrefixConversion
                 postorder(ROOT);
                         
                 //For prefix, just call the preorder function.
+        }
+}
+public class Node
+{
+        char value;
+        Node left;
+        Node(char c)
+        {
+                value=c;
+                left=right=null;
         }
 }
           
