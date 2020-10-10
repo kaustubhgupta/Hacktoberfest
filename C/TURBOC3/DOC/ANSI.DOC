@@ -1,0 +1,538 @@
+              ANSI IMPLEMENTATION-SPECIFIC STANDARDS
+              --------------------------------------
+
+Certain aspects of the ANSI C standard are not defined exactly by ANSI. 
+Instead, each implementor of a C compiler is free to define these aspects 
+individually. This chapter tells how Borland has chosen to define these 
+implementation-specific standards. The section numbers refer to the 
+February 1990 ANSI Standard. Remember that there are differences between 
+C and C++; this appendix addresses C only.
+
+2.1.1.3  How to identify a diagnostic.
+
+  When the compiler runs with the correct combination of options, any
+  message it issues beginning with the words Fatal, Error, or Warning
+  are diagnostics in the sense that ANSI specifies. The options needed
+  to insure this interpretation are in the following table. The options are 
+  listed as hot keys you use in the IDE. For example, the first option 
+  corresponds to Options|Compiler|Source, and in the Source Options 
+  dialog box you'd choose ANSI for the Keyword option.
+
+  -----------------------------------------------------------------------------
+  Option       Action
+  -----------------------------------------------------------------------------
+  O|C|S|A      Enable only ANSI keywords.
+  O|C|S|N      No nested comments allowed.
+  O|C|E|C      Use C calling conventions.
+  O|C|S|I      At least 32 significant characters in identifiers.
+  O|C|M|D|S    Turn off all warnings except selected ones.
+  O|C|M|A|I    Turn on warning about inappropriate initializers.
+  O|C|M|P|C    Turn on warning about non-portable pointer comparisons.
+  O|C|M|A|R    Turn on warning about duplicate non-identical definitions.
+  O|C|M|A|S    Turn on warning about suspicious pointer conversion.
+  O|C|P|N      Turn on warning about non-portable pointer conversion.
+  O|C|M|A|V    Turn on warning about void functions returning a value.
+  O|C|M|A|H    Turn on warning about hexadecimal values containg more than
+               3 digits.
+  O|C|M|P|M    Turn on warning about mixing pointers to signed and unsigned 
+               char.
+  O|C|M|A|U    Turn on warning about undefined structures.
+  O|C|M|A|X    Turn on warning about variables declared both as external and 
+               as static.
+  -----------------------------------------------------------------------------
+  Choose Options|Compiler|Code Generation and specify Never under SS = DS.
+  Also don't change the default values in the Segment Names dialog box under
+  Options|Compiler|Names; each text box should contain an asterisk (*).
+
+  Other options not specifically mentioned here can be set to whatever
+  you desire.
+
+2.1.2.2.1  The semantics of the arguments to main.
+
+  The value of argv[0] is a pointer to a null byte when the program is
+  run on DOS versions prior to version 3.0. For DOS version 3.0 or
+  later, argv[0] points to the program name.
+
+  The remaining argv strings point to each component of the DOS
+  command-line arguments. Whitespace separating arguments is removed,
+  and each sequence of contiguous nonwhitespace characters is treated
+  as a single argument. Quoted strings are handled correctly (that is,
+  as one string containing spaces).
+
+2.1.2.3  What constitutes an interactive device.
+
+  An interactive device is any device that looks like the console.
+
+2.2.1  The collation sequence of the execution character set.
+
+  The collation sequence for the execution character set uses the
+  signed value of the character in ASCII.
+
+2.2.1  Members of the source and execution character sets.
+
+  The source and execution character sets are the extended ASCII set
+  supported by the IBM PC. Any character other than ^Z (Control-Z)
+  can appear in string literals, character constants, or comments.
+
+2.2.1.2  Multibyte characters.
+
+  No multibyte characters are supported in Turbo C++.
+
+2.2.2  The direction of printing.
+
+  Printing is from left-to-right, the normal direction for the PC.
+
+2.2.4.2  The number of bits in a character in the execution character set.
+
+  There are 8 bits per character in the execution character set.
+
+3.1.2  The number of significant initial characters in identifiers.
+
+  The first 32 characters are significant, although you can use a
+  O|C|S|I to change that number. Both internal and external identifiers use 
+  the same number of significant digits. (The number of significant characters 
+  in C++ identifiers is unlimited.)
+
+3.1.2  Whether case distinctions are significant in external identifiers.
+
+  The compiler will normally force the linker to distinguish between
+  uppercase and lowercase. You can use suppress this distinction with
+  O|L|S|C to uncheck the Case-sensitive Link option.
+
+3.1.2.5  The representations and sets of values of the various types of 
+integers.
+
+  ------------------------------------------------------------------------
+  Type                    Minimum value                      Maximum value
+  ------------------------------------------------------------------------
+  signed char                      -128                               127
+  unsigned char                       0                               255
+  signed short                  -32,768                            32,767
+  unsigned short                      0                            65,535
+  signed int                    -32,768                            32,767
+  unsigned int                        0                            65,535
+  signed long            -2,147,483,648                     2,147,483,647
+  unsigned long                       0                     4,294,967,295
+
+  All char types use one 8-bit byte for storage.
+
+  All short and int types use 2 bytes.
+
+  All long types use 4 bytes.
+
+  If alignment is requested (O|C|C|W), all nonchar integer type objects will
+  be aligned to even byte boundaries. Character types are never aligned.
+
+3.1.2.5  The representations and sets of values of the various types of 
+floating-point numbers.
+
+  The IEEE floating-point formats as used by the Intel 8087 are used for all 
+  Turbo C++ floating-point types. The float type uses 32-bit 
+  IEEE real format. The double type uses 64-bit IEEE real format. The long
+  double type uses 80-bit IEEE extended real format.
+
+3.1.3.4  The mapping between source and execution character sets.
+
+  Any characters in string literals or character constants will remain
+  unchanged in the executing program. The source and execution character
+  sets are the same.
+
+3.1.3.4  The value of an integer character constant that contains a character 
+or escape sequence not represented in the basic execution character set or 
+the extended character set for a wide character constant.
+
+  Wide characters are not supported. They are treated as normal characters. 
+  All legal escape sequences map onto one or another character. If a hex or 
+  octal escape sequence is used that exceeds the range of a character, the 
+  compiler issues a message.
+
+3.1.3.4  The current locale used to convert multibyte characters into 
+corresponding wide characters for a wide character constant.
+
+  Wide character constants are recognized, but treated in all ways like
+  normal character constants. In that sense, the locale is the "C" locale.
+
+3.1.3.4  The value of an integer constant that contains more than one 
+character, or a wide character constant that contains more than one multibyte 
+character.
+
+  Character constants can contain one or two characters. If two characters are 
+  included, the first character occupies the low-order byte of the constant, 
+  and the second character occupies the high-order byte.
+
+3.2.1.2  The result of converting an integer to a shorter signed integer, or 
+the result of converting an unsigned integer to a signed integer of equal 
+length, if the value cannot be represented.
+
+  These conversions are performed by simply truncating the high-order
+  bits. Signed integers are stored as 2's-complement values, so the resulting 
+  number is interpreted as such a value. If the high-order bit of the smaller 
+  integer is nonzero, the value is interpreted as a negative value; otherwise, 
+  it is positive.
+
+3.2.1.3  The direction of truncation when an integral number is converted 
+to a floating-point number that cannot exactly represent the original value.
+
+  The integer value is rounded to the nearest representable value. Thus,
+  for example, the long value (2 to the 31th power minus 1) is converted to 
+  the float value 2 to the 31th power. Ties are broken according to the rules 
+  of IEEE standard arithmetic.
+
+3.2.1.4  The direction of truncation or rounding when a floating-point number
+is converted to a narrower floating-point number.
+
+  The value is rounded to the nearest representable value. Ties are broken 
+  according to the rules of IEEE standard arithmetic.
+
+3.3  The results of bitwise operations on signed integers.
+
+  The bitwise operators apply to signed integers as if they were their
+  corresponding unsigned types. The sign bit is treated as a normal data
+  bit. The result is then interpreted as a normal 2's complement signed
+  integer.
+
+3.3.2.3  What happens when a member of a union object is accessed using a
+member of a different type.
+
+  The access is allowed and will simply access the bits stored there.
+  You'll need a detailed understanding of the bit encodings of floating-point 
+  values in order to understand how to access a floating-type member using a 
+  different member. If the member stored is shorter than the member used to 
+  access the value, the excess bits have the value they had before the short 
+  member was stored.
+
+3.3.3.4  The type of integer required to hold the maximum size of an array.
+
+  For a normal array, the type is unsigned int, and for huge arrays the
+  type is signed long.
+
+3.3.4  The result of casting a pointer to an integer or vice versa.
+
+  When converting between integers and pointers of the same size, no
+  bits are changed. When converting from a longer type to a shorter, the
+  high-order bits are truncated. When converting from a shorter integer
+  type to a longer pointer type, the integer is first widened to an
+  integer type that is the same size as the pointer type. Thus signed
+  integers will sign-extend to fill the new bytes. Similarly, smaller
+  pointer types being converted to larger integer types will first be
+  widened to a pointer type that is as wide as the integer type.
+
+3.3.5 The sign of the remainder on integer division.
+
+  The sign of the remainder is negative when only one of the operands is
+  negative. If neither or both operands are negative, the remainder is
+  positive.
+
+3.3.6  The type of integer required to hold the difference between two
+pointers to elements of the same array, ptrdiff_t.
+
+  The type is signed int when the pointers are near, or signed long when 
+  the pointers are far or huge. The type of ptrdiff_t depends on the memory 
+  model in use. In small data models, the type is int. In large data models, 
+  the type is long.
+
+3.3.7  The result of a right shift of a negative signed integral type.
+
+  A negative signed value is sign-extended when right shifted.
+
+3.5.1  The extent to which objects can actually be placed in registers by
+using the register storage-class specifier.
+
+  Objects declared with any two-byte integer or pointer types can be placed 
+  in registers. The compiler will place any small auto objects into registers, 
+  but objects explicitly declared as register will take precedence. At least 
+  two and as many as six registers are available. The number of registers 
+  actually used depends on what registers are needed for temporary values 
+  in the function.
+
+3.5.2.1  Whether a plain int bit-field is treated as a signed int or as an 
+unsigned int bit field.
+
+  Plain int bit fields are treated as signed int bit fields.
+
+3.5.2.1  The order of allocation of bit fields within an int.
+
+  Bit fields are allocated from the low-order bit position to the high-order.
+
+3.5.2.1  The padding and alignment of members of structures.
+
+  By default, no padding is used in structures. If you use the alignment
+  option (O|C|C|W), structures are padded to even size, and any members that
+  do not have character or character array type will be aligned to an even 
+  offset.
+
+3.5.2.1  Whether a bit-field can straddle a storage-unit boundary.
+
+  When alignment (O|C|C|W) is not requested, bit fields can straddle word
+  boundaries, but will never be stored in more than two adjacent bytes.
+
+3.5.2.2  The integer type chosen to represent the values of an enumeration
+type.
+
+  If all enumerators can fit in an unsigned char, that is the type
+  chosen. Otherwise, the type is signed int.
+
+3.5.3  What constitutes an access to an object that has volatile-qualified 
+type.
+
+  Any reference to a volatile object will access the object. Whether
+  accessing adjacent memory locations will also access an object depends on 
+  how the memory is constructed in the hardware. For special device memory, 
+  like video display memory, it depends on how the device is constructed. For 
+  normal PC memory, volatile objects are only used for memory that might be 
+  accessed by asynchronous interrupts, so accessing adjacent objects has no 
+  effect.
+
+3.5.4  The maximum number of declarators that can modify an arithmetic, 
+structure, or union type.
+
+  There is no specific limit on the number of declarators. The number of
+  declarators allowed is fairly large, but when nested deeply within a set 
+  of blocks in a function, the number of declarators will be reduced. The 
+  number allowed at file level is at least 50.
+
+3.6.4.2  The maximum number of case values in a switch statement.
+
+  There is no specific limit on the number of cases in a switch. As long
+  as there is enough memory to hold the case information, the compiler
+  will accept them.
+
+3.8.1  Whether the value of a single-character character constant in a
+constant expression that controls conditional inclusion matches the
+value of the same character constant in the execution character set.
+Whether such a character constant can have a negative value.
+
+  All character constants, even constants in conditional directives use
+  the same character set (execution). Single-character character
+  constants will be negative if the character type is signed (default
+  and O|C|C|U not requested).
+
+3.8.2  The method for locating includable source files.
+
+  For include file names given with angle brackets, the file is searched 
+  for in each of the include directories. If no include directories are 
+  specified, then only the current directory is searched.
+
+3.8.2  The support for quoted names for includable source files.
+
+  For quoted file names, the file is first searched for in the current
+  directory. If not found, Turbo C++ searches for the file as 
+  if it were in angle brackets.
+
+3.8.2  The mapping of source file name character sequences.
+
+  Backslashes in include file names are treated as distinct characters,
+  not as escape characters. Case differences are ignored for letters.
+
+
+3.8.8  The definitions for __DATE__ and __TIME__ when they are unavailable.
+
+  The date and time are always available, and will use the DOS date and time.
+
+4.1.1  The decimal point character.
+
+  The decimal point character is a period (.).
+
+4.1.5  The type of the sizeof operator, size_t.
+
+  The type size_t is unsigned int.
+
+4.1.5  The null pointer constant to which the macro NULL expands.
+
+  An integer or a long 0, depending upon the memory model.
+
+4.2  The diagnostic printed by and the termination behavior of the assert
+function.
+
+  The diagnostic message printed is "Assertion failed: expression, file
+  filename, line nn", where expression is the asserted expression which
+  failed, filename is the source file name, and nn is the line number
+  where the assertion took place.
+
+  abort is called immediately after the assertion message is displayed.
+
+4.3  The implementation-defined aspects of character testing and case
+mapping functions.
+
+  None, other than what is mentioned in 4.3.1.
+
+4.3.1  The sets of characters tested for by the isalnum, isalpha, iscntrl,
+islower, isprint and isupper functions.
+
+  First 128 ASCII characters.
+
+4.5.1  The values returned by the mathematics functions on domain errors.
+
+  An IEEE NAN (not a number).
+
+4.5.1  Whether the mathematics functions set the integer expression errno to
+the value of the macro ERANGE on underflow range errors.
+
+  No, only for the other errors--domain, singularity, overflow, and total 
+  loss of precision.
+
+4.5.6.4  Whether a domain error occurs or zero is returned when the fmod
+function has a second argument of zero.
+
+No. fmod(x,0) returns 0.
+
+4.7.1.1  The set of signals for the signal function.
+
+  SIGABRT, SIGFPE, SIGILL, SIGINT, SIGSEGV, SIGTERM.
+
+4.7.1.1  The semantics for each signal recognized by the signal function.
+
+  See the description of signal in the Help system.
+
+4.7.1.1  The default handling and the handling at program startup for each
+signal recognized by the signal function.
+
+  See the description of signal in the Help system.
+
+4.7.1.1  If the equivalent of signal(sig, SIG_DFL); is not executed prior to
+the call of a signal handler, the blocking of the signal that is performed.
+
+  The equivalent of signal (sig, SIG_DFL) is always executed.
+
+4.7.1.1  Whether the default handling is reset if the SIGILL signal is received
+by a handler specified to the signal function.
+
+  No, it is not.
+
+4.9.2  Whether the last line of a text stream requires a terminating newline
+character.
+
+  No, none is required.
+
+4.9.2  Whether space characters that are written out to a text stream 
+immediately before a newline character appear when read in.
+
+  Yes, they do.
+
+4.9.2  The number of null characters that may be appended to data written to
+a binary stream.
+
+  None.
+
+4.9.3  Whether the file position indicator of an append mode stream is
+initially positioned at the beginning or end of the file.
+
+  The file position indicator of an append-mode stream is initially placed 
+  at the beginning of the file. It is reset to the end of the file before 
+  each write.
+
+4.9.3  Whether a write on a text stream causes the associated file to be
+truncated beyond that point.
+
+  A write of 0 bytes may or may not truncate the file, depending upon
+  how the file is buffered. It is safest to classify a zero-length write
+  as having indeterminate behavior.
+
+4.9.3  The characteristics of file buffering.
+
+  Files can be fully buffered, line buffered, or unbuffered. If a file is 
+  buffered, a default buffer of 512 bytes is created upon opening the file.
+
+4.9.3  Whether a zero-length file actually exists.
+
+  Yes, it does.
+
+4.9.3  Whether the same file can be open multiple times.
+
+  Yes, it can.
+
+4.9.4.1  The effect of the remove function on an open file.
+
+  No special checking for an already open file is performed; the 
+  responsibility is left up to the programmer.
+
+4.9.4.2  The effect if a file with the new name exists prior to a call to
+rename.
+
+  rename will return a -1 and errno will be set to EEXIST.
+
+4.9.6.1  The output for %p conversion in fprintf.
+
+  In near data models, four hex digits (XXXX). In far data models, four
+  hex digits, colon, four hex digits (XXXX:XXXX).
+
+4.9.6.2  The input for %p conversion in fscanf.
+
+  See 4.9.6.1.
+
+4.9.6.2  The interpretation of an - (hyphen) character that is neither the
+first nor the last character in the scanlist for a %[ conversion in fscanf.
+
+  See the description of scanf in the Help system.
+
+4.9.9.1  The value to which the macro errno is set by the fgetpos or ftell
+function on failure.
+
+  EBADF   Bad file number.
+
+4.9.10.4  The messages generated by perror.
+
+--------------------------------------------------------------------------
+  Error 0                           Invalid data
+  Invalid function number           No such device
+  No such file or directory         Attempted to remove current directory
+  Path not found                    Not same device
+  Too many open files               No more files
+  Permission denied                 Invalid argument
+  Bad file number                   Arg list too big
+  Memory arena trashed              Exec format error
+  Not enough memory                 Cross-device link
+ Invalid memory block address       Math argument
+ Invalid environment                Result too large
+ Invalid format                     File already exists
+ Invalid access code
+---------------------------------------------------------------------------
+See perror in the Help system for details.
+
+4.10.3  The behavior of calloc, malloc, or realloc if the size requested is
+zero.
+
+  calloc and malloc will ignore the request. realloc will free the block.
+
+4.10.4.1 The behavior of the abort function with regard to open and temporary
+files.
+
+  The file buffers are not flushed and the files are not closed.
+
+4.10.4.3  The status returned by exit if the value of the argument is ]
+other than zero, EXIT_SUCCESS, or EXIT_FAILURE.
+
+  Nothing special. The status is returned exactly as it is passed. The
+  status is a represented as a signed char.
+
+4.10.4.4  The set of environment names and the method for altering the
+environment list used by getenv.
+
+  The environment strings are those defined in DOS with the SET command.
+  putenv can be used to change the strings for the duration of the current 
+  program, but the DOS SET command must be used to change an environment 
+  string permanently.
+
+4.10.4.5  The contents and mode of execution of the string by the system
+function.
+
+  The string is interpreted as a DOS command. COMMAND.COM is executed and 
+the argument string is passed as a command to execute. Any DOS built-in 
+command, as well as batch files and executable programs, can be executed.
+
+4.11.6.2  The contents of the error message strings returned by strerror.
+
+  See 4.9.10.4.
+
+4.12.1  The local time zone and Daylight Saving Time.
+
+  Defined as local PC time and date.
+
+4.12.2.1  The era for clock.
+
+  Represented as clock ticks, with the origin being the beginning of the
+  program execution.
+
+4.12.3.5  The formats for date and time.
+
+  Turbo C++ implements ANSI formats.

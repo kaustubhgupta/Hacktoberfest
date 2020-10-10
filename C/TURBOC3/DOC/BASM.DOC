@@ -1,0 +1,926 @@
+
+
+
+
+
+CONTENTS
+___________________________________________________________________________
+
+
+
+
+
+Chapter 1  BASM.DOC                1         Inline assembly and register
+  Inline assembly language . . . . 1         variables . . . . . . . . .  7
+    BASM . . . . . . . . . . . . . 1         Inline assembly, offsets, and
+    Inline syntax  . . . . . . . . 2         size overrides  . . . . . .  7
+    Opcodes  . . . . . . . . . . . 3       Using C structure members . .  7
+      String instructions  . . . . 5       Using jump instructions and
+      Prefixes . . . . . . . . . . 5       labels  . . . . . . . . . . .  8
+      Jump instructions  . . . . . 5     Interrupt functions . . . . . .  9
+      Assembly directives  . . . . 6     Using low-level practices . . . 10
+    Inline assembly references to
+    data and functions . . . . . . 6   Index                             13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     i
+
+
+
+
+
+
+TABLES
+___________________________________________________________________________
+
+
+
+
+
+1.1: Opcode mnemonics  . . . . . . 4   1.3: Jump instructions  . . . . . .6
+1.2: String instructions . . . . . 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    ii
+
+
+
+
+
+
+
+
+
+
+
+
+Online document
+___________________________________________________________________________
+
+
+
+                                                                   BASM.DOC
+
+
+                    This online file tells you how to use the Turbo C++
+                    built-in inline assembler (BASM) to include assembly
+                    language routines in your C and C++ programs without
+                    any need for a separate assembler. Such assembly
+                    language routines are called inline assembly, because
+                    they are compiled right along with your C routines,
+                    rather than being assembled separately, then linked
+                    together with modules produced by the C compiler.
+
+                    Of course, Turbo C++ also supports traditional mixed-
+                    language programming in which your C program calls
+                    assembly language routines (or vice-versa) that are
+                    separately assembled by TASM (Turbo Assembler), sold
+                    separately. In order to interface C and assembly
+                    language, you must know how to write 80x86 assembly
+                    language routines and how to define segments, data
+                    constants, and so on. You also need to be familiar with
+                    calling conventions (parameter passing sequences) in C
+                    and assembly language, including the pascal parameter
+                    passing sequence in C.
+
+   Inline assembly  =======================================================
+          language
+                    Turbo C++ lets you write assembly language code right
+                    inside your C and C++ programs. This is known as inline
+                    assembly.
+
+------------------  If you don't invoke TASM, Turbo C++ can assemble your
+              BASM  inline assembly instructions using the built-in
+------------------  assembler (BASM). This assembler can do everything TASM
+                    can do with the following restrictions:
+
+                    o It cannot use assembler macros
+
+
+
+
+                                   - 1 -
+
+
+
+
+
+
+                    o It cannot handle 80386 or 80486 instructions
+
+                    o It does not permit Ideal mode syntax
+
+                    o It allows only a limited set of assembler directives
+                      (see page 6)
+
+
+------------------  Of course, you also need to be familiar with the 80x86
+     Inline syntax  instruction set and architecture. Even though you're
+------------------  not writing complete assembly language routines, you
+                    still need to know how the instructions you're using
+                    work, how to use them, and how not to use them.
+
+                    Having done all that, you need only use the keyword asm
+                    to introduce an inline assembly language instruction.
+                    The format is
+
+                       asm  opcode  operands ; or newline
+
+                    where
+
+                    o opcode is a valid 80x86 instruction (Table 1.0 lists
+                      all allowable opcodes).
+
+                    o operands contains the operand(s) acceptable to the
+                      opcode, and can reference C constants, variables, and
+                      labels.
+
+                    o ; or newline is a semicolon or a new line, either of
+                      which signals the end of the asm statement.
+
+                    A new asm statement can be placed on the same line,
+                    following a semicolon, but no asm statement can
+                    continue to the next line.
+
+                    To include a number of asm statements, surround them
+                    with braces:
+
+ The initial brace   asm {
+must appear on the      pop ax; pop ds
+  same line as the      iret
+      asm keyword.   }
+
+                    Semicolons are not used to start comments (as they are
+                    in TASM). When commenting asm statements, use C-style
+                    comments, like this:
+
+
+
+
+                                   - 2 -
+
+
+
+
+
+
+                     asm mov ax,ds;               /* This comment is OK */
+                     asm {pop ax; pop ds; iret;}  /* This is legal too */
+                     asm push ds                  ;THIS COMMENT IS
+                     INVALID!!
+
+                    The assembly language portion of the statement is
+                    copied straight to the output, embedded in the assembly
+                    language that Turbo C++ is generating from your C or
+                    C++ instructions. Any C symbols are replaced with ap-
+                    propriate assembly language equivalents.
+
+                    Because the inline assembly facility is not a complete
+                    assembler, it may not accept some assembly language
+                    constructs. If this happens, Turbo C++ will issue an
+                    error message. You then have two choices. You can
+                    simplify your inline assembly language code so that the
+                    assembler will accept it, or you can use an external
+                    assembler such as TASM. However, TASM might not identi-
+                    fy the location of errors, since the original C source
+                    line number is lost.
+
+                    Each asm statement counts as a C statement. For
+                    example,
+
+                     myfunc()
+                     {
+                        int  i;
+                        int x;
+
+                        if  (i > 0)
+                           asm  mov  x,4
+                        else
+                           i = 7;
+                     }
+
+                    This construct is a valid C if statement. Note that no
+                    semicolon was needed after the mov x,4 instruction. asm
+                    statements are the only statements in C that depend on
+                    the occurrence of a new line. This is not in keeping
+                    with the rest of the C language, but this is the
+                    convention adopted by several UNIX-based compilers.
+
+                    An assembly statement can be used as an executable
+                    statement inside a function, or as an external
+                    declaration outside of a function. Assembly statements
+                    located outside any function are placed in the data
+                    segment, and assembly statements located inside func-
+                    tions are placed in the code segment.
+
+
+
+                                   - 3 -
+
+
+
+
+
+
+------------------  You can include any of the 80x86 instruction opcodes as
+           Opcodes  inline assembly statements. There are four classes of
+------------------  instructions allowed by the Turbo C++ compiler:
+
+                    o normal instructions--the regular 80x86 opcode set
+
+                    o string instructions--special string-handling codes
+
+                    o jump instructions--various jump opcodes
+
+                    o assembly directives--data allocation and definition
+
+                    Note that all operands are allowed by the compiler,
+                    even if they are erroneous or disallowed by the
+                    assembler. The exact format of the operands is not
+                    enforced by the compiler.
+
+
+                    -------------------------------------------------------
+
+Opcode mnemonics    aaa            fclex          fldenv         fstenv
+                    aad            fcom           fldl2e         fstp
+                    aam            fcomp          fldl2t         fstsw
+                    aas            fcompp         fldlg2         fsub
+                    adc            fdecstp**      fldln2         fsubp
+  This table lists  add            fdisi          fldpi          fsubr
+        the opcode  and            fdiv           fldz           fsubrp
+mnemonics that can  bound          fdivp          fmul           ftst
+ be used in inline  call           fdivr          fmulp          fwait
+        assembler.  cbw            fdivrp         fnclex         fxam
+                    clc            feni           fndisi         fxch
+                    cld            ffree**        fneni          fxtract
+Inline assembly in  cli            fiadd          fninit         fyl2x
+ routines that use  cmc            ficom          fnop           fyl2xp1
+    floating-point  cmp            ficomp         fnsave         hlt
+ emulation doesn't  cwd            fidiv          fnstcw         idiv
+       support the  daa            fidivr         fnstenv        imul
+    opcodes marked  das            fild           fnstsw         in
+          with **.  dec            fimul          fpatan         inc
+                    div            fincstp**      fprem          int
+                    enter          finit          fptan          into
+                    f2xm1          fist           frndint        iret
+                    fabs           fistp          frstor         lahf
+                    fadd           fisub          fsave          lds
+                    faddp          fisubr         fscale         lea
+                    fbld           fld            fsqrt          leave
+                    fbstp          fld1           fst            les
+                    fchs           fldcw          fstcw          lsl
+
+
+
+                                   - 4 -
+
+
+
+
+
+
+                    mul            or             ret            stc
+                    neg            out            rol            std
+                    nop            pop            ror            sti
+                    not            popa           sahf           sub
+                                   popf           sal            test
+                                   push           sar            verr
+                                   pusha          sbb            verw
+                                   pushf          shl            wait
+                                   rcl            shr            xchg
+                                   rcr            smsw           xlat
+                                                                 xor
+                    -------------------------------------------------------
+
+
+                    String instructions
+                    =======================================================
+
+                    In addition to the listed opcodes, the string
+                    instructions given in the following table can be used
+                    alone or with repeat prefixes.
+          String
+    instructions    -------------------------------------------------------
+                       cmps          insw           movsb          outsw          stos
+                       cmpsb         lods           movsw          scas           stosb
+                       cmpsw         lodsb          outs           scasb          stosw
+                       ins           lodsw          outsb          scasw
+                       insb          movs
+
+                    -------------------------------------------------------
+
+
+                    Prefixes
+                    =======================================================
+
+                    The following prefixes can be used:
+
+                     lock   rep   repe   repne   repnz   repz
+
+
+                    Jump instructions
+                    =======================================================
+
+                    Jump instructions are treated specially. Since a label
+                    cannot be included on the instruction itself, jumps
+                    must go to C labels (discussed in "Using jump
+                    instructions and labels" on page 8). The allowed jump
+                    instructions are given in the next table.
+
+
+
+                                   - 5 -
+
+
+
+
+
+
+                    Table 1.3: Jump instructions (continued)_______________
+
+            Jump    -------------------------------------------------------
+    instructions      ja      jge     jnc      jns     loop
+                      jae     jl      jne      jnz     loope
+                      jb      jle     jng      jo      loopne
+                      jbe     jmp     jnge     jp      loopnz
+                      jc      jna     jnl      jpe     loopz
+                      jcxz    jnae    jnle     jpo
+                      je      jnb     jno      js
+                      jg      jnbe    jnp      jz
+
+                    -----------------------------------------
+
+
+                    Assembly directives
+                    =======================================================
+
+                    The following assembly directives are allowed in Turbo
+                    C++ inline assembly statements:
+
+                      db      dd      dw       extrn
+
+
+------------------  You can use C symbols in your asm statements; Turbo C++
+   Inline assembly  automatically converts them to appropriate assembly
+references to data  language operands and appends underscores onto
+     and functions  identifier names. You can use any symbol, including
+------------------  automatic (local) variables, register variables, and
+                    function parameters.
+
+                    In general, you can use a C symbol in any position
+                    where an address operand would be legal. Of course, you
+                    can use a register variable wherever a register would
+                    be a legal operand.
+
+                    If the assembler encounters an identifier while parsing
+                    the operands of an inline assembly instruction, it
+                    searches for the identifier in the C symbol table. The
+                    names of the 80x86 registers are excluded from this
+                    search. Either uppercase or lowercase forms of the
+                    register names can be used.
+
+
+
+
+
+
+
+
+
+                                   - 6 -
+
+
+
+
+
+
+                    Inline assembly and register variables
+                    =======================================================
+
+                    Inline assembly code can freely use SI or DI as scratch
+                    registers. If you use SI or DI in inline assembly code,
+                    the compiler won't use these registers for register
+                    variables.
+
+
+                    Inline assembly, offsets, and size overrides
+                    =======================================================
+
+                    When programming, you don't need to be concerned with
+                    the exact offsets of local variables. Simply using the
+                    name will include the correct offsets.
+
+                    However, it may be necessary to include appropriate
+                    WORD PTR, BYTE PTR, or other size overrides on assembly
+                    instruction. A DWORD PTR override is needed on LES or
+                    indirect far call instructions.
+
+
+------------------  You can reference structure members in an inline
+ Using C structure  assembly statement in the usual fashion (that is,
+           members  variable.member). In such a case, you are dealing with
+------------------  a variable, and you can store or retrieve values.
+                    However, you can also directly reference the member
+                    name (without the variable name) as a form of numeric
+                    constant. In this situation, the constant equals the
+                    offset (in bytes) from the start of the structure
+                    containing that member. Consider the following program
+                    fragment:
+
+                     struct myStruct {
+                        int a_a;
+                        int a_b;
+                        int a_c;
+                     } myA ;
+
+                     myfunc()
+                     {
+                        ...
+                        asm  {mov  ax, myA.a_b
+                              mov  bx, [di].a_c
+                             }
+                        ...
+                     }
+
+
+
+
+                                   - 7 -
+
+
+
+
+
+
+                    We've declared a structure type named myStruct with
+                    three members, a_a, a_b, and a_c; we've also declared a
+                    variable myA of type myStruct. The first inline
+                    assembly statement moves the value contained in myA.a_b
+                    into the register AX. The second moves the value at the
+                    address [di] + offset(a_c) into the register BX (it
+                    takes the address stored in DI and adds to it the
+                    offset of a_c from the start of myStruct). In this
+                    sequence, these assembler statements produce the
+                    following code:
+
+                     mov  ax, DGROUP : myA+2
+                     mov  bx, [di+4]
+
+                    Why would you even want to do this? If you load a
+                    register (such as DI) with the address of a structure
+                    of type myStruct, you can use the member names to
+                    directly reference the members. The member name
+                    actually can be used in any position where a numeric
+                    constant is allowed in an assembly statement operand.
+
+                    The structure member must be preceded by a dot (.) to
+                    signal that a member name, rather than a normal C
+                    symbol, is being used. Member names are replaced in the
+                    assembly output by the numeric offset of the structure
+                    member (the numeric offset of a_c is 4), but no type
+                    information is retained. Thus members can be used as
+                    compile-time constants in assembly statements.
+
+                    However, there is one restriction. If two structures
+                    that you are using in inline assembly have the same
+                    member name, you must distinguish between them. Insert
+                    the structure type (in parentheses) between the dot and
+                    the member name, as if it were a cast. For example,
+
+                       asm   mov    bx,[di].(struct tm)tm_hour
+
+
+------------------  You can use any of the conditional and unconditional
+        Using jump  jump instructions, plus the loop instructions, in
+  instructions and  inline assembly. They are only valid inside a function.
+            labels  Since no labels can be defined in the asm statements,
+------------------  jump instructions must use C goto labels as the object
+                    of the jump. If the label is too far away, the jump
+                    will be automatically converted to a long-distance
+                    jump. Direct far jumps cannot be generated.
+
+
+
+
+
+                                   - 8 -
+
+
+
+
+
+
+                    In the following code, the jump goes to the C goto
+                    label a.
+
+                     int     x()
+                     {
+                     a:                /* This is the goto label "a" */
+                        ...
+                        asm  jmp  a    /* Goes to label "a" */
+                        ...
+                     }
+
+                    Indirect jumps are also allowed. To use an indirect
+                    jump, you can use a register name as the operand of the
+                    jump instruction.
+
+
+   Interrupt func-  =======================================================
+             tions
+                    The 80x86 reserves the first 1024 bytes of memory for a
+                    set of 256 far pointers--known as interrupt vectors--to
+                    special system routines known as interrupt handlers.
+                    These routines are called by executing the 80x86
+                    instruction
+
+                      int  int#
+
+                    where int# goes from 0h to FFh. When this happens, the
+                    computer saves the code segment (CS), instruction
+                    pointer (IP), and status flags, disables the
+                    interrupts, then does a far jump to the location
+                    pointed to by the corresponding interrupt vector. For
+                    example, one interrupt call you're likely to see is
+
+                      int  21h
+
+                    which calls most DOS routines. But many of the
+                    interrupt vectors are unused, which means, of course,
+                    that you can write your own interrupt handler and put a
+                    far pointer to it into one of the unused interrupt
+                    vectors.
+
+                    To write an interrupt handler in Turbo C++, you must
+                    define the function to be of type interrupt; more
+                    specifically, it should look like this:
+
+                     void  interrupt myhandler(bp, di, si, ds, es, dx,
+
+
+
+
+                                   - 9 -
+
+
+
+
+
+
+                                               cx, bx, ax, ip, cs, flags,
+                     ... );
+
+                    As you can see, all the registers are passed as
+                    parameters, so you can use and modify them in your code
+                    without using the pseudovariables discussed earlier in
+                    this online file. You can also pass additional
+                    parameters (flags, ...) to the handler; those should be
+                    defined appropriately.
+
+                    A function of type interrupt will automatically save
+                    (in addition to SI, DI, and BP) the registers AX
+                    through DX, ES, and DS. These same registers are
+                    restored on exit from the interrupt handler.
+
+                    Interrupt handlers may use floating-point arithmetic in
+                    all memory models. Any interrupt handler code that uses
+                    an 80x87 must save the state of the chip on entry and
+                    restore it on exit from the handler.
+
+                    An interrupt function can modify its parameters.
+                    Changing the declared parameters will modify the
+                    corresponding register when the interrupt handler
+                    returns. This may be useful when you are using an
+                    interrupt handler to act as a user service, much like
+                    the DOS INT 21 services. Also, note that an interrupt
+                    function exits with an IRET (return from interrupt)
+                    instruction.
+
+                    So, why would you want to write your own interrupt
+                    handler? For one thing, that's how most memory-resident
+                    routines work. They install themselves as interrupt
+                    handlers. That way, whenever some special or periodic
+                    action takes place (clock tick, keyboard press, and so
+                    on), these routines can intercept the call to the
+                    routine handling the interrupt and see what action
+                    needs to take place. Having done that, they can then
+                    pass control on to the routine that was there.
+
+
+   Using low-level  =======================================================
+         practices
+                    You've already seen a few examples of how to use these
+                    different low-level practices in your code; now it's
+                    time to look at a few more. Let's start with an
+                    interrupt handler that does something harmless but
+                    tangible (or, in this case, audible): It beeps whenever
+                    it's called.
+
+
+
+                                  - 10 -
+
+
+
+
+
+
+                    First, write the function itself. Here's what it might
+                    look like:
+
+                     #include        <dos.h>
+
+                     void  interrupt  mybeep(unsigned bp, unsigned di,
+                     unsigned si,
+                                             unsigned ds, unsigned es,
+                     unsigned dx,
+                                             unsigned cx, unsigned bx,
+                     unsigned ax)
+                     {
+                        int     i, j;
+                        char    originalbits, bits;
+                        unsigned char   bcount = ax >> 8;
+
+                        /* Get the current control port setting */
+                        bits = originalbits = inportb(0x61);
+
+                        for (i = 0; i <= bcount; i++){
+
+                           /* Turn off the speaker for awhile */
+                           outportb(0x61, bits & 0xfc);
+                           for (j = 0; j <= 100; j++)
+                              ;   /* empty statement */
+
+                           /* Now turn it on for some more time */
+                           outportb(0x61, bits | 2);
+                           for (j = 0; j <= 100; j++)
+                              ;   /* another empty statement */
+                           }
+
+                        /* Restore the control port setting */
+                        outportb(0x61, originalbits);
+                     }
+
+                    Next, write a function to install your interrupt
+                    handler. Pass it the address of the function and its
+                    interrupt number (0 to 255 or 0x00 to 0xFF).
+
+                     void  install(void interrupt (*faddr)(), int inum)
+                     {
+                        setvect(inum, faddr);
+                     }
+
+                    Finally, call your beep routine to test it out. Here's
+                    a function to do just that:
+
+
+
+
+                                  - 11 -
+
+
+
+
+
+
+                     void  testbeep(unsigned char bcount, int inum)
+                     {
+                        _AH = bcount;
+                        geninterrupt(inum);
+                     }
+
+                    Your main function might look like this:
+
+                     main()
+                     {
+                        char  ch;
+
+                        install(mybeep,10);
+                        testbeep(3,10);
+                        ch = getch();
+                     }
+
+                    You might also want to preserve the original interrupt
+                    vector and restore it when your main program is
+                    finished. Use the getvect and setvect functions to do
+                    this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  - 12 -
+
+
+
+
+
+
+INDEX
+___________________________________________________________________________
+
+
+
+
+
+A                                       F
+asm (keyword) 2                         floating point
+  braces and 2                            arithmetic
+assembler                                   interrupt functions and 10
+  built in 1                            functions
+assembly language                         calling
+  inline 1                                  in inline assembly code 6
+    braces and 2
+    C structure members and 7
+      restrictions 8                    G
+    calling functions 6                 goto statements
+    commenting 2                          assembly language and 8
+    directives 6
+    goto in 8
+    jump instructions 5, 8              I
+    option (*B) 1                       INT instruction 9
+    referencing data in 6               interrupt (keyword) 9
+    register variables in 7             interrupts
+    semicolons and 3                      beep
+    size overrides in 7                     example 11
+    syntax 2                              functions
+    variable offsets in 7                   example of 10
+                                            floating-point arithmetic in 10
+                                          handlers
+B                                           calling 11
+braces                                      installing 11
+  asm keyword and 2                         programming 9
+built-in assembler 1
+
+                                        J
+C                                       jump instructions, inline assembly language
+command-line compiler                     table 5
+  options                                 using 8
+    assembly language and 1
+    -B (inline assembler code) 1
+    inline assembler code  1            L
+comments                                labels
+  inline assembly language code 2         in inline assembly code 8
+
+
+
+
+
+
+Index                                                                    13
+
+
+
+
+
+
+M                                       repeat prefix opcodes 5
+memory-resident routines 10
+
+                                        S
+O                                       size overrides in inline assembly
+opcodes 3                                 code 7
+  defined 2                             software interrupt instruction 9
+  mnemonics                             sounds
+    table 4                               beep 11
+  repeat prefixes 5                     structures
+operands (assembly language) 2            members
+                                            in inline assembly code 7
+                                              restrictions 8
+P                                       syntax
+prefix opcodes, repeat 5                  inline assembly language 2
+programs
+  terminate and stay resident
+    interrupt handlers and 10           T
+                                        terminate and stay resident
+                                          programs
+R                                         interrupt handlers and 10
+referencing data in inline assembly     Turbo Assembler 1
+  code 6
+registers
+  DI                                    V
+    assembly language and 7             variables
+  SI                                      offsets in inline assembly code 7
+    assembly language and 7
+  variables
+    in inline assembly code 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  - 14 -
+
