@@ -24,8 +24,6 @@ void MergeSort(Node** headRef)
 Node* SortedMerge(Node* a, Node* b) 
 { 
 	Node* result = NULL; 
-
-
 	if (a == NULL) 
 		return (b); 
 	else if (b == NULL) 
@@ -52,8 +50,6 @@ void FrontBackSplit(Node* source, Node** frontRef, Node** backRef)
 			fast = fast->next; 
 		} 
 	} 
-
-	
 	*frontRef = source; 
 	*backRef = slow->next; 
 	slow->next = NULL; 
@@ -66,17 +62,13 @@ void printList(Node* node)
 	} 
 } 
 void push(Node** head_ref, int new_data) 
-{ 
-
-	Node* new_node = new Node(); 
+{ 	Node* new_node = new Node(); 
 	new_node->data = new_data; 
 	new_node->next = (*head_ref); 
 	(*head_ref) = new_node; 
 } 
-
 int main() 
-{ 
-	Node* res = NULL; 
+{ 	Node* res = NULL; 
 	Node* a = NULL; 
 	int x,size;
     cin>>size;
@@ -90,5 +82,3 @@ int main()
 	printList(a); 
 	return 0; 
 } 
-
-
