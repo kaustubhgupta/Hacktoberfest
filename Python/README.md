@@ -26,6 +26,7 @@
 |  Tic-Tac-Toe Game    |   [link](./Tic-Tac-Toe/Tic-tac-toe.py)                 |
 |    Linear Search  |           [link](./linearsearch.py)     |
 |     Binary Search |               [link](./binarysearch.py) |
+|   Dijkstra's Shortest Path |      [link](./dijkstra.py)       |
 | String Subsets Recursive |		[link](.stringSubsetsRecursive.py)	|
 
 
