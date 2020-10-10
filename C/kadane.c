@@ -35,10 +35,3 @@ int main()
 
     return 0; 
 } 
-/*run the test case
-INPUT:
-n=5
-a[5]={1,2,3,4,5}
-OUTPUT:
-15
-*/
