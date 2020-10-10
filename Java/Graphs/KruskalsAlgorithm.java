@@ -148,6 +148,6 @@ public class KruskalsAlgorithm {
             graph.get(v).set(u, w);
         }
 
-        spanningTree(verticeNo, edgeNo, graph);;
+        spanningTree(verticeNo, edgeNo, graph);
     }
 }
