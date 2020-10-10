@@ -1,11 +1,3 @@
-/*
-Input format :
-Line 1 : Integer n i.e. Array size
-Line 2 : Array elements (separated by space)
-Output format :
-Array elements in increasing order (separated by space)
-*/
-
 #include<iostream>
 using namespace std;
 int partition(int *arr, int start, int end)
@@ -78,7 +70,3 @@ int main(){
     }
     delete [] input;
 }
-
-// Time complexity of best and average case is O(nlogn)
-// Time complexity of worst case is O(n^2)
-// Space complexity is O(1) 
