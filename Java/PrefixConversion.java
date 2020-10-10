@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.*;
 
-class PrefixConversion
+public class PrefixConversion
 {
         public static void preorder(Node root)
         {
