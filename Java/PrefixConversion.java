@@ -1,7 +1,7 @@
 //Code contributed by Aditya Prakash (@PrakashAditya17 --Github)
 import java.io.*;
 import java.util.*;
-class Node
+public class Node
 {
         char value;
         Node left;
