@@ -1,15 +1,11 @@
 #include <iostream> 
 #include <cstdio> 
 using namespace std; 
-
-
 struct Node 
 { 
 	int data; 
 	struct Node *next; 
 }; 
-
-
 void push(struct Node** head_ref, int new_data) 
 { 
 
@@ -24,8 +20,6 @@ void push(struct Node** head_ref, int new_data)
 	
 	(*head_ref) = new_node; 
 } 
-
-
 void printList(struct Node *node) 
 { 
 	while (node != NULL) 
@@ -35,23 +29,16 @@ void printList(struct Node *node)
 	} 
 	printf("\n"); 
 } 
-
-
 struct Node *getTail(struct Node *cur) 
 { 
 	while (cur != NULL && cur->next != NULL) 
 		cur = cur->next; 
 	return cur; 
 } 
-
-
-struct Node *partition(struct Node *head, struct Node *end, 
-					struct Node **newHead, struct Node **newEnd) 
+struct Node *partition(struct Node *head, struct Node *end, struct Node **newHead, struct Node **newEnd) 
 { 
 	struct Node *pivot = end; 
 	struct Node *prev = NULL, *cur = head, *tail = pivot; 
-
-	
 	while (cur != pivot) 
 	{ 
 		if (cur->data < pivot->data) 
@@ -75,8 +62,6 @@ struct Node *partition(struct Node *head, struct Node *end,
 			cur = tmp; 
 		} 
 	} 
-
-	
 	if ((*newHead) == NULL) 
 		(*newHead) = pivot; 
 
@@ -86,9 +71,6 @@ struct Node *partition(struct Node *head, struct Node *end,
 
 	return pivot; 
 } 
-
-
-
 struct Node *quickSortRecur(struct Node *head, struct Node *end) 
 { 
 	
@@ -114,37 +96,27 @@ struct Node *quickSortRecur(struct Node *head, struct Node *end)
 		tmp->next = pivot; 
 	} 
 
-
 	pivot->next = quickSortRecur(pivot->next, newEnd); 
 
 	return newHead; 
 } 
-
-
 void quickSort(struct Node **headRef) 
 { 
 	(*headRef) = quickSortRecur(*headRef, getTail(*headRef)); 
 	return; 
 } 
-
-
 int main() 
 { 
 	struct Node *a = NULL; 
 	int x,size;
     cin>>size;
-
     for(int i=0; i<size; i++)
     {
         cin>>x;
         push(&a,x);
     }
-
-	
 	quickSort(&a); 
-
 	cout << "Linked List after sorting \n"; 
 	printList(a); 
-
 	return 0; 
 } 
