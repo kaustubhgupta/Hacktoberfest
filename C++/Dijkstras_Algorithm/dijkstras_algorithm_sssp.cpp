@@ -75,7 +75,6 @@ public:
 				}
 			}
 		}
-
 		// Print dist from all other node to src
 		for (auto d : dist) {
 			T vertex = d.first;
