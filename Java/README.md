@@ -30,4 +30,4 @@
 |           factorial                    |       [link](./factorial.java)                            | 
 |           fibonacci                    |       [link](./fibonacci.java)                            |
 |           swaptwonumbers               |       [link](./swapTwoNumbers.java)                       |
-
+|  Subsets of a String (Recurive)        |       [link](./SubsetsOfAString.java)                     |
