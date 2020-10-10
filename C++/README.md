@@ -19,5 +19,6 @@
 | Longest Common Subsequence|              [link](./longest_common_subsequence.cpp)     |
 | Longest Palindromic Subsequence|    [link](./longest_palindromic_subsequence.cpp)     |
 | Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
+| Dijkstra's Algorithm  |  [link](Dijkstras_Algorithm/dijkstras_algorithm_sssp.cpp)     |
 
 
