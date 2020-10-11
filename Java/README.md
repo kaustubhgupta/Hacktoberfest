@@ -32,4 +32,5 @@
 |           swaptwonumbers               |       [link](./swapTwoNumbers.java)                       |
 |           sieveOfEratosthenes          |       [link](./sieveOfEratosthenes.java)                  |
 |  Subsets of a String (Recurive)        |       [link](./SubsetsOfAString.java)                     |
+|	factorial using stack		 |	[link](./factorialUsingStack.java)		     |
 
