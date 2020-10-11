@@ -1,0 +1,63 @@
+/**
+ * generates Fibonacci sequence
+ * @param limit max value that stops the generator. MAX_SAFE_INTEGER as default
+ */
+function* genFibonacci(limit = Number.MAX_SAFE_INTEGER) {
+  let a = 1;
+  let b = 0;
+  while (b <= limit) {
+    [a,b] = [a+b, a]
+    yield b;
+  }
+}
+
+const fibonacci = genFibonacci(2000);
+
+for (const term of fibonacci) {
+  console.log(term);
+}
+
+
+
+
+/**
+ * generator that yields 1 and -1 in zigzags
+ * @param maxTimes max number of times that a pair of alternates is generated. MAX_SAFE_INTEGER as default
+ */
+function* genAlternated(maxTimes = Number.MAX_SAFE_INTEGER) {
+  let counter = 0;
+  while (counter++ <= maxTimes) {
+    yield 1;
+    yield -1;
+  }
+}
+
+const alternated = genAlternated(10);
+
+for (const term of alternated) {
+  console.log(term);
+}
+
+
+
+
+/**
+ * generates a geometric serie with a specific ratio
+ * @param ratio oh much to multiply for each iteration
+ * @param maxTimes max number of times of iterators. Infinity as default
+ */
+function* genGeo(ratio, maxTimes = Infinity) {
+  if (typeof ratio != "number") throw new TypeError("ratio must be a number");
+  let counter = 0;
+  let current = 1;
+  while (counter++ <= maxTimes) {
+    current *= ratio;
+    yield current;
+  }
+}
+
+const geo = genGeo(2, 10);
+
+for (const term of geo) {
+  console.log(term);
+}
