@@ -1,6 +1,5 @@
 # A fun and interactive Python Car Game
 
-
 # Declaring the variables
 command = ""
 started = ""
