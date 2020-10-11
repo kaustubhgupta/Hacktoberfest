@@ -20,3 +20,4 @@
 | Longest Palindromic Subsequence|    [link](./longest_palindromic_subsequence.cpp)     |
 | Quick Sort                |         [link](./Quick_Sort.cpp)                          |  
 | Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
+| Linked List Insertion     |               [link](./LinkedList_Insertion.cpp)               |

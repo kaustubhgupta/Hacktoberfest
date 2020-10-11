@@ -8,13 +8,11 @@ using namespace std;
 
 template <typename T>
 class Node {
-
     private:
         T data;
         Node<T>* next;
 
     public:
-
         Node(T data) {
             this->data = data;
         }
@@ -34,7 +32,6 @@ class Node {
 
 template <typename T>
 class LinkedList {
-
     private:
         Node<T>* first;
         Node<T>* last;
@@ -48,7 +45,6 @@ class LinkedList {
         }
 
     public:
-
         LinkedList() {
             this->first = this->last = NULL;
         }
