@@ -1,4 +1,5 @@
-class tNode { 
+class BinaryTree { 
+    class tNode { 
     int data; 
     tNode left, right; 
   
@@ -9,7 +10,6 @@ class tNode {
     } 
 } 
   
-class BinaryTree { 
     tNode root; 
   
     /* Function to traverse a binary tree without recursion and  
