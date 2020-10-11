@@ -14,6 +14,7 @@ The following steps below outline how to make contributions to the existing proj
 ## Step 0: Find/Create an issue(any issue you can work on)
 
 -   Take a look at any Existing Issue you could work on✨ or create your **own** Issues!💡
+    **Note: Issues are assigned on first come first basis, do check if the issue or language implementation is not claimed by anyone else**
 -   While creating own issues make sure to **fill the template properly otherwise face the consequences of rejection**
 -   To tick the particular option in issue simply add "x" inbetween the [ ]. For example : [x]
 -   Wait for the `Issue` to be assigned to you, after which you can start working on it.

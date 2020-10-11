@@ -16,12 +16,20 @@
 |    Bubble Sort       |                   [link](./Sorting_Algorithms/bubble_sort.py)               |
 |    Insertion Sort    |                   [link](./Sorting_Algorithms/insertion_sort.py)            |
 |    Selection Sort    |                   [link](./Sorting_Algorithms/selection_sort.py)            |
-|   Message Encrypter  |               [link](./msg-encryptor/encrypter-msg.py) |
-|  Password_generator_App |          [link](./Password_generator_App.py)        |
-|   RSA                |             [link](./RSA.py)                           |
-|   SnakeGame          |            [link](./SnakeGame.py)                      |
-|    Sieve             |         [link](./sieve.py)                             |
+|    Quick Sort        |  [link](./Sorting_Algorithms/quick_sort/quick_sort.py)   |
+|   Message Encrypter  |               [link](./msg-encryptor/encrypter-msg.py)   |
+|  Password_generator_App |          [link](./Password_generator_App.py)          |
+|   RSA           |             [link](./RSA.py)                                  |
+|   SnakeGame     |            [link](./SnakeGame.py)                             |
+|    Sieve        |         [link](./sieve.py)                                    |
 |    Anagram           |         [link](./anagram.py)                           |
+|  Tic-Tac-Toe Game    |   [link](./Tic-Tac-Toe/Tic-tac-toe.py)                 |
+|    Linear Search  |           [link](./linearsearch.py)     |
+|     Binary Search |               [link](./binarysearch.py) |
+|   Dijkstra's Shortest Path |      [link](./dijkstra.py)       |
+| String Subsets Recursive |		[link](.stringSubsetsRecursive.py)	|
+| Car Game |    [link](./Car_Game/CarGame.py)  |
+
 
 
 
