@@ -1,4 +1,4 @@
-class LinkedList 
+class InsertionLinkedList 
 { 
     Node head;  
     class Node 
