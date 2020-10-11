@@ -1,4 +1,4 @@
-class Morris{
+class MorrisTraversal{
 class tNode { 
     int data; 
     tNode left, right; 
