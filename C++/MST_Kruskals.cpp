@@ -74,7 +74,7 @@ ll MST(ll start)
 		y=find(v);
 		// If parent of x is not same as the parent of y, merge them
 		// and add this edge
-		// Prims's is a greedy algorithm, the added edge has the least weight 
+		// Kruskal’s is a greedy algorithm, the added edge has the least weight 
 		// amongst all the remaining edges
 		if(x!=y)
 		{
@@ -95,7 +95,7 @@ int main()
 	fast;
 	ll m,u,v,w;
 	cin>>n>>m;
-	for(int i=1;i<=m;i++)
+	for(int i=0;i<m;i++)
 	{
 		cin>>u>>v>>w;
 		edges.pb({w,{u,v}});
@@ -106,7 +106,7 @@ int main()
 	sort(edges.begin(),edges.end());
 	for(int i=1;i<=n;i++)
 	{
-		// Initially, each node is it's own parent
+		// Initially, each node is its own parent
 		parent[i].first=i;
 		// Initially, the rank of each node = 0
 		parent[i].second=0;
@@ -116,3 +116,5 @@ int main()
 	cout<<MST(0);
 	return 0;
 }
+
+
