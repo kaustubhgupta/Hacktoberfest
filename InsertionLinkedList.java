@@ -1,11 +1,3 @@
-/* A node can be added in three ways 
-1) At the front of the linked list 
-2) After a given node. 
-3) At the end of the linked list.
-
-I have implemented all 3 insertion in simple program with the hellp of 3 different classes respecively.
-*/
-
 class LinkedList 
 { 
     Node head;  
