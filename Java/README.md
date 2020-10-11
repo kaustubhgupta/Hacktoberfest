@@ -32,5 +32,5 @@
 |           swaptwonumbers               |       [link](./swapTwoNumbers.java)                       |
 |           sieveOfEratosthenes          |       [link](./sieveOfEratosthenes.java)                  |
 |  Subsets of a String (Recurive)        |       [link](./SubsetsOfAString.java)                     |
-|  Insertion in Linked List              |       [link](../InsertionLinkedList.java)                 |
+|  Insertion in Linked List              |       [link](./InsertionLinkedList.java)                 |
 
