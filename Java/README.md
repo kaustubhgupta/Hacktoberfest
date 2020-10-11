@@ -31,4 +31,5 @@
 |           fibonacci                    |       [link](./fibonacci.java)                            |
 |           swaptwonumbers               |       [link](./swapTwoNumbers.java)                       |
 |           Extra Long Factorials        |        [link](./ExtraLongFactorial.java)                  |
-
+|           sieveOfEratosthenes          |        [link](./sieveOfEratosthenes.java)                 |
+|    Subsets of a String (Recurive)      |        [link](./SubsetsOfAString.java)                    |
