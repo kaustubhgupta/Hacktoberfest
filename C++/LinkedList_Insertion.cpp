@@ -81,7 +81,7 @@ class LinkedList {
          * Inserts the element @code(data) after the given element @code(after).
          * If the @code(after) element is not present, the insertion is not done.
          */
-        void push(T data, T after) {
+        void pushAfter(T data, T after) {
             Node<T>* pred = node(after);
             if (pred == NULL) {
                 return;
@@ -116,8 +116,8 @@ int main() {
     linkedList.pushFront(5);
     linkedList.pushFront(10);
     linkedList.pushBack(15);
-    linkedList.push(7, 10);
-    linkedList.push(13, 12); // 13 won't be added since 12 is not present
+    linkedList.pushAfter(7, 10);
+    linkedList.pushAfter(13, 12); // 13 won't be added since 12 is not present
     linkedList.display();
     return 0;
 }
