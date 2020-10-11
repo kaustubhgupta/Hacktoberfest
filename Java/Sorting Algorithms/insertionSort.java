@@ -2,7 +2,7 @@ package ARRAY;
 
 import java.util.Scanner;
 
-public class INSERTIONSORT {
+public class insertionSort {
 
 	static Scanner scn = new Scanner(System.in);
 
