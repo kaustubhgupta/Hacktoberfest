@@ -28,11 +28,13 @@
 |    Anagram           |         [link](./anagram.py)                           |
 |  Tic-Tac-Toe Game    |   [link](./Tic-Tac-Toe/Tic-tac-toe.py)                 |
 |    Linear Search  |           [link](./linearsearch.py)     |
-|     Binary Search |               [link](./binarysearch.py) |
-|   Dijkstra's Shortest Path |      [link](./dijkstra.py)       |
-| String Subsets Recursive |		[link](.stringSubsetsRecursive.py)	|
-|   Kadane's algorithm |	[link](./kadanes_algorithm.py)	|
-| Car Game |    [link](./Car_Game/CarGame.py)  |
+|     Binary Search 							|         [link](./binarysearch.py) 	|
+|   Dijkstra's Shortest Path 					|      [link](./dijkstra.py)       		|
+| String Subsets Recursive 						|	[link](.stringSubsetsRecursive.py)	|
+|   Kadane's algorithm 							|	[link](./kadanes_algorithm.py)		|
+| Car Game 										|    [link](./Car_Game/CarGame.py)  	|
+| Linkedlist insertion operations 				|    [link](./Linkedlist_insertion.py)  |
+
 
 
 
