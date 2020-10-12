@@ -16,6 +16,13 @@
 | Topological Sorting       |                   [link](./TopolgicalSort.cpp)            |
 | Linear Search             |                   [link](./linearSearch.cpp)              |
 | Binary Search             |                   [link](./binarySearch.cpp)              |
+| Minimum spanning tree using Prims             |[link](./MST_Prims.cpp)                |
+| Minimum spanning tree using Kruskals          |[link](./MST_Kruskals.cpp)             |
 | Longest Common Subsequence|              [link](./longest_common_subsequence.cpp)     |
 | Longest Palindromic Subsequence|    [link](./longest_palindromic_subsequence.cpp)     |
-
+| Recursive Power Set       |         [link](./recursivePowerSetOfString.cpp)           |
+| Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
+| Dijkstra's Algorithm  |  [link](Dijkstras_Algorithm/dijkstras_algorithm_sssp.cpp)     |
+| Quick Sort                |         [link](./Quick_Sort.cpp)                          |  
+| Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
+| Linked List Insertion     |               [link](./singlyLinkedList.cpp)               |
