@@ -30,6 +30,6 @@
 | String Subsets Recursive |		[link](.stringSubsetsRecursive.py)	|
 |   Kadane's algorithm |	[link](./kadanes_algorithm.py)	|
 
->>>>>>> 91e7b2245aefda241fa47a7adb7b4008db7a0c44
+
 
 
