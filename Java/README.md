@@ -34,3 +34,4 @@
 |  Subsets of a String (Recurive)        |       [link](./SubsetsOfAString.java)                     |
 |           Prim's Algorithm             |       [link](./Graphs/PrimsAlgorithm.java)                |
 |           Kruskal's Algorithm          |       [link](./Graphs/KruskalsAlgorithm.java)             |
+|Prefix Conversion using Expression Tree |       [link](./PrefixConversion.java)                     |
