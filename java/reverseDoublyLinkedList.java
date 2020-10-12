@@ -1,4 +1,4 @@
-public class Main {  
+public class reverseDoublyLinkedList {  
   
     //Represent a node of the doubly linked list  
   
@@ -78,7 +78,7 @@ public class Main {
   
     public static void main(String[] args) {  
   
-        Main dList = new Main();  
+        reverseDoublyLinkedList dList = new reverseDoublyLinkedList();  
         //Add nodes to the list  
         dList.addNode(1);  
         dList.addNode(2);  
