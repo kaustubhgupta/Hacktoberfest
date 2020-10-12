@@ -38,7 +38,4 @@ if __name__=='__main__':
 	new_list.insert_after(new_list.head,4) 
 	new_list.insert_after(new_list.head,8) 
 	print ('Created linked list is:') 
-	new_list.printList() 
-
-
-
+	new_list.printList()
