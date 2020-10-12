@@ -25,6 +25,11 @@
 |    Longest Common Subsequence          |        [link](./LongestCommonSubsequence.java)            |
 |    Longest Palindromic Subsequence     |        [link](./LongestPalindromicSubsequence.java)       |
 |           HeapSort                     |        [link](./HeapSort.java)                            |
+|         What Is Number? - Game         |        [link](./WhatIsNumberGame.java)
+|           FastIO                       |  [link](./FastIO/Reader.java) [link](./FastIO/Writer.java)|
 |           factorial                    |       [link](./factorial.java)                            | 
 |           fibonacci                    |       [link](./fibonacci.java)                            |
 |           swaptwonumbers               |       [link](./swapTwoNumbers.java)                       |
+|           sieveOfEratosthenes          |       [link](./sieveOfEratosthenes.java)                  |
+|  Subsets of a String (Recurive)        |       [link](./SubsetsOfAString.java)                     |
+|Prefix Conversion using Expression Tree |       [link](./PrefixConversion.java)                     |
