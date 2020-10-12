@@ -33,8 +33,8 @@ class LinkedList:
 if __name__=='__main__': 
 	new_list = LinkedList() 
 	new_list.insert_end(1) 
-	new_list.insert_begin(2); 
-	new_list.insert_begin(3); 
+	new_list.insert_begin(2)
+	new_list.insert_begin(3)
 	new_list.insert_after(new_list.head,4) 
 	new_list.insert_after(new_list.head,8) 
 	print ('Created linked list is:') 
