@@ -6,8 +6,8 @@ import java.util.*;
 public class BucketSort {
  
 	public static int[] bucketSort(int[] arr, int len) {
-		Map<Integer, Integer> frequency= new HashMap<Integer, Integer>();
-		List<Integer>[] bucket = new List[arr.length + 1];
+	Map<Integer, Integer> frequency= new HashMap<Integer, Integer>();
+	List<Integer>[] bucket = new List[arr.length + 1];
         List<Integer> result = new ArrayList();
         for (int n : arr) {
             frequency.put(n, frequency.getOrDefault(n, 0) + 1);
