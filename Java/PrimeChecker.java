@@ -8,10 +8,14 @@ public class PrimeChecker{
 		Scanner scanner = new Scanner(System.in);
 		int number = scanner.nextInt();
 
+		if(number==0){
+			System.out.println(number + " is neither prime nor composite");
+		}else{
 		if(isPrime(number))
 			System.out.println(number + " is a prime number");
 		else
 			System.out.println(number + " is not a prime number");
+	             }
 	}
 
 	public static boolean isPrime(int number)
