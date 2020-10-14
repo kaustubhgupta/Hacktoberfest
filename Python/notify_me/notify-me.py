@@ -1,9 +1,11 @@
 from plyer import notification
 import os, time
 
+# get the desktop directory and notify-me.txt file
 desk_dir = os.path.join(os.environ["HOMEPATH"], "Desktop")
 notifylist_dir = os.path.join(desk_dir, "notify-me.txt")
 
+# read todo items in notify-me.txt. If notify-me.txt not exist, create one.
 def get_todo():
     todo = []
     if not os.path.isfile(notifylist_dir):
@@ -20,6 +22,7 @@ def get_todo():
     
     return [i for i in todo if i != '']
 
+# Push desktop notification for every todo list
 def notify(todos):
     for todo in todos:
         notification.notify(
@@ -30,6 +33,7 @@ def notify(todos):
         )
         time.sleep(5.5)
 
+# main function --> notify user every 4 hours
 def main():
     while True:
         todos = get_todo()
