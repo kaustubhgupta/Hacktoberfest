@@ -1,5 +1,6 @@
 from plyer import notification
-import os, time
+import os
+import time
 
 # get the desktop directory and notify-me.txt file
 desk_dir = os.path.join(os.environ["HOMEPATH"], "Desktop")
@@ -22,7 +23,7 @@ def get_todo():
     
     return [i for i in todo if i != '']
 
-# Push desktop notification for every todo list
+# push desktop notification for every todo list
 def notify(todos):
     for todo in todos:
         notification.notify(
