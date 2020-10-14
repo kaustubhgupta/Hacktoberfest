@@ -30,6 +30,7 @@
 |           factorial                    |       [link](./factorial.java)                            |
 |           fibonacci                    |       [link](./fibonacci.java)                            |
 |           swaptwonumbers               |       [link](./swapTwoNumbers.java)                       |
+|           Permutation of String        |       [link](./PermutaionOfString.java)                   |
 |           sieveOfEratosthenes          |        [link](./sieveOfEratosthenes.java)                 |
 |    Subsets of a String (Recurive)      |        [link](./SubsetsOfAString.java)                    |
 |           sieveOfEratosthenes          |       [link](./sieveOfEratosthenes.java)                  |
@@ -37,3 +38,4 @@
 |           Kruskal's Algorithm          |       [link](./Graphs/KruskalsAlgorithm.java)             |
 |Prefix Conversion using Expression Tree |       [link](./PrefixConversion.java)                     |
 |           Extra Long Factorials        |        [link](./ExtraLongFactorial.java)                  |
+
