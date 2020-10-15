@@ -58,8 +58,7 @@ public:
             }
             // if find move to child node
              curNode = curNode->children[word[i] - 'a'];
-        }
-        
+        }       
     }
     
     /** Returns if the word is in the trie. */
@@ -72,8 +71,7 @@ public:
             if(curNode == NULL)
             {
                 return false;
-            }
-            
+            }            
         }
         // If reached the end 
         if(curNode->end)
@@ -92,7 +90,6 @@ public:
         trieNode *curNode = root;
         for(int i = 0; i < prefix.length(); i++)
         {
-          
             curNode = curNode->children[prefix[i] - 'a'];
             if(curNode == NULL)
             {
