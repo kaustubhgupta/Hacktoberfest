@@ -8,13 +8,10 @@ public class factorial {
 
 	// fact method to calculate factorial, takes integer n as parameter and returns the factorial
 	public static int fact(int n)
-	{	// setting factorial to 1
-		int factorial = 1;
-
-		// loop to calculate factorial
-		for (int i = n; i > 0; i--)
-			factorial *= i;
-	return factorial;
+	{	if (n >= 1)
+            return n * fact(num - 1);
+        else
+            return 1;
 	}
 
 	// main method
