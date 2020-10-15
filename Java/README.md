@@ -37,6 +37,7 @@
 |           sieveOfEratosthenes          |        [link](./sieveOfEratosthenes.java)                 |
 |    Subsets of a String (Recurive)      |        [link](./SubsetsOfAString.java)                    |
 |           sieveOfEratosthenes          |       [link](./sieveOfEratosthenes.java)                  |
+|       Reverse Doubly Linked List       |        [link](./reverseDoublyLinkedList.java)             |
 |           Prim's Algorithm             |       [link](./Graphs/PrimsAlgorithm.java)                |
 |           Kruskal's Algorithm          |       [link](./Graphs/KruskalsAlgorithm.java)             |
 |Prefix Conversion using Expression Tree |       [link](./PrefixConversion.java)                     |
