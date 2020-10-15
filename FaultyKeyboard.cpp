@@ -18,13 +18,11 @@ int main() {
   }
   map<string,int> mp;
   int l=0,r=s.length()-1;
-  for(auto i=0;i<slen;i++) {
-      
+  for(auto i=0;i<slen;i++) {   
     string te="";
       l=i;
       r=s.length()-i;
       for(auto j=i;j<slen;j++) {
-        
           r--;
           te.push_back(s.at(j));
           int rr=1+l+r;
@@ -35,7 +33,6 @@ int main() {
   }
   int ans=0,le=0;
   for(auto i=0;i<tlen;i++) {
-    
       string temp(1,t.at(i));
       if(se.find(t.at(i))!=se.end()) {
           if(le==0) {
