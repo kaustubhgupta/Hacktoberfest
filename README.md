@@ -6,7 +6,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/kaustubhgupta/Hacktoberfest2020_)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/kaustubhgupta/Hacktoberfest2020_)
 ![GitHub Hacktoberfest combined status (suggestion label override)](https://img.shields.io/github/hacktoberfest/2020/kaustubhgupta/Hacktoberfest2020_)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://hacktoberfest.netlify.com/)&nbsp;
+![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)
 
 # Hacktober Fest
 ![Hacktober](https://i0.wp.com/wp.laravel-news.com/wp-content/uploads/2020/09/hacktoberfest2020.jpg?fit=2200%2C1100&ssl=1?resize=2200%2C1125)
