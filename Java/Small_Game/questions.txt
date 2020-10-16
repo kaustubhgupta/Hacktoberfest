@@ -1,0 +1,21 @@
+5
+How many members are nominated by president in Lok Sabha in india
+	a(1)	b(2)
+	c(10)	d(12)
+b
+The reserve bank of india was nationalised in the year of
+	a(1935)	b(1947)
+	c(1948)	d(1949)
+d
+Indian army day is celebrated in india every year on
+	a(8 oct)	b(7 oct)
+	c(7 dec)	d(8 sept)
+a
+Which among the following standard protocols is the most widely used by the internet
+	a(HTTP)	b(TCP/IP)
+	c(SMTP)	d(SLIP)
+b
+Which part of the computer is used for storing information
+	a(monitor)      b(keyboard)
+	c(disk drive)	d(printer)
+c
