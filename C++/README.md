@@ -25,5 +25,6 @@
 | Dijkstra's Algorithm  |  [link](Dijkstras_Algorithm/dijkstras_algorithm_sssp.cpp)     |
 | Quick Sort                |         [link](./Quick_Sort.cpp)                          |  
 | Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
-| Linked List Insertion     |               [link](./singlyLinkedList.cpp)               |
+| Linked List Insertion     |               [link](./singlyLinkedList.cpp)              |
 | Trie Implementation       |               [link](./trie_implementation.cpp)           |
+| Kadane's Algorithm        |                   [link](./kadanes.cpp)                   |
