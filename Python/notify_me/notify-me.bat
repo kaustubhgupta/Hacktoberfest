@@ -1,0 +1,1 @@
+call pythonw.exe notify-me.py
