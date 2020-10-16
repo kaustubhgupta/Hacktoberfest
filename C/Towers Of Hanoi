@@ -1,0 +1,29 @@
+/* C program for Tower of Hanoi*/
+#include <stdio.h>
+#include<time.h>
+void towerfun(int, char, char, char);
+int main()
+{
+    int n,st,et;// defined to store the number disc
+    printf("Enter the number of disks : ");
+    scanf("%d", &n);
+    printf("The sequence of moves involved in the Tower of Hanoi are :\n");
+    st=clock();
+	towerfun(n, 'A', 'C', 'B'); // A, B, C are tower
+    et=clock();
+   	printf("\nStart Time =%d\nEnd Time =%d",st,et);
+	return 0;
+}
+ 
+void towerfun(int n, char fr, char tr, char ar)
+{
+    if (n == 1)
+    {
+        printf("\n Move disk 1 from rod %c to rod %c", fr, tr);
+        return;
+    }
+    towerfun(n - 1, fr, ar, tr);
+    printf("\n Move disk %d from rod %c to rod %c", n, fr, tr);
+    towerfun(n - 1, ar, tr, fr);
+}
+
