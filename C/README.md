@@ -30,3 +30,4 @@ C is a general-purpose, high-level language that was originally developed by Den
 | Print factorial using stack|                  [link](./stackFactorial.c)                      |
 | Subsets of string          |                  [link](./SubsetsOfString.c)                     |
 | Extra Long Factorial       |                  [link](./extraLongFactorial.c)                  |
+|BreadthFirstSearch(Adj.List)|                  [link](./BFS_AdjacencyList.c)                   |
