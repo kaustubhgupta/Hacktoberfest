@@ -1,3 +1,11 @@
+"""
+Sample Inputs/Outputs
+1.  Enter a number: 140
+    2 2 5 7
+2.  Enter a number: 60
+    2 2 3 5
+"""
+
 import math
 
 def primefactor(num):
