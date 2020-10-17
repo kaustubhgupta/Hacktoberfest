@@ -1,40 +1,44 @@
-import java.util.Scanner;
-
-public class PrimeFactorsOfNumbers {
-
-    public static void main(String args[]){
-
+// Program to print all prime factors 
+import java.util.*; 
+import java.lang.Math; 
+  
+public class PrimeFactorsOfNumbers
+{ 
+    // A function to print all prime factors 
+    // of a given number n 
+    public static void primeFactors(int num) 
+    { 
+        // Print the number of 2s that divide n 
+        while (num%2==0) 
+        { 
+            System.out.print(2 + " "); 
+            num /= 2; 
+        } 
+  
+        // n must be odd at this point.  So we can 
+        // skip one element (Note i = i +2) 
+        for (int i = 3; i <= Math.sqrt(num); i+= 2) 
+        { 
+            // While i divides n, print i and divide n 
+            while (num%i == 0) 
+            { 
+                System.out.print(i + " "); 
+                num /= i; 
+            } 
+        } 
+  
+        // This condition is to handle the case whien 
+        // n is a prime number greater than 2 
+        if (num > 2) 
+            System.out.print(num); 
+    } 
+  
+    public static void main (String[] args) 
+    { 
         Scanner in=new Scanner(System.in);
-        //input the number
-        int num= in.nextInt();
-        for(int i=1;i<=num;i++){
-            if(num%i==0){
-                //Calling fuction Prime to check whether the factor is prime or not
-                boolean isPrime=Prime(i);
-                if(isPrime){
-                    //The prime factors eventually printed
-                    System.out.print(i+" ");
-                }
-            }
-        }
-        System.out.println();
-    }
-    //Prime is the function that finds the Prime factors of number
-    public static boolean Prime(int fact)
-    {
-        int count=0;
-        for(int j=1;j<=fact;j++){
-            if(fact%j==0){
-                count++;
-            }
-        }
-        // A prime condition that it has only 2 factors
-        if(count==2){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-}
-		
+        //Enter the number as input
+        int number=in.nextInt();
+        
+        primeFactors(number); 
+    } 
+} 
