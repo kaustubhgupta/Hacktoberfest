@@ -11,6 +11,11 @@ using namespace std;
 
 /*--------------------------------------------------*/
 int partition(int a[],int l ,int h){
+	* This function takes last element as pivot, places 
+   the pivot element at its correct position in sorted 
+    array, and places all smaller (smaller than pivot) 
+   to left of pivot and all greater elements to right 
+   of pivot */
 	int pi = a[l];
 	int i=l;int j=h+1;
 	do{
@@ -32,6 +37,7 @@ int partition(int a[],int l ,int h){
 }
 void quicksort(int a[],int l,int h)
 {
+	//function to sort the elements in an array
 	int j;
 	if(l<h){
 		j=partition(a,l,h);
