@@ -42,3 +42,4 @@
 |           Kruskal's Algorithm          |       [link](./Graphs/KruskalsAlgorithm.java)             |
 |Prefix Conversion using Expression Tree |       [link](./PrefixConversion.java)                     |
 |           Extra Long Factorials        |        [link](./ExtraLongFactorial.java)                  |
+|           Trie Implementation          |        [link](./Trie_Implementation.java)                 |
