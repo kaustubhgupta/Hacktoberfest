@@ -28,7 +28,7 @@ else
 int main() 
 { 
 	char str[100];
-  	scanf("%s", str);
+  	scanf("%10s", str);
 	int n = strlen(str); 
 	permute(str, 0, n-1); 
 	return 0; 
