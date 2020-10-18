@@ -29,4 +29,5 @@
 | Linked List Insertion     |               [link](./singlyLinkedList.cpp)              |
 | Trie Implementation       |               [link](./trie_implementation.cpp)           |
 | Kadane's Algorithm        |                   [link](./kadanes.cpp)                   |
-
+| Prime Factors             |                   [link](./PrimeFactors.cpp)              |
+| String Permutations       |                    [link](./stringPermutations.cpp)       |
