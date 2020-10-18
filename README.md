@@ -38,3 +38,11 @@ Voila!
 ## Happy?? Do Star ⭐ this Repo. 🤩
 
 If you have any concern, then read this [code of conduct](CODE_OF_CONDUCT.md)
+
+## A milestone!
+
+We have successfully merged our 100th 'hacktoberfest-accepted' pull request! This pull request was made by @Blackwidow2981. Here is the link for that:
+
+https://github.com/kaustubhgupta/Hacktoberfest2020_/pull/436
+
+![image](
