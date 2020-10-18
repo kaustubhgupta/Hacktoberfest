@@ -36,8 +36,9 @@ def extended_euclidean(p, q):
     return [int(table['remainder_temp1']), [int(table['multiplicative_inverse1']), q + int(table['multiplicative_inverse1'])]]
 
 if __name__=='__main__':
-    p = int(input("ENter p: "))
-    q = int(input("ENter q: "))
+    #Defining set of random values of p and q
+    p = [10, 20, 30, 40]
+    q = [23, 766, 2, 98]
     
     result = extended_euclidean(p, q)
 
