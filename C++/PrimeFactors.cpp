@@ -22,6 +22,6 @@ int main()
 		cout << "Enter the number ";
 		int number;
 		cin >> number;
-        primeFactors(number);
+        	primeFactors(number);
 		return 0; 
     }
