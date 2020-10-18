@@ -16,6 +16,10 @@
 |    Bubble Sort       |                   [link](./Sorting_Algorithms/bubble_sort.py)               |
 |    Insertion Sort    |                   [link](./Sorting_Algorithms/insertion_sort.py)            |
 |    Selection Sort    |                   [link](./Sorting_Algorithms/selection_sort.py)            |
+|    Quick Sort        |  [link](./Sorting_Algorithms/quick_sort/quick_sort.py)   |
+|    Shell Sort        |  [link](./Sorting_Algorithms/shell_sort.py)              |
+|    Bucket Sort       |  [link](./Sorting_Algorithms/bucket_sort.py)             |
+|    Radix Sort        |  [link](./Sorting_Algorithms/radix_sort.py)              |
 |   Message Encrypter  |               [link](./msg-encryptor/encrypter-msg.py)   |
 |  Password_generator_App |          [link](./Password_generator_App.py)          |
 |   RSA           |             [link](./RSA.py)                                  |
@@ -25,6 +29,13 @@
 |  Tic-Tac-Toe Game    |   [link](./Tic-Tac-Toe/Tic-tac-toe.py)                 |
 |    Linear Search  |           [link](./linearsearch.py)     |
 |     Binary Search |               [link](./binarysearch.py) |
+|   Dijkstra's Shortest Path |      [link](./dijkstra.py)       |
+| String Subsets Recursive |		[link](.stringSubsetsRecursive.py)	|
+|   Kadane's algorithm |	[link](./kadanes_algorithm.py)	|
+| Car Game |    [link](./Car_Game/CarGame.py)  |
+| Clone Graph |    [link](./Clone_Graph.py)  |
+| Notify Me |    [link](./notify_me/notify-me.py)  |
+
 
 
 
