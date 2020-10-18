@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class insertionORupdation {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        int number, pos;
+
+
+        System.out.print("Enter the total no. to be contained in array : ");
+        int n = sc.nextInt();
+        int [] arr = new int [n];
+
+        System.out.println("Enter the Numbers : " );
+        for(int i = 0; i<arr.length; i++){
+            arr[i] = sc.nextInt();
+        }
+
+
+        System.out.println("Enter 1 for INSERTION OR 2 for UPDATION");
+        int choice = sc.nextInt();
+
+        switch (choice) {
+            case 1:
+                  System.out.println("Input the number to add with it's POSITION : ");
+                  number = sc.nextInt();
+                  pos = sc.nextInt();
+                  int ar [] = new int[n+1];
+                  for (int i = 0; i<arr.length; i++){
+                      ar[i] = arr[i];
+                  }
+
+                  fun(ar,number, pos);
+                  break;
+            case 2:
+                System.out.println("Enter the NEW NUMBER and POSITION to be replaced : ");
+                number = sc.nextInt();
+                pos = sc.nextInt();
+                arr[pos-1] = number;
+                for (int items: arr) {
+                    System.out.println(items);
+                }
+                break;
+            default:
+                System.out.println("ERROR!!!!!! Wrong Choice");
+        }
+
+
+    }
+    public static void fun(int ar[], int n, int p){
+        for(int i =ar.length-1; i>=0; i--){
+            if(i==(p-1))
+              break;
+            else
+                ar[i] = ar[i-1];
+        }
+        ar[p-1] = n;
+
+        for (int items : ar){
+            System.out.println(items);
+        }
+    }
+}
