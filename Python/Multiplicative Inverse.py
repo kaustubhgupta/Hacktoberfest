@@ -17,7 +17,7 @@ def extended_euclidean(p, q):
             table['remainder'] = table['remainder_temp1'] % table['remainder_temp2']
             if table['remainder'] < 0:
                 break
-        except:
+        except ZeroDivisionError:
             break
         #From here we calculate value of q
         table['quotent'] = (table['remainder_temp1'] - table['remainder'])/table['remainder_temp2'] 
