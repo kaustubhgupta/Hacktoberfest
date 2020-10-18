@@ -22,10 +22,12 @@
 | Longest Palindromic Subsequence|    [link](./longest_palindromic_subsequence.cpp)     |
 | Recursive Power Set       |         [link](./recursivePowerSetOfString.cpp)           |
 | Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
+| Prime Factors             |                   [link](./PrimeFactors.cpp)              |
 | Dijkstra's Algorithm  |  [link](Dijkstras_Algorithm/dijkstras_algorithm_sssp.cpp)     |
 | Quick Sort                |         [link](./Quick_Sort.cpp)                          |  
 | Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
 | Linked List Insertion     |               [link](./singlyLinkedList.cpp)              |
 | Trie Implementation       |               [link](./trie_implementation.cpp)           |
 | Kadane's Algorithm        |                   [link](./kadanes.cpp)                   |
+| Prime Factors             |                   [link](./PrimeFactors.cpp)              |
 | String Permutations       |                    [link](./stringPermutations.cpp)       |
