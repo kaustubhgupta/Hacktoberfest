@@ -6,7 +6,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/kaustubhgupta/Hacktoberfest2020_)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/kaustubhgupta/Hacktoberfest2020_)
 ![GitHub Hacktoberfest combined status (suggestion label override)](https://img.shields.io/github/hacktoberfest/2020/kaustubhgupta/Hacktoberfest2020_)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://hacktoberfest.netlify.com/)&nbsp;
+![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)
 
 # Hacktober Fest
 ![Hacktober](https://i0.wp.com/wp.laravel-news.com/wp-content/uploads/2020/09/hacktoberfest2020.jpg?fit=2200%2C1100&ssl=1?resize=2200%2C1125)
@@ -36,5 +36,10 @@ Voila!
 ## 👑 👑 Hurray!!! You just got closer to completing your hacktoberfest challenge. 😃
 
 ## Happy?? Do Star ⭐ this Repo. 🤩
+
+## A milestone!
+
+We have successfully merged our 100th 'hacktoberfest-accepted' pull request! This pull request was made by @Blackwidow2981. 
+[![image](./screenshots/Capture.PNG)](https://github.com/kaustubhgupta/Hacktoberfest2020_/pull/436)
 
 If you have any concern, then read this [code of conduct](CODE_OF_CONDUCT.md)
