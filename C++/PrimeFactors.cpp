@@ -14,9 +14,7 @@ void primeFactors(int number)
                   cout <<  i << " ";  
              }
         }     
- 
 } 
-
 int main()
     {
 		cout << "Enter the number ";
