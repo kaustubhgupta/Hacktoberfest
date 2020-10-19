@@ -45,3 +45,4 @@
 |           Small Game                   |        [link](./Small_Game/Game.java)                     |
 |           Quick Sort                   |        [link](./QuickSort.java)                           |
 |           Trie Implementation          |        [link](./Trie_Implementation.java)                 |
+|           Multiplicative Inverse       |        [link](./MultiplicativeInverse.java)               |
