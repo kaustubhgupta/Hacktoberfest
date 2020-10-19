@@ -1,8 +1,19 @@
+/**
+ * Description: finds the multiplicative inverse a^{-1} of a (mod b)
+ * such that a^{-1}*a = 1 (mod b)
+ * Runtime: O(log(b)) (I think)
+ */
+
 public class MultiplicativeInverse {
+    /**
+     * inverses[0] = a^{-1}
+     * inverses[1] = b^{-1}
+     * @return gcd(a, b)
+     */
     public static int egcd(int a, int b, int[] inverses) {
         if (b == 0) {
-        inverses[0] = 1;
-        inverses[1] = 0;
+            inverses[0] = 1;
+            inverses[1] = 0;
             return a;
         }
 
@@ -13,6 +24,9 @@ public class MultiplicativeInverse {
         return gcd;
     }
 
+    /**
+     * a and b are 2 distinct coprime integers
+     */
     public static void findInverse(int a, int b) {
         int[] inverses = {0,0};
 
