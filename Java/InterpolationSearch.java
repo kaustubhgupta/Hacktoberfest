@@ -1,4 +1,4 @@
-class Test 
+class FenwickTrees  
 { 
     // Array of items on which search will 
     // be conducted. 
