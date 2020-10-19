@@ -36,7 +36,7 @@
 | Clone Graph |    [link](./Clone_Graph.py)  |
 | Notify Me |    [link](./notify_me/notify-me.py)  |
 | Prime Factors |     [link](./prime_factors.py)      |
-
+| Multiplicative Inverse | [link](./Multiplicative%20Inverse.py) |
 
 
 
