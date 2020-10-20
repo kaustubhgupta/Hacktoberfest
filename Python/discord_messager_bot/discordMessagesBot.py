@@ -99,7 +99,8 @@ if __name__ == '__main__':
     message = ""
     while message != "continue":
         message = input("insert the messages to be sent in random order, to continue insert continue and press enter: ")
-        if message == "continue": break
+        if message == "continue": 
+            break
         messages.append(message)
 
     discordBot = DiscordBot(
