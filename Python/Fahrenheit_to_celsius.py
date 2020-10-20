@@ -1,4 +1,4 @@
-def fahrenheit_to_celsius(start_temperature, end_temperature):          #Fucntion to convert Fahrenheit to Celsius accepting starting and ending value of range [start, end]
+def fahrenheit_to_celsius(start_temperature, end_temperature):
   '''
   number -> float
   
