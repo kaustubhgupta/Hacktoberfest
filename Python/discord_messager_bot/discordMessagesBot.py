@@ -1,3 +1,4 @@
+import selenium
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -55,8 +56,9 @@ class DiscordBot:
         time.sleep(10)
         try:
             verifyNewMessagesNotification = driver.find_element_by_xpath("//div[@class='bar-30k2ka unreadMentionsBar-1VrBNe mention-1f5kbO active-1SSsBb']").click()
-        except:
-            pass
+        except selenium.common.exceptions.ElementClickInterceptedException:
+            print("It seems you have new messages and the code cant find the class tag")
+            print("The code should never get in this print")
         time.sleep(2)
         serverName = driver.find_element_by_xpath(f"//a[@aria-label='{self.server}']").click()
         time.sleep(2)
@@ -79,6 +81,7 @@ class DiscordBot:
 
 
 if __name__ == '__main__':
+    #Get inputs from user, login, channel and server name, isNSFW, language, time between messages and messages.
     email = input("insert your email: ")
     password = input("insert your password: ")
     server = input("insert the discord server name: ")
@@ -109,4 +112,3 @@ if __name__ == '__main__':
         time_between_messages=time_between_messages,
         messages=messages
     )
-
