@@ -58,22 +58,22 @@ class DiscordBot:
         except:
             pass
         time.sleep(2)
-        canalDb = driver.find_element_by_xpath(f"//a[@aria-label='{self.server}']").click()
+        serverName = driver.find_element_by_xpath(f"//a[@aria-label='{self.server}']").click()
         time.sleep(2)
 
-        canalPorradeBots = driver.find_element_by_xpath(
+        channelName = driver.find_element_by_xpath(
             f"//div[@aria-label='{self.channel} {'(canal de texto)' if self.language == Language.portuguese else '(text channel)'}']"
         ).click()
         time.sleep(3)
 
-        botaoContinuar = (driver.find_element_by_xpath(f"//div[text()='{'Continuar' if self.language == Language.portuguese else 'Continue'}']").click()) if self.is_not_safe_for_work else 0
+        continueButton = (driver.find_element_by_xpath(f"//div[text()='{'Continuar' if self.language == Language.portuguese else 'Continue'}']").click()) if self.is_not_safe_for_work else 0
         time.sleep(3)
         array = self.messages
         while True:
-            enviarMensagem = driver.find_element_by_xpath(f"//div[@aria-label='{'Conversar em ' if self.language == Language.portuguese else 'Message '}#{self.channel}']")
-            enviarMensagem.send_keys(random.choice(array))
+            sendMessage = driver.find_element_by_xpath(f"//div[@aria-label='{'Conversar em ' if self.language == Language.portuguese else 'Message '}#{self.channel}']")
+            sendMessage.send_keys(random.choice(array))
             time.sleep(3)
-            enviarMensagem.send_keys(Keys.ENTER)
+            sendMessage.send_keys(Keys.ENTER)
             time.sleep(2)
 
 
