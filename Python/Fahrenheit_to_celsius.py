@@ -1,6 +1,6 @@
 def fahrenheit_to_celsius(start_temperature, end_temperature):
   '''
-  number -> float
+  number, number -> float
   
   Return temperature converted to °Celsius where input is in °Fahrenheit
   
@@ -16,10 +16,10 @@ def fahrenheit_to_celsius(start_temperature, end_temperature):
   35°F is 1.6667°C
   '''
   for fahrenheit in range (start_temperature, end_temperature + 1):
-    print(str(fahrenheit)+'°F', 'is', str(round((fahrenheit - 32) * 5/9, ndigits=4))+'°C')  #Celsius = (Fahrenheit - 32) * 5/9  (Formula to convert temperature from °Fehrenheit to °Celsius)
+    print(str(fahrenheit)+'°F', 'is', str(round((fahrenheit - 32) * 5/9, ndigits=4))+'°C')  # Celsius = (Fahrenheit - 32) * 5/9  (Formula to convert temperature from °Fehrenheit to °Celsius)
     
 
 if __name__=="__main__":
-  fahrenheit_to_celsius(32, 212)                           #We pass the range of 32°F to 212°F which will output as 0°C and 100°C
+  fahrenheit_to_celsius(32, 212)                              # Here inputs are start_temperature and end_temperature of any desired range
   print('\n')
-  fahrenheit_to_celsius(212, 1832)                         #Second example of range from 212°F to 1832°F which will output as 100°C to 1000°C
+  fahrenheit_to_celsius(212, 1832)
