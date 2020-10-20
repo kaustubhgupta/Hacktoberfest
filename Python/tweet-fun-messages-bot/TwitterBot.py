@@ -12,11 +12,11 @@ def start_tweeting_fun_messages():
 	# create a twitter developer account, or use your account if you have one
 	# follow this steps to get your keys from your developer account
 	# https://www.slickremix.com/docs/how-to-get-api-keys-and-tokens-for-twitter/
-	consumer_key = "ADD_CONSUMER_KEY_HERE"
-	consumer_secret = "ADD_CONSUMER_SECRET_HERE"
+	consumer_key = input("ADD_CONSUMER_KEY_HERE: ")
+	consumer_secret = input("ADD_CONSUMER_SECRET_HERE: ")
 
-	access_token = "ADD_ACCESS_TOKEN_HERE"
-	access_secret = "ADD_ACCESS_SECRET_HERE"
+	access_token = input("ADD_ACCESS_TOKEN_HERE: ")
+	access_secret = input("ADD_ACCESS_SECRET_HERE: ")
 
 	auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 	auth.set_access_token(access_token, access_secret)
