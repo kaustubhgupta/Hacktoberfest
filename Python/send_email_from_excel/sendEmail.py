@@ -46,4 +46,3 @@ class Email():
 		except Exception as e:
 
 			return str(e)
-

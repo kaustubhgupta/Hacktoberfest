@@ -15,21 +15,22 @@ def fileSelector():
 	f_ = int(input("Enter the file number: "))
 
 	if f_ in range(len(files_)):
-		return files_[f_]
+		a = files_[f_]
 	else:
 		print("="*30)
 		print('Please select a proper file name')
 		fileSelector()
 
+	return a
 
 
 def start():
 	# configuration
 	USER_ = input('Enter your email: ')
-	PASS_ = input('Enter Password: ')
+	PWD_ = input('Enter Password: ')
 	SENDER_ = input('Select one (Gmail/Outlook): ').capitalize()
 
-	if USER_ != "" or PASS_ != "" or SENDER_ != "":
+	if USER_ != "" or PWD_ != "" or SENDER_ != "":
 
 		if SENDER_ in ['Gmail','Outlook']:
 
@@ -48,7 +49,7 @@ def start():
 					e = EMAIL_.send(target, subject, body)
 
 					print(e)
-					
+
 			except Exception as e:
 				print(str(e))
 				
@@ -64,10 +65,3 @@ def start():
 
 if __name__ == "__main__":
 	start()
-
-
-
-		
-
-
-
