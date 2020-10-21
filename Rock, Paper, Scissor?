@@ -1,0 +1,27 @@
+from random import randint
+t = ["Rock", "Paper", "Scissor"]
+Akshya = t[randint(0, 2)]
+Akanksha = False
+while Akanksha == False:
+    Akanksha = input("Rock,Paper,Scissor?")
+    if Akanksha == Akshya:
+        print("Tie")
+    elif Akanksha == "Rock":
+        if Akshya == "Paper":
+            print("You lose!", Akshya, "cover", Akanksha)
+        else:
+            print("You win!", Akanksha, "smashes", Akshya)
+    elif Akanksha == "Paper":
+        if Akshya == "Scissor":
+            print("You lose!", Akshya, "cuts", Akanksha)
+        else:
+            print("You win!", Akanksha, "covers", Akshya)
+    elif Akanksha == "Scissor":
+        if Akshya == "Rock":
+            print("You lose!", Akshya, "smashes", Akanksha)
+        else:
+            print("You win!", Akanksha, "cuts", Akshya)
+    else:
+        print("what ever you put in there .... check it! and put right input in there.")
+    Akanksha = False
+    Akshya = t[randint(0, 2)]
