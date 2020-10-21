@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import random
 from enum import Enum
@@ -34,8 +35,7 @@ class DiscordBot:
         self.messages = messages
         self.options = Options()
         self.options.add_argument(f"--lang={'pt-BR' if language == Language.portuguese else 'en-US'}")
-        self.options.headless = False
-        self.driver = webdriver.Chrome(options=self.options)
+        self.driver = webdriver.Chrome(ChromeDriverManager().install())
         self.getInfos()
 
     def getInfos(self):
@@ -67,8 +67,9 @@ class DiscordBot:
             f"//div[@aria-label='{self.channel} {'(canal de texto)' if self.language == Language.portuguese else '(text channel)'}']"
         ).click()
         time.sleep(3)
-
-        continueButton = (driver.find_element_by_xpath(f"//div[text()='{'Continuar' if self.language == Language.portuguese else 'Continue'}']").click()) if self.is_not_safe_for_work else 0
+        print(self.is_not_safe_for_work)
+        if self.is_not_safe_for_work == True:
+            continueButton = (driver.find_element_by_xpath(f"//div[text()='{'Continuar' if self.language == Language.portuguese else 'Continue'}']").click())
         time.sleep(3)
         array = self.messages
         while True:
@@ -86,7 +87,11 @@ if __name__ == '__main__':
     password = input("insert your password: ")
     server = input("insert the discord server name: ")
     channel = input("insert the discord channel name: ")
-    is_not_safe_for_work = bool(input("the server is not safe for work: (True) or (False) "))
+    is_not_safe_for_work = input("the server is not safe for work: (True) or (False) ")
+    if is_not_safe_for_work == "True":
+        is_not_safe_for_work = True
+    elif is_not_safe_for_work == "False":
+        is_not_safe_for_work = False
     language = input("Your discord is in portuguese or english?: (portuguese) or (english) ")
     if language == "portuguese":
         language = Language.portuguese
