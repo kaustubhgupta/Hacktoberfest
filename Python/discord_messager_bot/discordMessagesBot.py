@@ -67,8 +67,8 @@ class DiscordBot:
             f"//div[@aria-label='{self.channel} {'(canal de texto)' if self.language == Language.portuguese else '(text channel)'}']"
         ).click()
         time.sleep(3)
-        print(self.is_not_safe_for_work)
-        if self.is_not_safe_for_work == True:
+
+        if self.is_not_safe_for_work:
             continueButton = (driver.find_element_by_xpath(f"//div[text()='{'Continuar' if self.language == Language.portuguese else 'Continue'}']").click())
         time.sleep(3)
         array = self.messages
