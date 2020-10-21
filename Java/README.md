@@ -46,3 +46,4 @@
 |           Quick Sort                   |        [link](./QuickSort.java)                           |
 |           Trie Implementation          |        [link](./Trie_Implementation.java)                 |
 |           Kadane's Algorithm Implementation          |        [link](./kadanesalgorithm.java)                 |
+|    Fahrenheit to Celcius Converter     |        [link](./Fahrenheit_to_Celsius.java)               |
