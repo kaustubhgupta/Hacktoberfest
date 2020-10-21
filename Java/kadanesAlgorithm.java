@@ -1,7 +1,7 @@
 //This algorithm gives the sum of the largest sum contiguous subarray
 
 import java.util.*;
-public class kadaneAlgo {
+public class kadanesAlgorithm {
 	public static void main(String[] args) {
 		//Implementing scanner for Input
 		Scanner sc = new Scanner(System.in);
