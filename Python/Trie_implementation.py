@@ -38,7 +38,7 @@ class Trie:
 				return False
 			node = node.children[index] 
 
-		return node != None and node.isWordEnd 
+		return node is not None and node.isWordEnd 
 
 def main(): 
     
