@@ -37,6 +37,7 @@
 | Notify Me |    [link](./notify_me/notify-me.py)  |
 | Prime Factors |     [link](./prime_factors.py)      |
 | Discord Bot Messager |     [link](./discord_messager_bot/discordMessagesBot.py)      |
+| Trie Data Structure | [link](.Trie_implementation.py)     |
 
 
 
