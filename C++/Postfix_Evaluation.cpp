@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 /*
 Input Format:
 The only argument given is character array A.
@@ -8,7 +7,6 @@ The only argument given is character array A.
 Output Format:
 Return the value of arithmetic expression formed using postfix Notation.
 */
-
 int evalpostfix(vector<string> &A) {
     int n=A.size();
     stack<int>stk;
@@ -55,11 +53,9 @@ int evalpostfix(vector<string> &A) {
         {
             stk.push(stoi(A[i]));
         }
-
     }
     return (stk.top());
 }
-
 //driver function
 int main()
 {
@@ -73,10 +69,8 @@ int main()
         v.push_back(s);
     }
     cout<<evalpostfix(v)<<"\n";
-
     return 0;
 }
-
 /*
 input output example:
 Input 1:
