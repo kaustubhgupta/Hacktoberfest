@@ -36,5 +36,6 @@
 | Clone Graph |    [link](./Clone_Graph.py)  |
 | Notify Me |    [link](./notify_me/notify-me.py)  |
 | Prime Factors |     [link](./prime_factors.py)      |
+| Fahrenheit to Celsius | [link](./Fahrenheit_to_celsius.py) |
 | Multiplicative Inverse | [link](./Multiplicative%20Inverse.py) |
 | Discord Bot Messager |     [link](./discord_messager_bot/discordMessagesBot.py)      |
