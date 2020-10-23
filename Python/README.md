@@ -37,8 +37,4 @@
 | Notify Me |    [link](./notify_me/notify-me.py)  |
 | Prime Factors |     [link](./prime_factors.py)      |
 | Multiplicative Inverse | [link](./Multiplicative%20Inverse.py) |
-
-
-
-
-
+| Discord Bot Messager |     [link](./discord_messager_bot/discordMessagesBot.py)      |
