@@ -48,3 +48,4 @@
 |           Multiplicative Inverse       |        [link](./MultiplicativeInverse.java)               |
 |           Kadane's Algorithm Implementation          |        [link](./kadanesalgorithm.java)      |
 |    Fahrenheit to Celsius Converter     |        [link](./Fahrenheit_to_Celsius.java)               |
+|    Postfix Evaluation using stack      |        [link](./postfix_evaluation.java)                  |
