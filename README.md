@@ -37,9 +37,15 @@ Voila!
 
 ## Happy?? Do Star ⭐ this Repo. 🤩
 
-## A milestone!
+## Milestones!
 
+### 100th 'hacktoberfest-accepted' pull request
 We have successfully merged our 100th 'hacktoberfest-accepted' pull request! This pull request was made by @Blackwidow2981. 
 [![image](./screenshots/Capture.PNG)](https://github.com/kaustubhgupta/Hacktoberfest2020_/pull/436)
+
+
+### 100th Repository Contributor
+![image](./screenshots/100thcontrib.PNG)
+
 
 If you have any concern, then read this [code of conduct](CODE_OF_CONDUCT.md)
