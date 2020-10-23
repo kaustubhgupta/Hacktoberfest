@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Test 
+public class postfix_evaluation 
 { 
 	static int postfixEval(String expression) 
 	{ 
@@ -22,20 +22,25 @@ public class Test
 				switch(d) 
 				{ 
 					case '+': 
-					stack.push(num1 + num2); 
-					break; 
+						stack.push(num1 + num2); 
+						break; 
 					
 					case '-': 
-					stack.push(num2 - num1); 
-					break; 
+						stack.push(num2 - num1); 
+						break; 
 					
 					case '/': 
-					stack.push(num2/num1); 
-					break; 
+						stack.push(num2/num1); 
+						break; 
 					
 					case '*': 
-					stack.push(num2*num1); 
-					break; 
+						stack.push(num2*num1); 
+						break;
+					
+					default:
+						break;
+						
+						
 			} 
 			} 
 		} 
