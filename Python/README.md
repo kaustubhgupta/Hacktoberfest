@@ -39,3 +39,4 @@
 | Fahrenheit to Celsius | [link](./Fahrenheit_to_celsius.py) |
 | Multiplicative Inverse | [link](./Multiplicative%20Inverse.py) |
 | Discord Bot Messager |     [link](./discord_messager_bot/discordMessagesBot.py)      |
+| Trie Data Structure | [link](./Trie_implementation.py)     |
