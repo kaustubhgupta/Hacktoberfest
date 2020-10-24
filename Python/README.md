@@ -40,3 +40,4 @@
 | Multiplicative Inverse | [link](./Multiplicative%20Inverse.py) |
 | Discord Bot Messager |     [link](./discord_messager_bot/discordMessagesBot.py)      |
 | Trie Data Structure | [link](./Trie_implementation.py)     |
+| Simple Flask API | [link](./flask_api_model.py)     |
