@@ -33,3 +33,4 @@
 | String Permutations       |                    [link](./stringPermutations.cpp)       |
 | Convert Fahrenheit to Celsius      |                    [link](./fah_to_cel_function(CB).cpp)       |
 | Counting Sort Algorithm   |                 [link](./countingSort.cpp)                |
+| Postfix Evaluation         |       [link](./Postfix_Evaluation.cpp)                   |
