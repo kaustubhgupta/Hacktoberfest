@@ -57,12 +57,12 @@ public class BinaryTree {
 	}
 	
 	static class Node{
-	Node left, right;
-	int value;
+		Node left, right;
+		int value;
 	
-	public Node(int value){
-		this.value = value;
+		public Node(int value){
+			this.value = value;
+		}
 	}
-}
 
 }
