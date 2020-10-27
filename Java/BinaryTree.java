@@ -1,14 +1,5 @@
 import java.util.Scanner;
 
-class Node{
-	Node left, right;
-	int value;
-	
-	public Node(int value){
-		this.value = value;
-	}
-}
-
 public class BinaryTree {
 	
 	static Scanner sc = new Scanner(System.in);
@@ -65,4 +56,13 @@ public class BinaryTree {
 		System.out.print(root.value+" ");
 	}
 
+}
+
+class Node{
+	Node left, right;
+	int value;
+	
+	public Node(int value){
+		this.value = value;
+	}
 }
