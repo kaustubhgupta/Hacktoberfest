@@ -52,3 +52,4 @@
 |     Postfix Expression Evaluation      |        [link](./PostfixEvaluation.java)                   |    
 |       Binary Tree Implementation       |        [link](./BinaryTree.java)                          |  
 |           Juggling Algorithm           |        [link](./JugglingAlgorithm.java)                   |  
+|       Major Element in an array        |        [link](./MajorElement.java)                        |
