@@ -49,4 +49,5 @@
 |           Kadane's Algorithm Implementation          |        [link](./kadanesalgorithm.java)      |
 |    Fahrenheit to Celsius Converter     |        [link](./Fahrenheit_to_Celsius.java)               |
 |Minimum number of Swaps to Sort An Array|        [link](./MinSwapsTOSortArray.java)                 |
-|     Postfix Expression Evaluation      |        [link](./PostfixEvaluation.java)                   |     
+|     Postfix Expression Evaluation      |        [link](./PostfixEvaluation.java)                   |    
+|       Binary Tree Implementation       |        [link](./BinaryTree.java)                          |  
