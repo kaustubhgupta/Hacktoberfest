@@ -22,6 +22,7 @@
 | Longest Palindromic Subsequence|    [link](./longest_palindromic_subsequence.cpp)     |
 | Recursive Power Set       |         [link](./recursivePowerSetOfString.cpp)           |
 | Expression convertor: Prefix to Postfix & Infix|    [link](./prefixConverter.cpp)     |
+| Comb Sort                 |                   [link](./CombSort.cpp)            |
 | Prime Factors             |                   [link](./PrimeFactors.cpp)              |
 | Dijkstra's Algorithm  |  [link](Dijkstras_Algorithm/dijkstras_algorithm_sssp.cpp)     |
 | Quick Sort                |         [link](./Quick_Sort.cpp)                          |  
@@ -34,3 +35,4 @@
 | Convert Fahrenheit to Celsius      |                    [link](./fah_to_cel_function(CB).cpp)       |
 | Counting Sort Algorithm   |                 [link](./countingSort.cpp)                |
 | Postfix Evaluation         |       [link](./Postfix_Evaluation.cpp)                   |
+
