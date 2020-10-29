@@ -20,7 +20,7 @@
 |   RSA           |             [link](./RSA.py)                             |
 |   SnakeGame          |            [link](./SnakeGame.py)          |
 |    Sieve            |         [link](./sieve.py)                       |
-
+|   Mergesort            |      [link](./mergesort.py)                   |
 
 
 
