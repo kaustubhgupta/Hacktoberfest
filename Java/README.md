@@ -51,4 +51,5 @@
 |Minimum number of Swaps to Sort An Array|        [link](./MinSwapsTOSortArray.java)                 |
 |     Postfix Expression Evaluation      |        [link](./PostfixEvaluation.java)                   |    
 |       Binary Tree Implementation       |        [link](./BinaryTree.java)                          |  
-|           Juggling Algorithm           |        [link](./JugglingAlgorithm.java)                   |  
+|           Juggling Algorithm           |        [link](./JugglingAlgorithm.java)                   | 
+|            Comb Sort                   |        [link](./combsort.java)                   |
