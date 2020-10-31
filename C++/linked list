@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+class Bank
+{public:
+  int rate=12;
+  int year=3;
+
+};
+class Customer
+{public:
+  string name;
+  int customerid;
+ 
+
+};
+class Account:public Bank,public Customer
+{
+  int accno;
+  int balance;
+  int Interest;
+  public:
+  void getdata();
+  void printdata();
+  void calculate()
+  {
+     Interest=balancerateyear/100;
+
+  }
+};
+
+
+  void Account::getdata()
+  {
+    cin>>name;
+    cin>>customerid;
+    cin>>accno;
+    cin>>balance;
+
+
+  }
+void Account::printdata()
+{
+  cout<<"Customer Name="<<name<<endl;
+  cout<<"Customer Id="<<customerid<<endl;
+  cout<<"Account No="<<accno<<endl;
+  cout<<"Account Balance="<<balance<<endl; 
+  cout<<"Interest="<<Interest;
+}
+int main() {
+
+  Account a;
+  a.getdata();
+  a.calculate();
+  a.printdata();
+
+    return 0;
+}
