@@ -1,3 +1,5 @@
+### Update: 2020 Hacktoberfest is over now! See you in 2021
+
 ### Update: Read this before moving head! [Important](https://github.com/kaustubhgupta/Hacktoberfest2020_/issues/105)
 
 ![GitHub forks](https://img.shields.io/github/forks/kaustubhgupta/Hacktoberfest2020_?style=social)
