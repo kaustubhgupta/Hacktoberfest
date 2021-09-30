@@ -1,7 +1,3 @@
-### Update: 2020 Hacktoberfest is over now! See you in 2021
-
-### Update: Read this before moving head! [Important](https://github.com/kaustubhgupta/Hacktoberfest2020_/issues/105)
-
 ![GitHub forks](https://img.shields.io/github/forks/kaustubhgupta/Hacktoberfest2020_?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/kaustubhgupta/Hacktoberfest2020_?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/kaustubhgupta/Hacktoberfest2020_)
@@ -9,8 +5,9 @@
 ![GitHub Hacktoberfest combined status (suggestion label override)](https://img.shields.io/github/hacktoberfest/2020/kaustubhgupta/Hacktoberfest2020_)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)
 
-# Hacktober Fest
-![Hacktober](https://i0.wp.com/wp.laravel-news.com/wp-content/uploads/2020/09/hacktoberfest2020.jpg?fit=2200%2C1100&ssl=1?resize=2200%2C1125)
+<center><p><h1>Hacktober Fest</h1></p><center>
+
+![image](https://user-images.githubusercontent.com/43691873/135417244-f5a221ec-dc29-4687-a5f1-ae715727b6b0.png)
 Voila!
 🙅🏼‍♂️Hacktoberfest is open to everyone in our global community. Whether you’re new to development, a student, long-time contributor, event host, or company of any size, you can help drive the growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.🙅🏼‍♂️
 
@@ -38,7 +35,7 @@ Voila!
 
 ## Happy?? Do Star ⭐ this Repo. 🤩
 
-## Milestones!
+## Milestones 2020!
 
 ### 100th 'hacktoberfest-accepted' pull request
 We have successfully merged our 100th 'hacktoberfest-accepted' pull request! This pull request was made by @Blackwidow2981. 
