@@ -2,7 +2,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/kaustubhgupta/Hacktoberfest2020_?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/kaustubhgupta/Hacktoberfest2020_)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/kaustubhgupta/Hacktoberfest2020_)
-![GitHub Hacktoberfest combined status (suggestion label override)](https://img.shields.io/github/hacktoberfest/2020/kaustubhgupta/Hacktoberfest2020_)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)
 
 <center><p><h1>Hacktober Fest</h1></p><center>
