@@ -4,7 +4,9 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/kaustubhgupta/Hacktoberfest2020_)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)
 
-<center><p><h1>Hacktober Fest</h1></p><center>
+_Note: If you want to contribute to an actual real-world project, head over to [PortfolioFy](https://github.com/kaustubhgupta/PortfolioFy)_
+
+<center><h1>Hacktober Fest</h1><center>
 
 ![image](https://user-images.githubusercontent.com/43691873/135417244-f5a221ec-dc29-4687-a5f1-ae715727b6b0.png)
 Voila!
