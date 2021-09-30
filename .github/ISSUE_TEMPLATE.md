@@ -7,10 +7,13 @@ Add any other context, links references or screenshots about the feature request
 # Important Checklist 
 -   [ ] I have read the contribution guidelines before making this issue.
 -   [ ] I have verified this issue program is not already implemented
--   [ ] I have not pushed this code anywhere else (even my repo)
 
+<!-- To be used by project admin, leave out this section-->
 # Languages and Assignees:
 -   [ ] Python: @
 -   [ ] Java: @
 -   [ ] C: @
 -   [ ] C++: @ 
+
+# Notes
+Anything you would like to discuss. 
