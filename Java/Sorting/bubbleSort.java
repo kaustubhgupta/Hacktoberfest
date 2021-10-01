@@ -1,8 +1,8 @@
-package ARRAY;
+// package ARRAY;
 
 import java.util.Scanner;
 
-public class BUBBLESORT {
+public class bubbleSort {
 
 	static Scanner scn = new Scanner(System.in);
 	
@@ -12,9 +12,9 @@ public class BUBBLESORT {
     
 		display(array);
     
-    bubbleSort(arr);
+    	bubbleSort(array);
     
-    display(arr);
+    	display(array);
     
     }
     
@@ -35,8 +35,10 @@ public class BUBBLESORT {
 	public static void display(int[] arr) {
 		
 		for(int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
+			System.out.print(arr[i]+" ");
 		}
+		System.out.println();
+
 	}
   
   public static void bubbleSort(int[] arr) {

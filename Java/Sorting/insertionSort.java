@@ -1,8 +1,9 @@
-package ARRAY;
+
 
 import java.util.Scanner;
 
-public class INSERTIONSORT {
+public class insertionSort
+ {
 
 	static Scanner scn = new Scanner(System.in);
 
@@ -12,9 +13,9 @@ public class INSERTIONSORT {
 
 		display(array);
 
-    insertionSort(arr);
+    	insertionSort(array);
 
-    display(arr);
+    	display(array);
 
     }
 
@@ -35,8 +36,9 @@ public class INSERTIONSORT {
 	public static void display(int[] arr) {
 
 		for(int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
+			System.out.print(arr[i]+" ");
 		}
+		System.out.println();
 	}
 
 public static void insertionSort(int[] arr) {
