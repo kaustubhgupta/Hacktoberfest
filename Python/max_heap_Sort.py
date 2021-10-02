@@ -19,10 +19,10 @@ def heap(array):
         array[i],array[0]=array[0],array[i]
         heapify(array,i,0)
 
-array=list(map(int,input('enter tree elements ').split()))
+array=list(map(int,input('Enter Tree Elements ').split()))
 print(array)
 heap(array)
-print("ascending sort of given array is ",array)
+print("Ascending Sort of Given Array is ",array)
 
 
 #input: 6 7 13 15 11 8 5
