@@ -1,9 +1,10 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 void fahToCel(int f,int steps){
     for(;f<=300;f+=steps){
-        int c = 5*(f-32)/9;
-        cout<<f<<" "<<c<<endl;
+        float c = 5*(f-32)/9.0;
+        cout<<f<<" deg. F in Celcius is "<<fixed<<setprecision(2)<<c<<" deg. C."<<endl;
     }
     return;
 }
