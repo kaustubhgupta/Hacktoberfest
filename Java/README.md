@@ -16,7 +16,6 @@
 |           Cycle Detection              |        [link](./Graphs/CycleDetection.java)               |
 |           Dijkstra Algorithm           |        [link](./Graphs/DijkstraAlgorithm.java)            |
 |           Bellman Ford Algorithm       |        [link](./Graphs/BellmanFordAlgorithm.java)         |
-|           BST                          |        [link](./binarySearchTree.java)                    |
 |           Bubble Sort                  |        [link](./bubbleSort.java)                          |
 |           Insertion Sort               |        [link](./insertionSort.java)                       |
 |           Selection Sort               |        [link](./selectionSort.java)                       |
