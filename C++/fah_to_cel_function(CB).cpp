@@ -4,7 +4,7 @@ using namespace std;
 void fahToCel(int f,int steps){
     for(;f<=300;f+=steps){
         float c = 5*(f-32)/9.0;
-        cout<<f<<" "<<fixed<<setprecision(2)<<c<<endl;
+        cout<<f<<" deg. F in Celcius is "<<fixed<<setprecision(2)<<c<<" deg. C."<<endl;
     }
     return;
 }
