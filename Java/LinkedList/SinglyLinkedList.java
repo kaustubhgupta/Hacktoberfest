@@ -67,9 +67,7 @@ public class SinglyLinkedList {
         }
     }
 
-    /********************
-     * Add an element at the beginning of the LinkedList
-     *********************/
+    /******************** Add an element at the beginning of the LinkedList *********************/
     public void insertAtFirst(int a) {
         if (head == null) {
             head = new Node(a);
@@ -81,9 +79,7 @@ public class SinglyLinkedList {
         head.next = temp;
     }
 
-    /**********************
-     * Add an element at the end of the LinkedList
-     ***********************/
+    /********************** Add an element at the end of the LinkedList ***********************/
     public void insertAtEnd(int a) {
         if (head == null) {
             head = new Node(a);
@@ -97,9 +93,7 @@ public class SinglyLinkedList {
         }
     }
 
-    /******************
-     * Add an element at Kth position of the LinkedList
-     *********************/
+    /******************* Add an element at Kth position of the LinkedList*********************/
     public void insertAtKthPosition(int k, int d) {
 
         k = k - 2;
@@ -122,9 +116,7 @@ public class SinglyLinkedList {
         }
     }
 
-    /*********************
-     * Delete the first element of the List
-     ***********************/
+    /********************** Delete the first element of the List***********************/
     public void deleteFirst() {
         if (head == null) {
             return;
@@ -133,9 +125,7 @@ public class SinglyLinkedList {
         head = temp.next;
     }
 
-    /*********************
-     * Delete the last element of the List
-     ***********************/
+    /********************** Delete the last element of the List ***********************/
     public void deleteLast() {
         Node temp = head;
         if (head == null) {
@@ -151,9 +141,7 @@ public class SinglyLinkedList {
         temp.next = null;
     }
 
-    /*********************
-     * Delete the element present at Kth position
-     ***********************/
+    /********************** Delete the element present at Kth position ***********************/
     public void deleteAtKthPosition(int k) {
         int count = 1;
         Node temp = head;
