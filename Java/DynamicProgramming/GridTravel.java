@@ -8,7 +8,7 @@ public class GridTravel {
         int rows=sc.nextInt();
         int cols=sc.nextInt(); //rows and columns input
 
-        int arr[][]=new int[rows[cols];
+        int arr[][]=new int[rows][cols];
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
